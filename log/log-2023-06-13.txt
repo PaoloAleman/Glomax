@@ -1,0 +1,849 @@
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='14'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='1'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='1'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='1'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones WHERE nombre_vestido='Vestido Starples'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones WHERE nombre_vestido='Vestido Starples'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='1'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT id
+                FROM vestido
+                ORDER BY id DESC LIMIT 1
+[2023-06-13][INFO]Ejecutando query: INSERT INTO vestido(id, nombre,entrada, salida, saldoTotalMercaderia, precio, saldoTotal, estado, fechaPago)
+                VALUES ('19','Paolo',0,0,0,'1000',0*'1000','No pagado','2023-06-13')
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: INSERT INTO acciones(nombre_vestido, color_vestido, talle_vestido, cantidadS,cantidadE)
+                    VALUES ('Paolo','Verde','XL',0,0)
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones WHERE nombre_vestido='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS+'1' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida+'1' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Salida', 1,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones WHERE nombre_vestido='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='18'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='18'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones WHERE nombre_vestido='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadE=cantidadE+'10' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET entrada=entrada+'10' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Entrada', 10,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones WHERE nombre_vestido='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS+'6' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida+'6' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Salida', 6,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS+'2' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida+'2' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Salida', 2,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS+'2' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida+'2' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Salida', 2,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadE=cantidadE+'2' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET entrada=entrada+'2' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Entrada', 2,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoTotalMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS+'1' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida+'1' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Salida', 1,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoTotalMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadE=cantidadE+'12' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET entrada=entrada+'12' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Entrada', 12,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoTotalMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS+'1' 
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida+'1' WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Verde claro','XL','Salida', 1,'2023-06-13')
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoTotalMercaderia=entrada-salida
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET saldoTotal=salida*precio
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: DELETE FROM acciones WHERE nombre_vestido='Paolo'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM vestido WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='25'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='25'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='24'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='24'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='19'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='19'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='20'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='20'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='21'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='21'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='22'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='22'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='23'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='23'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+                FROM fecha f
+                WHERE f.id='26'
+[2023-06-13][INFO]Ejecutando query: DELETE FROM fecha WHERE id='26'
+[2023-06-13][INFO]Ejecutando query: UPDATE acciones 
+                    SET cantidadS=cantidadS-1
+                    WHERE nombre_vestido='Paolo' AND color_vestido='Verde claro' AND talle_vestido='XL'
+[2023-06-13][INFO]Ejecutando query: UPDATE vestido SET salida=salida-1 WHERE nombre='Paolo'
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
+                f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
+                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
+                FROM fecha f
+                ORDER BY f.fecha
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT * FROM acciones ORDER BY nombre_vestido,talle_vestido,color_vestido
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-13][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id

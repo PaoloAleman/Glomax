@@ -1,0 +1,38 @@
+{{>header}}
+<main>
+
+    <div class="relative rounded-2xl p-6 bg-[#1C1919] bg-opacity-80  lg:w-[937px] mx-auto m-10 ">
+        <div class="lg:h-[60px] flex justify-center items-center gap-2 my-2 mb-6 mx-auto rounded-2xl p-4 bg-[#1C1919] bg-opacity-80 lg:w-[350px] text-center text-[15px] lg:text-3xl text-white">
+            <p>Actualizar estado</p>
+        </div>
+        <div class="lg:h-[250px] flex justify-center mx-auto rounded-2xl p-10 bg-[#1C1919] bg-opacity-80 lg:w-[600px] h-[1000px]">
+            <form action="/vestido/estado" method="post">
+                <label class="text-center text-[15px] lg:text-xl text-white" for="nombre">Nombre</label>
+                <br>
+                <select class="lg:w-[250px] pl-2" name="nombre">
+                    {{#vestidos}}
+                        <option value="{{nombre}}">{{nombre}}</option>
+                    {{/vestidos}}
+                </select>
+                <br><br>
+                <select name="estado" class="lg:w-[250px] lg:h-[30px] pl-2">
+                    <option value="Pagado">Pagado</option>
+                    <option value="No pagado">No pagado</option>
+                </select>
+                <br><br>
+                <div class="flex justify-around items-center">
+                    <input class="lg:text-xl text-white border p-4 m-2" type="submit" name="cambiarEstado" value="Actualizar">
+                    <input class="lg:text-xl text-white border p-4 m-2" type="submit" name="cambiarTodos" value="Actualizar todos">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="flex justify-around items-center">
+        <a href="/vestido/listarVestidos" class="text-center text-[15px] lg:text-2xl text-white">
+            <div class="lg:h-[60px] flex justify-center items-center gap-2 my-2 mb-6 mx-auto rounded-2xl p-4 bg-[#1C1919] bg-opacity-80 lg:w-[300px]">
+                Volver
+            </div>
+        </a>
+    </div>
+</main>
+{{>footer}}

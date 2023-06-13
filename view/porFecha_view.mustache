@@ -1,0 +1,57 @@
+{{>header}}
+<main class="">
+
+    <div class="relative rounded-2xl p-6 bg-[#1C1919] bg-opacity-80  lg:w-[1337px] mx-auto m-10 ">
+        <div class="lg:h-[90px] flex justify-center items-center gap-2 my-2 mb-6 mx-auto rounded-2xl p-4 bg-[#1C1919] bg-opacity-80 lg:w-[350px] text-center text-[15px] lg:text-3xl text-white">
+            <p>Vestidos por fecha</p>
+        </div>
+        <div class="flex justify-around items-center">
+            <a href="/vestido/listarVestidos" class="text-center text-[15px] lg:text-2xl text-white">
+                <div class="lg:h-[60px] flex justify-center items-center gap-2 my-2 mb-6 mx-auto rounded-2xl p-4 bg-[#1C1919] bg-opacity-80 lg:w-[300px]">
+                    Volver
+                </div>
+            </a>
+        </div>
+
+        <div class="lg:h-[90px] flex justify-center items-center gap-2 my-2 mb-6 mx-auto rounded-2xl p-4 bg-[#1C1919] bg-opacity-80 lg:w-[400px]">
+            <form action="/vestido/verPorFecha" method="post">
+                <select class="lg:w-[250px] pl-2" name="nombre">
+                    {{#vestidos2}}
+                        <option value="{{nombre}}">{{nombre}}</option>
+                    {{/vestidos2}}
+                </select>
+                <input class="text-white ml-10" type="submit" name="buscarFecha" value="Buscar">
+            </form>
+        </div>
+
+        <table class="bg-[#252121] bg-opacity-80 w-[100%] mx-auto text-center border-collapse mt-12 p-5 mb-6 border">
+            <tr class="text-white text-[20px] font-semibold border-t">
+                <th class="border px-4 py-4">Vestido</th>
+                <th class="border px-4 py-4">Talle</th>
+                <th class="border px-4 py-4">Color</th>
+                <th class="border px-4 py-4">Tipo</th>
+                <th class="border px-4 py-4">Cantidad</th>
+                <th class="border px-4 py-4">Fecha</th>
+                <th class="border px-4 py-4">Eliminar</th>
+            </tr>
+            {{#datos}}
+                <tr class="text-white text-[20px] font-semibold border-t my-1">
+                    <td class="border px-4 py-4">{{nombre_vestido}}</td>
+                    <td class="border px-4 py-4">{{talle_vestido}}</td>
+                    <td class="border px-4 py-4">{{color_vestido}}</td>
+                    <td class="border px-4 py-4">{{tipo}}</td>
+                    <td class="border px-4 py-4">{{cantidad}}</td>
+                    <td class="border px-4 py-4">{{fecha}}</td>
+                    <td class="border px-4 py-4">
+                        <form action="/vestido/verPorFecha" method="post">
+                        <button type="submit" name="eliminarSalida" value="{{id}}">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+            {{/datos}}
+        </table>
+
+
+    </div>
+</main>
+{{>footer}}

@@ -1,0 +1,51 @@
+{{>header}}
+<main>
+
+    <div class="relative rounded-2xl p-6 bg-[#1C1919] bg-opacity-80  lg:w-[937px] mx-auto m-10 ">
+        <div class="lg:h-[90px] flex justify-center items-center gap-2 my-2 mb-6 mx-auto rounded-2xl p-4 bg-[#1C1919] bg-opacity-80 lg:w-[350px] text-center text-[15px] lg:text-3xl text-white">
+            <p>Agregar vestido</p>
+        </div>
+        <div class="lg:h-[300px] flex flex-wrap mx-auto rounded-2xl p-10 bg-[#1C1919] bg-opacity-80 lg:w-[650px] h-[1000px]">
+            <form action="/vestido/agregarVestido" method="post" class="grid grid-cols-2 gap-4">
+                <div class="mr-9">
+                    <label class="text-center text-[15px] lg:text-xl text-white" for="nombre">Nombre</label>
+                    <br>
+                    <input type="text" class="lg:w-[250px] pl-2" name="nombre">
+                    <br><br>
+                    <label class="text-center text-[15px] lg:text-xl text-white" for="precio">Precio</label>
+                    <br>
+                    <input type="number" class="lg:w-[250px] pl-2" name="precio">
+                    <br><br>
+                </div>
+                <div class="mr-9">
+                    <label class="text-center text-[15px] lg:text-xl text-white" for="estado">Estado</label>
+                    <br>
+                    <select name="estado" class="lg:w-[250px] pl-2">
+                        <option value="Pagado">Pagado</option>
+                        <option value="No pagado">No pagado</option>
+                    </select>
+                    <br><br>
+                    <label class="text-center text-[15px] lg:text-xl text-white" for="fechaPago">Fecha Pago</label>
+                    <br>
+                    <input type="date" class="lg:w-[250px] pl-2" name="fechaPago">
+                </div>
+                <div class="flex justify-center items-center ml-20">
+                    <br><br>
+                    <input class="lg:text-xl text-white border px-5 py-1 mb-20 ml-20" type="submit" name="agregarVestido" value="Agregar">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="flex justify-around items-center mt-10">
+            <a href="/vestido/listarVestidos" class="text-center text-[15px] lg:text-2xl text-white">
+                <div class="lg:h-[60px] flex justify-center items-center gap-2 my-2 mb-6 mx-auto rounded-2xl p-4 bg-[#1C1919] bg-opacity-80 lg:w-[300px]">
+                    Volver
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</main>
+{{>footer}}
