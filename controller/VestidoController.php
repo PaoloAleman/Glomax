@@ -15,14 +15,14 @@ class VestidoController{
             $nombre=$_POST["nombre"];
             $data = [
                 "vestidos" => $this->vestidoModel->buscarVestido($nombre),
-                "vestidos2" => $this->vestidoModel->listarVestidos()
-
+                "vestidos2" => $this->vestidoModel->listarVestidos(),
+                "totales"=>$this->vestidoModel->obtenerTotales()
             ];
         }else {
             $data = [
                 "vestidos" => $this->vestidoModel->listarVestidos(),
-                "vestidos2" => $this->vestidoModel->listarVestidos()
-
+                "vestidos2" => $this->vestidoModel->listarVestidos(),
+                "totales"=>$this->vestidoModel->obtenerTotales()
             ];
         }
         $this->renderer->render('vestidos', $data);

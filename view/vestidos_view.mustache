@@ -46,6 +46,25 @@
                     <td class="p-4 border border-gray-300">{{fechaPago}}</td>
                 </tr>
             {{/vestidos}}
+            {{#totales}}
+                <tr class="text-white text-[20px] font-semibold">
+                    <td class="p-4 border border-gray-300" colspan="3">TOTALES</td>
+                    <td class="p-4 border border-gray-300">{{entradaTotal}}</td>
+                    <td class="p-4 border border-gray-300">{{salidaTotal}}</td>
+                    <td class="p-4 border border-gray-300">{{saldoTM}}</td>
+                    <td class="p-4 border border-gray-300">{{saldoTotal}}</td>
+                    <td class="p-4 border border-gray-300" colspan="2"></td>
+                </tr>
+            {{/totales}}
+            <tr class="text-white text-[20px] font-semibold">
+                <th class="p-4 border border-gray-300" colspan="3"> </th>
+                <th class="p-4 border border-gray-300">Total entrada</th>
+                <th class="p-4 border border-gray-300">Total salida</th>
+                <th class="p-4 border border-gray-300">Saldo T. Mercadería</th>
+                <th class="p-4 border border-gray-300">Saldo Total</th>
+                <th class="p-4 border border-gray-300" colspan="2"></th>
+
+            </tr>
         </table>
 
     </div>

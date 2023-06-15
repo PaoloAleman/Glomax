@@ -29,6 +29,7 @@ class VestidoModel{
             $this->database->query($sql);
             $sql2="UPDATE vestido SET salida=salida+'$cantidad' WHERE nombre='$nombre'";
             $this->database->query($sql2);
+            date_default_timezone_set('America/Argentina/Buenos_Aires');
             $fechaActual = date('Y-m-d');
             $sql3="INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
                         VALUES('$nombre','$color','$talle','Salida', $cantidad,'$fechaActual')";
@@ -50,6 +51,7 @@ class VestidoModel{
             $this->database->query($sql);
             $sql2="UPDATE vestido SET entrada=entrada+'$cantidad' WHERE nombre='$nombre'";
             $this->database->query($sql2);
+            date_default_timezone_set('America/Argentina/Buenos_Aires');
             $fechaActual = date('Y-m-d');
             $sql3="INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
                         VALUES('$nombre','$color','$talle','Entrada', $cantidad,'$fechaActual')";
@@ -193,19 +195,32 @@ class VestidoModel{
             $nombre=$datos["nombreVestido"];
             $color=$datos["colorVestido"];
             $talle=$datos["talleVestido"];
+            $tipo=$datos["tipoVestido"];
+            $cantidad=$datos["cantidad"];
             $sql="DELETE FROM fecha WHERE id='$id'";
             $this->database->query($sql);
-            $sql1="UPDATE acciones 
-                    SET cantidadS=cantidadS-1
+            if($tipo=='Salida'){
+                $sql1="UPDATE acciones 
+                    SET cantidadS=cantidadS-'$cantidad'
                     WHERE nombre_vestido='$nombre' AND color_vestido='$color' AND talle_vestido='$talle'";
-            $this->database->query($sql1);
-            $sql2="UPDATE vestido SET salida=salida-1 WHERE nombre='$nombre'";
-            $this->database->query($sql2);
+                $this->database->query($sql1);
+                $sql2="UPDATE vestido SET salida=salida-'$cantidad' WHERE nombre='$nombre'";
+                $this->database->query($sql2);
+            }elseif ($tipo=='Entrada'){
+                $sql1="UPDATE acciones 
+                    SET cantidadE=cantidadE-'$cantidad'
+                    WHERE nombre_vestido='$nombre' AND color_vestido='$color' AND talle_vestido='$talle'";
+                $this->database->query($sql1);
+                $sql2="UPDATE vestido SET entrada=entrada-'$cantidad' WHERE nombre='$nombre'";
+                $this->database->query($sql2);
+            }
+
         }
     }
 
     public function obtenerDatosAPartirDelID($id){
-        $sql="SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido, f.talle_vestido as talleVestido
+        $sql="SELECT f.nombre_vestido as nombreVestido, f.color_vestido as colorVestido,
+                f.talle_vestido as talleVestido, f.tipo as tipoVestido, f.cantidad as cantidad
                 FROM fecha f
                 WHERE f.id='$id'";
         return $this->database->query($sql)->fetch_assoc();
@@ -216,6 +231,13 @@ class VestidoModel{
         $this->database->query($sql);
         $sql2="UPDATE vestido SET saldoTotal=salida*precio";
         $this->database->query($sql2);
+    }
+
+    public function obtenerTotales(){
+        $sql="SELECT sum(saldoTotal) as saldoTotal, sum(saldoTotalMercaderia) as saldoTM,
+                    sum(entrada) as entradaTotal, sum(salida) as salidaTotal
+                FROM vestido ";
+        return $this->database->query($sql)->fetch_assoc();
     }
 
 
