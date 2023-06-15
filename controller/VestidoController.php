@@ -49,13 +49,14 @@ class VestidoController{
             $nombre=$_POST["nombre"];
             $data = [
                 "vestidos" => $this->vestidoModel->buscarVestidoPorTalle($nombre),
-                "vestidos2"=>$this->vestidoModel->listarVestidos()
-
+                "vestidos2"=>$this->vestidoModel->listarVestidos(),
+                "totales"=>$this->vestidoModel->obtenerTotalesAcciones()
             ];
         }else {
             $data = [
                 "vestidos" => $this->vestidoModel->listarVestidosPorTalle(),
-                "vestidos2"=>$this->vestidoModel->listarVestidos()
+                "vestidos2"=>$this->vestidoModel->listarVestidos(),
+                "totales"=>$this->vestidoModel->obtenerTotalesAcciones()
             ];
         }
         $this->renderer->render('porTalle',$data);
@@ -123,6 +124,13 @@ class VestidoController{
         $this->renderer->render('eliminar',$data);
     }
 
+    public function verHistorialPagos(){
+        $data=[
+            "historial"=>$this->vestidoModel->obtenerHistorialDePagos()
+        ];
+        $this->renderer->render('historialPagos',$data);
+
+    }
 
 
 

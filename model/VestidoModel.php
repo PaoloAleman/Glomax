@@ -77,10 +77,18 @@ class VestidoModel{
             $sql="UPDATE vestido SET estado='$estado'";
             $this->database->query($sql);
         }
-
+        date_default_timezone_set('America/Argentina/Buenos_Aires');
+        $fecha=date("Y-m-d");
+        $datos=$this->obtenerTotales();
+        $saldoPagado=$datos["saldoTotal"];
+        $cantidadSalidas=$datos["salidaTotal"];
         if($estado=='Pagado'){
-            $sql1="UPDATE vestido SET saldoTotal=0 WHERE estado='Pagado' or estado='pagado'";
+            $sql2= "INSERT INTO historialPagos(cantidadSalidas,saldoPagado,fechaPagada) values('$cantidadSalidas','$saldoPagado','$fecha')";
+            $this->database->query($sql2);
+            $sql1="UPDATE vestido SET saldoTotal=0, fechaPago='$fecha', entrada=entrada-salida, salida=0 WHERE estado='Pagado' or estado='pagado'";
             $this->database->query($sql1);
+            $sql3="UPDATE vestido SET estado='No pagado' WHERE estado='Pagado' or estado='pagado'";
+            $this->database->query($sql3);
         }else{
             $sql1="UPDATE vestido SET saldoTotal=salida*precio WHERE estado='No pagado'";
             $this->database->query($sql1);
@@ -238,6 +246,20 @@ class VestidoModel{
                     sum(entrada) as entradaTotal, sum(salida) as salidaTotal
                 FROM vestido ";
         return $this->database->query($sql)->fetch_assoc();
+    }
+
+    public function obtenerHistorialDePagos(){
+        $sql="SELECT DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada,
+                cantidadSalidas, saldoPagado
+                FROM historialPagos
+                ORDER BY fechaPagada";
+        return $this->database->query($sql);
+    }
+
+    public function obtenerTotalesAcciones(){
+        $sql="SELECT sum(cantidadE) as cantidadE, sum(cantidadS) as cantidadS 
+            FROM acciones";
+        return $this->database->query($sql);
     }
 
 

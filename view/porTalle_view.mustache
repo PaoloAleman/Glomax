@@ -32,6 +32,13 @@
         </div>
 
         <table class="bg-[#252121] bg-opacity-80 w-[100%] mx-auto text-center border-collapse mt-12 p-5 mb-6 border">
+            {{#totales}}
+                <tr class="text-white text-[20px] font-semibold border-t my-1">
+                    <td class="border px-4 py-4" colspan="3">Totales</td>
+                    <td class="border px-4 py-4">{{cantidadE}}</td>
+                    <td class="border px-4 py-4">{{cantidadS}}</td>
+                </tr>
+            {{/totales}}
             <tr class="text-white text-[20px] font-semibold border-t">
                 <th class="border px-4 py-4">Vestido</th>
                 <th class="border px-4 py-4">Talle</th>
@@ -48,6 +55,7 @@
                     <td class="border px-4 py-4">{{cantidadS}}</td>
                 </tr>
             {{/vestidos}}
+
         </table>
 
 

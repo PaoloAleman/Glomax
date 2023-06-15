@@ -35,6 +35,14 @@ create table fecha(
     fecha date
 );
 
+create table historialPagos(
+    id smallint primary key auto_increment,
+    cantidadSalidas int,
+    saldoPagado float,
+    fechaPagada date
+);
+
+
 INSERT INTO vestido(id,nombre,entrada, salida, saldoTotalMercaderia, precio, saldoTotal, estado, fechaPago) VALUES
                             (1,'Vestido corto Dhara',30,5,entrada-salida,2685.0,precio*salida,'No pagado','2023-06-10'),
                             (2,'Vestido Starples',48,13,entrada-salida,3250.0,precio*salida,'No pagado','2023-06-10'),
