@@ -1,0 +1,27 @@
+[2023-06-20][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Negro','XL','Salida', 12,'2023-06-20')
+[2023-06-20][INFO]Ejecutando query: UPDATE vestido SET saldoTotalMercaderia=entrada-salida
+[2023-06-20][INFO]Ejecutando query: UPDATE vestido SET saldoTotal=salida*precio
+[2023-06-20][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-20][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Negro','XL','Entrada', 18,'2023-06-20')
+[2023-06-20][INFO]Ejecutando query: UPDATE vestido SET saldoTotalMercaderia=entrada-salida
+[2023-06-20][INFO]Ejecutando query: UPDATE vestido SET saldoTotal=salida*precio
+[2023-06-20][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id
+[2023-06-20][INFO]Ejecutando query: INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('Paolo','Negro','XL','Salida', 2,'2023-06-20')
+[2023-06-20][INFO]Ejecutando query: UPDATE vestido SET saldoTotalMercaderia=entrada-salida
+[2023-06-20][INFO]Ejecutando query: UPDATE vestido SET saldoTotal=salida*precio
+[2023-06-20][INFO]Ejecutando query: SELECT DATE_FORMAT(v.fechaPago,'%d-%m-%Y') as fechaPago,
+                v.nombre as nombre, v.entrada as entrada, v.salida as salida, v.saldoTotalMercaderia as saldoTotalMercaderia,
+                v.precio as precio, v.saldoTotal as saldoTotal, v.estado as estado, v.id as id
+                FROM vestido v 
+                ORDER BY id

@@ -35,7 +35,20 @@ class VestidoModel{
                         VALUES('$nombre','$color','$talle','Salida', $cantidad,'$fechaActual')";
             $this->database->query($sql3);
             $this->actualizarSaldoMercaderia();
+        }
+    }
 
+    public function devolucionVestidos(){
+        if(isset($_POST["devolucionVestidos"])){
+            $cantidad=$_POST["cantidad"];
+            $nombre=$_POST["nombre"];
+            $color=$_POST["color"];
+            $talle=$_POST["talle"];
+            date_default_timezone_set('America/Argentina/Buenos_Aires');
+            $fechaActual = date('Y-m-d');
+            $sql="INSERT INTO fecha(nombre_vestido, color_vestido, talle_vestido, tipo, cantidad,fecha) 
+                        VALUES('$nombre','$color','$talle','Devolucion', $cantidad,'$fechaActual')";
+            return $this->database->query($sql);
         }
     }
 
@@ -137,14 +150,15 @@ class VestidoModel{
                 f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
                 DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha, f.id as id
                 FROM fecha f
-                ORDER BY f.fecha";
+                ORDER BY f.fecha DESC";
         return $this->database->query($sql);
     }
 
     public function buscarVestidoPorFecha($nombre){
         $sql="SELECT f.nombre_vestido as nombre_vestido, f.color_vestido as color_vestido,
                 f.talle_vestido as talle_vestido, f.tipo as tipo, f.cantidad as cantidad,
-                DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha FROM fecha f WHERE f.nombre_vestido='$nombre'";
+                f.id as id,DATE_FORMAT(f.fecha,'%d-%m-%Y') as fecha 
+                FROM fecha f WHERE f.nombre_vestido='$nombre'";
         return $this->database->query($sql);
     }
 
@@ -212,7 +226,7 @@ class VestidoModel{
                     SET cantidadS=cantidadS-'$cantidad'
                     WHERE nombre_vestido='$nombre' AND color_vestido='$color' AND talle_vestido='$talle'";
                 $this->database->query($sql1);
-                $sql2="UPDATE vestido SET salida=salida-'$cantidad' WHERE nombre='$nombre'";
+                $sql2="UPDATE vestido SET salida=salida-'$cantidad', entrada=entrada+'$cantidad' WHERE nombre='$nombre'";
                 $this->database->query($sql2);
             }elseif ($tipo=='Entrada'){
                 $sql1="UPDATE acciones 
@@ -261,6 +275,5 @@ class VestidoModel{
             FROM acciones";
         return $this->database->query($sql);
     }
-
 
 }

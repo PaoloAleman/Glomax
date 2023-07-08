@@ -11,6 +11,7 @@ class VestidoController{
     }
 
     public function listarVestidos(){
+        $this->vestidoModel->actualizarSaldoMercaderia();
         if(isset($_POST["buscarVestido"])){
             $nombre=$_POST["nombre"];
             $data = [
