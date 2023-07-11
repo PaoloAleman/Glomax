@@ -5,134 +5,44 @@ class VestidoController{
     private $vestidoModel;
     private $renderer;
 
-    public function __construct($vestidoModel, $view) {
-        $this->vestidoModel = $vestidoModel;
-        $this->renderer= $view;
+    public function __construct($vestidoModel,$renderer){
+        $this->vestidoModel=$vestidoModel;
+        $this->renderer=$renderer;
     }
 
     public function listarVestidos(){
-        $this->vestidoModel->actualizarSaldoMercaderia();
-        if(isset($_POST["buscarVestido"])){
-            $nombre=$_POST["nombre"];
-            $data = [
-                "vestidos" => $this->vestidoModel->buscarVestido($nombre),
-                "vestidos2" => $this->vestidoModel->listarVestidos(),
-                "totales"=>$this->vestidoModel->obtenerTotales()
-            ];
-        }else {
-            $data = [
-                "vestidos" => $this->vestidoModel->listarVestidos(),
-                "vestidos2" => $this->vestidoModel->listarVestidos(),
-                "totales"=>$this->vestidoModel->obtenerTotales()
-            ];
+        $data=[
+            "vestidos"=>$this->vestidoModel->getVestidos(),
+            "vestidosSelect"=>$this->vestidoModel->getVestidosSinFiltro(),
+            "totales"=>$this->vestidoModel->getTotales()
+        ];
+    $this->renderer->render("listaVestidos",$data);
+    }
+
+    public function detalle(){
+        if(isset($_GET["nombreVestido"])){
+            $_SESSION["nombreVestido"]=$_GET["nombreVestido"];
         }
-        $this->renderer->render('vestidos', $data);
-    }
-
-    public function salidaVestidos(){
-        $this->vestidoModel->salidaVestidos();
-        $data=[
-            "vestidos"=>$this->vestidoModel->listarVestidos()
-        ];
-        $this->renderer->render('salida',$data);
-    }
-
-    public function entradaVestidos(){
-        $this->vestidoModel->entradaVestidos();
-        $data=[
-            "vestidos"=>$this->vestidoModel->listarVestidos()
-        ];
-        $this->renderer->render('entrada',$data);
-    }
-
-    public function porTalle(){
-        if(isset($_POST["buscarVestido"])){
-            $nombre=$_POST["nombre"];
-            $data = [
-                "vestidos" => $this->vestidoModel->buscarVestidoPorTalle($nombre),
-                "vestidos2"=>$this->vestidoModel->listarVestidos(),
-                "totales"=>$this->vestidoModel->obtenerTotalesAcciones()
-            ];
-        }else {
-            $data = [
-                "vestidos" => $this->vestidoModel->listarVestidosPorTalle(),
-                "vestidos2"=>$this->vestidoModel->listarVestidos(),
-                "totales"=>$this->vestidoModel->obtenerTotalesAcciones()
-            ];
+        unset($_GET["nombreVestido"]);
+        if(isset($_POST["vestidoBuscado"])){
+            $_SESSION["nombreVestido"]=$_POST["vestidoBuscado"];
         }
-        $this->renderer->render('porTalle',$data);
-    }
-
-    public function estado(){
-        $this->vestidoModel->actualizarEstado();
         $data=[
-            "vestidos"=>$this->vestidoModel->listarVestidos()
+            "detalle"=>$this->vestidoModel->getDetallePorVestido($_SESSION["nombreVestido"]),
+            "nombreVestido"=>$this->vestidoModel->getNombreVestidoDetalle($_SESSION["nombreVestido"]),
+            "totales"=>$this->vestidoModel->getTotalesPorVestido($_SESSION["nombreVestido"]),
+            "talles"=>$this->vestidoModel->getTallesPorVestido($_SESSION["nombreVestido"]),
+            "colores"=>$this->vestidoModel->getColoresPorVestido($_SESSION["nombreVestido"]),
+            "vestidosSelect"=>$this->vestidoModel->getNombresVestidos()
         ];
-        $this->renderer->render('estado',$data);
+        var_dump($_SESSION["nombreVestido"]);
+        $this->renderer->render("detalle",$data);
     }
 
-    public function actualizarPrecio(){
-        $this->vestidoModel->actualizarPrecio();
-        $data=[
-            "vestidos"=>$this->vestidoModel->listarVestidos()
-        ];
-        $this->renderer->render('precios',$data);
+    public function filtro(){
+        $jsonData = file_get_contents('php://input');
+        $datos = json_decode($jsonData, true);
+        $_SESSION["nombreVestido"]=$datos["vestido"];
     }
-
-    public function actualizarFechaPago(){
-        $this->vestidoModel->actualizarFechaPago();
-        $data=[
-            "vestidos"=>$this->vestidoModel->listarVestidos()
-        ];
-        $this->renderer->render('fechaPago',$data);
-    }
-
-    public function verPorFecha(){
-        $this->vestidoModel->eliminarSalida();
-        if(isset($_POST["buscarFecha"])){
-            $nombre=$_POST["nombre"];
-            $data = [
-                "datos" => $this->vestidoModel->buscarVestidoPorFecha($nombre),
-                "vestidos2" => $this->vestidoModel->listarVestidos()
-            ];
-        }else {
-            $data = [
-                "datos" => $this->vestidoModel->listarDatos(),
-                "vestidos2" => $this->vestidoModel->listarVestidos()
-            ];
-        }
-        $this->renderer->render('porFecha',$data);
-    }
-
-    public function agregarVestido(){
-        $this->vestidoModel->agregarVestido();
-        $this->renderer->render('agregarVestido');
-    }
-
-     public function agregarTalle(){
-        $this->vestidoModel->agregarTalle();
-         $data=[
-             "vestidos"=>$this->vestidoModel->listarVestidos()
-         ];
-        $this->renderer->render('agregarTalle',$data);
-    }
-
-    public function eliminarVestido(){
-        $this->vestidoModel->eliminarVestido();
-        $data=[
-            "vestidos"=>$this->vestidoModel->listarVestidos()
-        ];
-        $this->renderer->render('eliminar',$data);
-    }
-
-    public function verHistorialPagos(){
-        $data=[
-            "historial"=>$this->vestidoModel->obtenerHistorialDePagos()
-        ];
-        $this->renderer->render('historialPagos',$data);
-
-    }
-
-
 
 }

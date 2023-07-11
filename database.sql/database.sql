@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS vestidos;
 CREATE DATABASE vestidos;
 USE vestidos;
 
@@ -15,24 +14,27 @@ create table vestido(
     primary key (nombre)
 );
 
-create table acciones(
+create table vestidosDetalle(
     id smallint primary key auto_increment,
     nombre_vestido varchar(100),
     color_vestido varchar(40),
     talle_vestido varchar(10),
     cantidadS int,
     cantidadE int,
+    totalStock int,
+    saldoTotal int,
     FOREIGN KEY (nombre_vestido) references vestido(nombre)
 );
 
-create table fecha(
+create table registros(
     id smallint primary key auto_increment,
     nombre_vestido varchar(100),
     color_vestido varchar(40),
     talle_vestido varchar(10),
     tipo varchar(20),
     cantidad int,
-    fecha date
+    fecha date,
+    FOREIGN KEY (nombre_vestido) references vestido(nombre)
 );
 
 create table historialPagos(
@@ -63,7 +65,7 @@ INSERT INTO vestido(id,nombre,entrada, salida, saldoTotalMercaderia, precio, sal
                             (17,'Tapado Julieth',15,0,entrada-salida,4030.0,precio*salida,'No pagado','2023-06-10'),
                             (18,'Tapado Roma',75,3,entrada-salida,3610.0,precio*salida,'No pagado','2023-06-10');
 
-INSERT INTO acciones(nombre_vestido, color_vestido, talle_vestido, cantidadS,cantidadE) VALUES
+INSERT INTO vestidosDetalle(nombre_vestido, color_vestido, talle_vestido, cantidadS,cantidadE) VALUES
                              ('Vestido corto Dhara','Negro','M',0,0), ('Vestido corto Dhara','Negro','L',0,0),
                              ('Vestido corto Dhara','Negro','XL',0,0), ('Vestido corto Dhara','Negro','XXL',0,0),
                              ('Vestido corto Dhara','Gris oscuro','M',0,0), ('Vestido corto Dhara','Gris oscuro','L',0,0),
