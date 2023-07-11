@@ -89,16 +89,14 @@ class VestidoModel
        return implode("",$condiciones);
     }
 
-    public function getTallesPorVestido($vestido){
+    public function getTalles(){
         $sql="SELECT DISTINCT talle_vestido
-                FROM vestidosDetalle
-                    WHERE nombre_vestido='$vestido'";
+                FROM vestidosDetalle";
         return $this->database->query($sql);
     }
-    public function getColoresPorVestido($vestido){
+    public function getColores(){
         $sql="SELECT DISTINCT color_vestido
-                FROM vestidosDetalle
-                    WHERE nombre_vestido='$vestido'";
+                FROM vestidosDetalle";
         return $this->database->query($sql);
     }
 
