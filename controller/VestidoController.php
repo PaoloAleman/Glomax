@@ -21,9 +21,8 @@ class VestidoController{
 
     public function datos(){
         $data=[
-            "talles"=>$this->vestidoModel->getTalles()->fetch_all(),
-            "colores"=>$this->vestidoModel->getColores()->fetch_all(),
-            "vestidosSelect"=>$this->vestidoModel->getNombresVestidos()->fetch_all()
+            "vestidosSelect"=>$this->vestidoModel->getNombresVestidos()->fetch_all(),
+            "detallesTotales"=>$this->vestidoModel->getVestidosDetalles(),
         ];
         echo json_encode($data);
     }
@@ -44,9 +43,5 @@ class VestidoController{
         $this->renderer->render("detalle",$data);
     }
 
-    public function filtro(){
-        $jsonData = file_get_contents('php://input');
-        $datos = json_decode($jsonData, true);
-    }
 
 }

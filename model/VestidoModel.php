@@ -100,5 +100,16 @@ class VestidoModel
         return $this->database->query($sql);
     }
 
+    public function getVestidosDetalles(){
+        $sql = "SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle";
+        $vestidos=$this->database->query($sql);
+        $arrayAsociativo = array();
+        while ($fila = mysqli_fetch_assoc($vestidos)) {
+            $arrayAsociativo[] = $fila;
+        }
+        return $arrayAsociativo;
+    }
+
 
 }
