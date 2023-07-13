@@ -1,0 +1,22 @@
+{{>header}}
+<main id="main" class="pt-10 pb-20">
+<div class="mx-auto border border-[#B1AC33] lg:w-[300px] lg:h-[100px] w-[210px] h-[90px] flex items-center justify-center border border-2 rounded-3xl">
+    <h1 class="text-[#B1AC33] lg:text-4xl text-2xl">Pagos</h1>
+</div>
+
+<table class="border border-[#B1AC33] mx-auto mt-20 w-[98%]">
+    <tr class="border border-[#B1AC33]">
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Cantidad de Salidas</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Saldo pagado</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Fecha de pago</th>
+    </tr>
+    {{#historial}}
+        <tr class="border border-[#79762D]">
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidadSalidas}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{saldoPagado}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{fechaPagada}}</td>
+        </tr>
+    {{/historial}}
+</table>
+</main>
+{{>footer}}

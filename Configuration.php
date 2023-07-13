@@ -1,7 +1,11 @@
 <?php
 include_once ("./controller/VestidoController.php");
+include_once ("./controller/RegistroController.php");
+include_once ("./controller/CreacionController.php");
 
 include_once ("./model/VestidoModel.php");
+include_once ("./model/RegistroModel.php");
+include_once ("./model/CreacionModel.php");
 
 include_once ("./helpers/MustacheRender.php");
 include_once ("./helpers/MySqlDatabase.php");
@@ -13,8 +17,7 @@ include_once('third-party/mustache/src/Mustache/Autoloader.php');
 class Configuration {
     private $configFile = 'config/config.ini';
 
-    public function __construct()
-    {
+    public function __construct(){
     }
 
     public function getPhpMailer(){
@@ -24,9 +27,14 @@ class Configuration {
         return $phpMailer;
     }
 
-
     public function getVestidoController(){
         return new VestidoController(new VestidoModel($this->getDatabase()),$this->getRenderer());
+    }
+    public function getRegistroController(){
+        return new RegistroController(new RegistroModel($this->getDatabase()),$this->getRenderer());
+    }
+    public function getCreacionController(){
+        return new CreacionController(new CreacionModel($this->getDatabase()),$this->getRenderer());
     }
 
     private function getArrayConfig() {

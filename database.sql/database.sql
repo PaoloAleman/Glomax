@@ -1,3 +1,4 @@
+DROP DATABASE vestidos;
 CREATE DATABASE vestidos;
 USE vestidos;
 

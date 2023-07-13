@@ -1,0 +1,58 @@
+{{>header}}
+<main id="main" class="pt-10 pb-20">
+<div class="mx-auto border border-[#B1AC33] lg:w-[300px] lg:h-[100px] w-[210px] h-[90px] flex items-center justify-center border border-2 rounded-3xl">
+    <h1 class="text-[#B1AC33] lg:text-4xl text-2xl">{{tipo}}</h1>
+</div>
+
+<div class="mt-20">
+    <form action="/vestido/detalle" method="post" class="flex justify-center items-center">
+        <select name="vestidoBuscado" class="w-[400px] h-[60px] bg-black
+                border border-[#B1AC33] text-[#B1AC33] py-2 text-2xl pl-4" id="vestidoBuscado">
+            <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
+                            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] ">Vestidos</option>
+        </select>
+        <select name="talles" class="w-[300px] h-[60px] bg-black ml-10
+                border border-[#B1AC33] text-[#B1AC33] py-2 text-2xl pl-4" id="talleBuscado">
+            <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
+                            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] ">Talles</option>
+        </select>
+        <select name="colores" class="w-[300px] h-[60px] bg-black
+                border border-[#B1AC33] text-[#B1AC33] py-2 text-2xl pl-4 ml-10" id="colorBuscado">
+            <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
+                            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">Colores</option>
+
+        </select>
+        <input type="submit" name="filtrar" value="Filtrar"
+               class=" ml-10 border border-[#B1AC33] w-[150px] h-[60px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
+    </form>
+</div>
+
+<table class="border border-[#B1AC33] mx-auto mt-20 w-[98%]">
+    <tr class="border border-[#B1AC33]">
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Nombre</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Talle</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Color</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Tipo</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Cantidad</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Fecha</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Devolución</th>
+    </tr>
+    {{#historial}}
+        <tr class="border border-[#79762D]">
+            <td class="text-[#B1AC33] text-2xl p-4 border border-[#B1AC33] font-bold">{{nombre_vestido}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{talle_vestido}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{color_vestido}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{tipo}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidad}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{fecha}}</td>
+            <td class="text-[#B1AC33] text-2xl p-4 border border-[#B1AC33] font-bold
+                    hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">
+                <form action="/registro/historialEntradas" method="post">
+                    <button type="submit" class="hover:bg-[#B1AC33] w-[100%] h-[100%]" name="idVestido" value="{{id}}">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+    {{/historial}}
+</table>
+</main>
+{{>footer}}

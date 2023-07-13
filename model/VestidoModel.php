@@ -33,14 +33,7 @@ class VestidoModel
     public function getNombresVestidos(){
         $sql="SELECT nombre
                 FROM vestido
-                ORDER BY id";
-        return $this->database->query($sql);
-    }
-
-    public function getTotales(){
-        $sql="SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
-                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
-                FROM vestido";
+                ORDER BY nombre";
         return $this->database->query($sql);
     }
 
@@ -91,16 +84,30 @@ class VestidoModel
 
     public function getTalles(){
         $sql="SELECT DISTINCT talle_vestido
-                FROM vestidosDetalle";
+                FROM vestidosDetalle
+                ORDER BY talle_vestido";
         return $this->database->query($sql);
     }
     public function getColores(){
         $sql="SELECT DISTINCT color_vestido
-                FROM vestidosDetalle";
+                FROM vestidosDetalle
+                ORDER BY color_vestido";
         return $this->database->query($sql);
     }
 
     public function getVestidosDetalles(){
+        $sql = "SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS";
+        $vestidos=$this->database->query($sql);
+        $arrayAsociativo = array();
+        while ($fila = mysqli_fetch_assoc($vestidos)) {
+            $arrayAsociativo[] = $fila;
+        }
+        return $arrayAsociativo;
+    }
+
+    public function getVestidosDetallesSinFiltros(){
         $sql = "SELECT nombre_vestido, talle_vestido, color_vestido
                 FROM vestidosDetalle";
         $vestidos=$this->database->query($sql);
@@ -109,6 +116,38 @@ class VestidoModel
             $arrayAsociativo[] = $fila;
         }
         return $arrayAsociativo;
+    }
+
+    public function getTotales(){
+        $sql="SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido";
+        return $this->database->query($sql);
+    }
+
+    public function realizarPago(){
+        if(isset($_POST["pagarTodo"])){
+            $datos=$this->getTotales()->fetch_assoc();
+            $cantSalidas=$datos["totalSalida"];
+            $saldoPagado=$datos["totalSaldo"];
+            date_default_timezone_set('America/Argentina/Buenos_Aires');
+            $fecha=date("Y-m-d");
+            $sql="INSERT INTO historialPagos(cantidadSalidas,saldoPagado,fechaPagada)
+                    VALUES ('$cantSalidas','$saldoPagado','$fecha')";
+            $this->database->query($sql);
+            $sql="UPDATE vestido
+                    SET entrada=entrada-salida, salida=0, saldoTotalMercaderia=entrada, saldoTotal=0, fechaPago='$fecha'";
+            $this->database->query($sql);
+            $sql="UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE-cantidadS, cantidadS=0, totalStock=cantidadE, saldoTotal=0 ";
+            $this->database->query($sql);
+        }
+    }
+
+    public function getHistorialDePagos(){
+        $sql="SELECT cantidadSalidas, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
+                FROM historialPagos";
+        return $this->database->query($sql);
     }
 
 

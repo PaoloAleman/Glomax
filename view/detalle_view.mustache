@@ -1,7 +1,7 @@
 {{>header}}
-<main>
+<main id="main" class="pt-10 pb-20">
        <a href="/vestido/detalle" class="text-[#B1AC33] lg:text-4xl text-2xl
-        mx-auto mt-10 border border-[#B1AC33] lg:w-[450px] lg:h-[100px] w-[210px] h-[90px] flex items-center justify-center border border-2 rounded-3xl
+        mx-auto border border-[#B1AC33] lg:w-[450px] lg:h-[100px] w-[210px] h-[90px] flex items-center justify-center border border-2 rounded-3xl
           hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">{{nombreVestido}}</a>
 
     <div class="mx-auto mt-20 flex justify-center flex-wrap mb-20">
@@ -27,8 +27,7 @@
         <form action="/vestido/detalle" method="post" class="flex justify-center items-center">
             <select name="vestidoBuscado" class="w-[400px] h-[60px] bg-black
                 border border-[#B1AC33] text-[#B1AC33] py-2 text-2xl pl-4" id="vestidoBuscado">
-                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
-                            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] ">Vestidos</option>
+                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]">Vestidos</option>
             </select>
             <select name="talles" class="w-[300px] h-[60px] bg-black ml-10
                 border border-[#B1AC33] text-[#B1AC33] py-2 text-2xl pl-4" id="talleBuscado">
@@ -45,8 +44,8 @@
                    class=" ml-10 border border-[#B1AC33] w-[150px] h-[60px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
         </form>
     </div>
-    <div class="mx-auto mt-20 flex justify-center flex-wrap mb-20">
-        <table class="border border-[#B1AC33] mx-auto  w-[98%] ">
+    <div class="mx-auto mt-20 flex justify-center flex-wrap">
+        <table class="border border-[#B1AC33] mx-auto w-[98%] ">
             <tr class=" border border-[#B1AC33]">
                 <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Talle</th>
                 <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Color</th>
@@ -59,8 +58,8 @@
                 <tr>
                     <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{talle_vestido}}</td>
                     <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{color_vestido}}</td>
-                    <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidadS}}</td>
                     <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidadE}}</td>
+                    <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidadS}}</td>
                     <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{totalStock}}</td>
                     <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{saldoTotal}}</td>
                 </tr>

@@ -10,12 +10,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Glomax</title>
 </head>
-<body class="bg-black">
+<body class="bg-black" id="body">
 <header class="w-[100%] h-[70px] lg:h-[100px] border-b-4 border-b border-[#B1AC33] flex items-center justify-center"  >
-    <div class="w-[200px] h-[100px] flex items-center absolute left-0" id="menuIcon">
+    <div class="w-[320px] h-[100px] flex items-center absolute left-0 " id="menuIcon">
         <button type="button" class="h-[70px]" ><img class="w-[70px] ml-4" src="/public/iconos/menuIcon.png" alt="menuIcon" id="imgMenu"></button>
     </div>
-    <div class="absolute w-[200px] bg-[#B1AC33] h-[100%] top-24 left-0 flex flex-column" style="display: none;" id="menu">
+    <div class="absolute w-[320px] pb-10 bg-black top-24 left-0 flex flex-col border-r-4 border-b-4 border-[#B1AC33] rounded-br-3xl" style="display: none;" id="menu">
+        <ul class="text-[#B1AC33] flex flex-col gap-4">
+            <a href="/registro/agregarSalida"><li class="text-3xl hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Agregar salida</li></a>
+            <a href="/registro/agregarEntrada"><li class="text-3xl hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Agregar entrada</li></a>
+            <a href="/registro/historialSalidas"><li class="text-3xl text-[#B1AC33] hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Historial de salidas</li></a>
+            <a href="/registro/historialEntradas"><li class="text-3xl text-[#B1AC33] hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Historial de entradas</li></a>
+            <a href="/vestido/historialPagos"><li class="text-3xl hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Historial de pagos</li></a>
+            <a href="/creacion/crearTalle"><li class="text-3xl hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Crear talle</li></a>
+        </ul>
     </div>
     <a href="/vestido/listarVestidos" class="text-3xl lg:text-6xl font-semibold text-[#B1AC33] text-center">Glomax</a>
 </header>

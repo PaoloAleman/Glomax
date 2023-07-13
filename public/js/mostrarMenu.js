@@ -1,18 +1,20 @@
 const menuIcon=document.getElementById('menuIcon');
 const menu=document.getElementById('menu');
-const imgMenu=document.getElementById('imgMenu');
-
-let contadorClicks=0;
+const main=document.getElementById('main');
+let contadorClicksMenu=0;
 
 menuIcon.addEventListener("click",()=>{
-    contadorClicks++;
-    if(contadorClicks % 2 ===0){
-        menuIcon.style.backgroundColor="black"
+    contadorClicksMenu++;
+    if(contadorClicksMenu % 2 ===0){
+        menuIcon.classList.remove('border-r-4','rounded-tr-3xl','border-[#B1AC33]');
         menu.style.display="none";
-        imgMenu.setAttribute("src","/public/iconos/menuIcon.png")
     }else{
+        menuIcon.classList.add('border-r-4','border-[#B1AC33]','rounded-tr-3xl');
         menu.style.display="block";
-        menuIcon.style.backgroundColor="#B1AC33"
-        imgMenu.setAttribute("src","/public/iconos/menuIconBlack.png")
     }
+});
+
+main.addEventListener("click",()=> {
+    menuIcon.classList.remove('border-r-4','rounded-tr-3xl','border-[#B1AC33]');
+    menu.style.display="none";
 });
