@@ -1,18 +1,20 @@
 {{>header}}
 <main id="main" class="pt-24 pb-20">
-<form action="/creacion/crearVestido" method="post">
-    <div class="flex flex-col gap-6 items-center border border-[#B1AC33] rounded-3xl p-6 pt-20 w-[40%] mx-auto">
-        <h1 class="w-[24%] h-[80px] border border-[#2E2C02] rounded-3xl bg-[#B1AC33] text-black text-4xl
-                absolute top-40 flex items-center justify-center">Cambiar precios</h1>
-        <select name="nombre" class="w-[400px] h-[60px] bg-black
-                border border-[#B1AC33] rounded-3xl text-[#B1AC33] py-2 text-2xl pl-4" id="vestidoBuscado">
+<form action="/vestido/cambiarPrecio" method="post">
+    <div class="flex flex-col gap-6 items-center border border-[#B1AC33] rounded-3xl p-6 pt-20 lg:w-[40%] w-[80%] mx-auto">
+        <div class="lg:w-[70%] w-[90%] lg:-mt-28 -mt-24 lg:mb-10 mb-4 lg:h-[90px] h-[50px]
+                border border-[#2E2C02] bg-[#B1AC33] rounded-3xl flex items-center justify-center">
+            <h1 class="text-black lg:text-4xl text-2xl text-center">Cambiar precios</h1>
+        </div>
+        <select name="nombre"  class="w-[90%] lg:h-[60px] h-[40px] bg-black
+                border border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-2xl text-xl pl-4" id="vestidoBuscado">
             <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
                             hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] ">Vestidos</option>
         </select>
-          <input name="precio" type="number" class="w-[400px] h-[60px] bg-black
-                border border-[#B1AC33] text-[#B1AC33] py-2 text-2xl text-[#B1AC33] pl-4 rounded-3xl" placeholder="Precio">
-        <input type="submit" name="cambiarPrecio" value="Cambiar"
-               class="border border-[#B1AC33] w-[180px] h-[60px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
+          <input name="precio" type="number" class="w-[90%] lg:h-[60px] h-[40px] bg-black
+                border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" placeholder="Precio">
+<input type="submit" name="cambiarPrecio" value="Cambiar"
+       class="border border-[#B1AC33] w-[180px] h-[60px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
     </div>
 </form>
 </main>

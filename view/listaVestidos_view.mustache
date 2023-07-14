@@ -1,84 +1,91 @@
 {{>header}}
-<main id="main" class="pt-10 pb-20">
-        <a href="/vestido/listarVestidos" class="mx-auto border border-[#B1AC33] lg:w-[300px] lg:h-[100px] w-[210px] h-[90px]
+<main id="main" class="pt-10 pb-20 pl-4 pr-4">
+        <a href="/vestido/listarVestidos" class="mx-auto border border-[#B1AC33] lg:w-[300px] lg:h-[100px] w-[210px] h-[80px]
            flex items-center justify-center border border-2 rounded-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] text-[#B1AC33] lg:text-4xl text-2xl ">Vestidos</a>
-    <div class="mx-auto mt-20 flex justify-center flex-wrap mb-20">
-        <button class="w-[1000px] h-[80px] border border-2 border-[#B1AC33] rounded-3xl text-[#B1AC33] text-3xl
+    <div class="mx-auto lg:mt-20 mt-10 flex justify-center flex-wrap">
+        <button class="w-[80%] lg:h-[80px] h-[45px] border border-2 border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-3xl text-2xl
             hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]" id="mostrarTable">Obtener totales</button>
-        <table class="border border-[#B1AC33] mx-auto mt-20 w-[98%] " style="display: none;" id="tabla">
-            <tr class=" border border-[#B1AC33]">
-                <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Entradas</th>
-                <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Salidas</th>
-                <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Stock</th>
-                <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Saldo total</th>
-            </tr>
-            {{#totales}}
-                <tr>
-                    <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{totalEntrada}}</td>
-                    <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{totalSalida}}</td>
-                    <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{totalStock}}</td>
-                    <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{totalSaldo}}</td>
+        <div class="overflow-x-auto w-[98%]">
+            <table class="border border-[#B1AC33] mx-auto lg:mt-20 mt-10 w-[98%] " style="display: none;" id="tabla">
+                <tr class=" border border-[#B1AC33]">
+                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Entradas</th>
+                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Salidas</th>
+                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Stock</th>
+                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Saldo total</th>
                 </tr>
-            {{/totales}}
-        </table>
+                {{#totales}}
+                    <tr>
+                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{totalEntrada}}</td>
+                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{totalSalida}}</td>
+                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{totalStock}}</td>
+                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{totalSaldo}}</td>
+                    </tr>
+                {{/totales}}
+            </table>
+        </div>
     </div>
 
-    <div class="mt-20 flex justify-around items-center ">
-        <div >
-            <form action="/vestido/listarVestidos" method="post">
-                <select name="vestidoBuscado" class="w-[500px] h-[60px] bg-black
-                border border-[#B1AC33] text-[#B1AC33] py-2 text-2xl pl-4 select">
+    <div class="lg:mt-20 mt-10 lg:flex lg:justify-around lg:items-center">
+        <form action="/vestido/listarVestidos" method="post">
+        <div class="flex flex-col items-center lg:flex-row">
+                <select name="vestidoBuscado" class="lg:w-[500px] w-[80%] lg:h-[60px] h-[40px] bg-black lg:mr-4
+                border border-[#B1AC33] text-[#B1AC33] lg:py-2 lg:text-2xl text-xl md:pl-4 ">
                     {{#vestidosSelect}}
                         <option value="{{nombre}}" class="text-[#B1AC33] h-[30px] w-[300px]">{{nombre}}</option>
                     {{/vestidosSelect}}
                 </select>
-
                 <input type="submit" name="buscar" value="Buscar"
-                       class=" ml-4 border border-[#B1AC33] w-[150px] h-[60px] text-[#B1AC33] text-2xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
-            </form>
+                       class="lg:mt-0 mt-4 border border-[#B1AC33] lg:w-[150px] w-[50%] md:h-[40px] lg:h-[60px] h-[30px] text-[#B1AC33] lg:text-2xl text-xl
+                        hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
         </div>
-            <button type="button" class="border border-[#B1AC33] lg:w-[300px] lg:h-[80px] w-[210px] h-[90px]
-                        flex items-center justify-center border border-2 rounded-3xl text-3xl text-[#B1AC33]
+        </form>
+
+            <div class="flex items-center justify-center">
+                <button type="button" class="border border-[#B1AC33] lg:w-[300px] lg:h-[80px] w-[210px] h-[50px] lg:mt-0 mt-6
+                            border-2 rounded-3xl lg:text-3xl text-xl text-[#B1AC33]
                             hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]" id="pagar">Pagar todo</button>
+            </div>
     </div>
-    <div class="h-[500px] w-[800px] bg-black border border-[#B1AC33] rounded-3xl
+    <div class="lg:h-[500px] h-[300px] w-[80%] bg-black border border-[#B1AC33] rounded-3xl
         fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2" id="popUpPago" style="display: none">
-        <h1 class="text-[#B1AC33] text-6xl mt-40 text-center">¿Está seguro de pagar?</h1>
+        <h1 class="text-[#B1AC33] lg:text-6xl text-3xl lg:mt-40 mt-20 text-center">¿Está seguro de pagar?</h1>
         <form method="post" action="/vestido/listarVestidos">
             <input type="submit" name="pagarTodo" value="Pagar"
-                   class="border border-[#B1AC33] w-[250px] h-[90px] text-[#B1AC33] text-4xl
+                   class="border border-[#B1AC33] w-[60%] lg:h-[90px] h-[50px] text-[#B1AC33] lg:text-4xl text-2xl
                     hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl
                         absolute left-1/2 top-3/4 transform -translate-x-1/2 -translate-y-1/2">
         </form>
-        <button class="absolute right-4 top-4" id="cerrarPopUp"><img src="/public/iconos/cerrar.png" class="w-[60px]"></button>
+        <button class="absolute right-4 top-4" id="cerrarPopUp"><img src="/public/iconos/cerrar.png" class="lg:w-[60px] w-[30px]"></button>
     </div>
-    <table class="border border-[#B1AC33] mx-auto mt-20 w-[98%]">
-        <tr class="border border-[#B1AC33]">
-           <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Nombre</th>
-           <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Entradas</th>
-           <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Salidas</th>
-           <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Precio</th>
-           <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Stock</th>
-           <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Saldo total</th>
-           <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Fecha de pago</th>
-        </tr>
-    {{#vestidos}}
-        <tr class="border border-[#79762D]">
-            <td class="text-[#B1AC33] text-2xl p-4 border border-[#B1AC33] font-bold
+    <div class="mx-auto lg:mt-20 mt-10 lg:w-[100%] w-[100%] overflow-x-auto">
+        <table class="border border-[#B1AC33] lg:mx-auto w-[100%]" >
+            <tr class="border border-[#B1AC33]">
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Nombre</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Entradas</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Salidas</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Precio</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Stock</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Saldo total</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Fecha de pago</th>
+            </tr>
+            {{#vestidos}}
+                <tr class="border border-[#79762D]">
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl p-4 border border-[#B1AC33] font-bold
                     hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">
-                <form action="/vestido/detalle" method="get">
-                    <button type="submit" class="hover:bg-[#B1AC33] w-[100%] h-[100%] text-left" name="nombreVestido" value="{{nombre}}">{{nombre}}</button>
-                </form>
-            </td>
-            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{entrada}}</td>
-            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{salida}}</td>
-            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">${{precio}}</td>
-            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{saldoTotalMercaderia}}</td>
-            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">${{saldoTotal}}</td>
-            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{fechaPago}}</td>
-        </tr>
-    {{/vestidos}}
-    </table>
+                        <form action="/vestido/detalle" method="get">
+                            <button type="submit" class="hover:bg-[#B1AC33] w-[100%] h-[100%] text-left" name="nombreVestido" value="{{nombre}}">{{nombre}}</button>
+                        </form>
+                    </td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{entrada}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{salida}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">${{precio}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{saldoTotalMercaderia}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">${{saldoTotal}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{fechaPago}}</td>
+                </tr>
+            {{/vestidos}}
+        </table>
+    </div>
 
 </main>
 {{>footer}}

@@ -14,6 +14,7 @@ include_once ("./helpers/Logger.php");
 
 include_once('third-party/mustache/src/Mustache/Autoloader.php');
 
+include_once ('FPDF/plantilla.php');
 class Configuration {
     private $configFile = 'config/config.ini';
 
@@ -28,7 +29,7 @@ class Configuration {
     }
 
     public function getVestidoController(){
-        return new VestidoController(new VestidoModel($this->getDatabase()),$this->getRenderer());
+        return new VestidoController(new VestidoModel($this->getDatabase(), new FPDF("P", "mm", "letter")),$this->getRenderer());
     }
     public function getRegistroController(){
         return new RegistroController(new RegistroModel($this->getDatabase()),$this->getRenderer());

@@ -3,9 +3,11 @@
 class VestidoModel
 {
     private $database;
+    private $pdf;
 
-    public function __construct($database){
+    public function __construct($database,$pdf){
         $this->database=$database;
+        $this->pdf=$pdf;
     }
 
     public function getVestidos(){
@@ -59,10 +61,18 @@ class VestidoModel
     }
 
     public function getTotalesPorVestido($vestido){
-        $sql="SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
-                SUM(totalStock) as totalStock
+        if(isset($_POST["filtrar"])){
+            $sql="SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='$vestido'".$this->filtrarPor();
+            return $this->database->query($sql);
+        }else{
+            $sql = "SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
                 FROM vestidosDetalle";
-        return $this->database->query($sql);
+            return $this->database->query($sql);
+        }
     }
 
     public function ponerEnCero(){
@@ -119,10 +129,19 @@ class VestidoModel
     }
 
     public function getTotales(){
-        $sql="SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+        if(isset($_POST["buscar"])){
+            $vestido=$_POST["vestidoBuscado"];
+            $sql="SELECT entrada as totalEntrada, salida as totalSalida,
+                saldoTotalMercaderia as totalStock, saldoTotal as totalSaldo
+                FROM vestido
+                WHERE nombre='$vestido'";
+            return $this->database->query($sql);
+        }else{
+            $sql="SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
                 SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
                 FROM vestido";
-        return $this->database->query($sql);
+            return $this->database->query($sql);
+        }
     }
 
     public function realizarPago(){
@@ -148,6 +167,74 @@ class VestidoModel
         $sql="SELECT cantidadSalidas, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
                 FROM historialPagos";
         return $this->database->query($sql);
+    }
+
+    public function cambiarPrecio(){
+        if(isset($_POST["cambiarPrecio"])){
+            $vestido=$_POST["nombre"];
+            $precio=$_POST["precio"];
+            $sql="UPDATE vestido
+                    SET precio='$precio'
+                        WHERE nombre='$vestido'";
+            $this->database->query($sql);
+        }
+    }
+
+    public function generarPDF(){
+        if (isset($_POST["pagarTodo"])) {
+            $tituloReporte = "Lista de vestidos";
+            $this->darDatosDefault($tituloReporte);
+            $this->pdf->SetMargins(10, 10, 10);
+            $vestidos=$this->getVestidosPagados()->fetch_all();
+            $this->pdf->Cell(40, 5, "Nombre", 1, 0, "C");
+            $this->pdf->Cell(40, 5, "Talle", 1, 0, "C");
+            $this->pdf->Cell(40, 5, "Color", 1, 0, "C");
+            $this->pdf->Cell(40, 5, "Cantidad", 1, 0, "C");
+            $this->pdf->Cell(40, 5, "Fecha", 1, 1, "C");
+
+            foreach ($vestidos as $vestido){
+                $this->pdf->Cell(40, 5, $vestido[1], 1, 0, "C");
+                $this->pdf->Cell(40, 5, $vestido[2], 1, 0, "C");
+                $this->pdf->Cell(40, 5, $vestido[3], 1, 0, "C");
+                $this->pdf->Cell(40, 5, $vestido[5], 1, 0, "C");
+                $this->pdf->Cell(40, 5, $vestido[6], 1, 1, "C");
+            }
+            header('Content-Type: application/pdf');
+            header('Content-Disposition: attachment; filename="mi_archivo.pdf"');
+            $this->pdf->Output('D', $tituloReporte . '.pdf');
+        }
+    }
+
+    public function getVestidosPagados(){
+        $fechaPago=$this->getUltimaFechaDePago();
+        date_default_timezone_set("America/Argentina/Buenos_Aires");
+        $fechaActual=date('Y-m-d');
+        $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual'
+                ORDER BY nombre_vestido,talle_vestido,color_vestido, fecha";
+        return $this->database->query($sql);
+    }
+
+    public function getUltimaFechaDePago(){
+        date_default_timezone_set("America/Argentina/Buenos_Aires");
+        $fechaActual=date('Y-m-d');
+        $sql="SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='$fechaActual'
+                    ORDER BY fechaPagada DESC LIMIT 1 ";
+        return $this->database->query($sql)->fetch_assoc()["fechaPagada"];
+    }
+
+    public function darDatosDefault($tituloReporte){
+        $this->pdf->SetTitle($tituloReporte);
+        $this->pdf->SetAuthor('Glomax');
+        $this->pdf->AliasNbPages();
+        $this->pdf->AddPage();
+        $this->pdf->SetFont("Arial", "B", 9);
+
+        $this->pdf->SetFont("Arial", "", 9);
     }
 
 

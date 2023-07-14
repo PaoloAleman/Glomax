@@ -32,7 +32,6 @@ class RegistroController
     }
 
     public function historialEntradas(){
-        var_dump($this->registroModel->getRegistro(1));
         $this->registroModel->eliminarRegistro();
         $data=[
             "historial"=>$this->registroModel->getHistorialEntradas(),

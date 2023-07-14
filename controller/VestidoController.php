@@ -12,6 +12,7 @@ class VestidoController{
 
     public function listarVestidos(){
         $this->vestidoModel->realizarPago();
+        $this->vestidoModel->generarPDF();
         $data=[
             "vestidos"=>$this->vestidoModel->getVestidos(),
             "vestidosSelect"=>$this->vestidoModel->getVestidosSinFiltro(),
@@ -55,6 +56,7 @@ class VestidoController{
     }
 
     public function cambiarPrecio(){
+        $this->vestidoModel->cambiarPrecio();
         $this->renderer->render("cambiarPrecio");
     }
 

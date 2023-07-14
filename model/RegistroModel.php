@@ -54,18 +54,52 @@ class RegistroModel{
     }
 
     public function getHistorialSalidas(){
-        $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+        if(isset($_POST["filtrar"])){
+            $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
                     cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
-                FROM registros
-                    WHERE tipo='Salida'";
-        return $this->database->query($sql);
+                FROM registros r 
+                    WHERE tipo='Salida'".$this->filtrarPor().
+                        " ORDER BY r.fecha DESC";
+            return $this->database->query($sql);
+        }else{
+            $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r
+                    WHERE tipo='Salida'
+                    ORDER BY r.fecha DESC";
+            return $this->database->query($sql);
+        }
+    }
+    public function filtrarPor(){
+        $condiciones[]="";
+        if(isset($_POST["vestidoBuscado"])){
+            $condiciones[]="and nombre_vestido='".$_POST["vestidoBuscado"]."'";
+        }
+        if(isset($_POST["talles"])){
+            $condiciones[]="and talle_vestido='".$_POST["talles"]."'";
+        }
+
+        if(isset($_POST["colores"])){
+            $condiciones[]="and color_vestido='".$_POST["colores"]."'";
+        }
+        return implode("",$condiciones);
     }
     public function getHistorialEntradas(){
-        $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+        if(isset($_POST["filtrar"])){
+            $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
                     cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
                 FROM registros
-                    WHERE tipo='Entrada'";
-        return $this->database->query($sql);
+                    WHERE tipo='Entrada'".$this->filtrarPor().
+                " ORDER BY fecha DESC";
+            return $this->database->query($sql);
+        }else{
+            $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                    WHERE tipo='Entrada'
+                 ORDER BY fecha DESC";
+            return $this->database->query($sql);
+        }
     }
 
     public function agregarEntrada(){
