@@ -751,3 +751,3101 @@
 [2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
                 SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
                 FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Tapado Roma' and color_vestido='xl' and tipo='Salida'
+                                and talle_vestido='U' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3780'
+                        WHERE nombre_vestido='Tapado Roma' and color_vestido='Gris claro' and talle_vestido='U'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Tapado Roma'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Tapado Roma','U','Gris claro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Chaleco Ethna' and color_vestido='qwe ' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'2680'
+                        WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Gris' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Chaleco Ethna'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Chaleco Ethna','XL','Gris','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='sa' and color_vestido='qwe ' and tipo='Salida'
+                                and talle_vestido='s' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Devolución'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Devolución'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Devolución'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=true
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Devolucion'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=true
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Devolución'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=true
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro ' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=true
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro ' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=true
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro ' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=true
+                                LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro ' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=true
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro ' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=true
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro ' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-25' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro '
+                                and talle_vestido='XL' and cantidad='1'
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3250'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro '
+                                and talle_vestido='XL' and cantidad='1'
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3250'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro '
+                                and talle_vestido='XL' and cantidad='1'
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3250'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro '
+                                and talle_vestido='XL' and cantidad='1'
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3250'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='xd' and color_vestido='' and tipo='Salida'
+                                and talle_vestido='' and cantidad='' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='xd' and color_vestido='' and tipo='Salida'
+                                and talle_vestido='' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='xd' and color_vestido='' and tipo='Salida'
+                                and talle_vestido='' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre=''
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre=''
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and tipo='Salida'
+                                and talle_vestido='L' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='XL' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-07-27][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro '
+                                and talle_vestido='XL' and cantidad='1'
+                                ORDER BY id LIMIT 1
+[2023-07-27][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1', cantidadE=cantidadE+'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3250'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-27][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', entrada=entrada+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-07-27][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Vestido Starples','XL','Negro','Devolución','1','2023-07-27')
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r
+                    WHERE tipo='Salida'
+                    ORDER BY r.id DESC
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha,devolucion
+                FROM registros r
+                    WHERE tipo='Salida'
+                    ORDER BY r.id DESC
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r
+                    WHERE tipo='Salida' and devolucion=false
+                    ORDER BY r.id DESC
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r
+                    WHERE tipo='Salida' and devolucion=false
+                    ORDER BY r.id DESC
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r
+                    WHERE tipo='Salida' and devolucion=false
+                    ORDER BY r.id DESC
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-27][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-27][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-27'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-27][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-09' and '2023-07-27'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-27][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido

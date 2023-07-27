@@ -36,6 +36,7 @@
         <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Cantidad</th>
         <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Fecha</th>
         <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Devolución</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Eliminar</th>
     </tr>
     {{#historial}}
         <tr class="border border-[#79762D]">
@@ -45,6 +46,7 @@
             <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{color_vestido}}</td>
             <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidad}}</td>
             <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{fecha}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{devolucion}}</td>
             <td class="text-[#B1AC33] text-2xl p-4 border border-[#B1AC33] font-bold
                     hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">
                 <form action="/registro/historialSalidas" method="post">

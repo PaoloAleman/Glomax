@@ -58,14 +58,14 @@ class RegistroModel{
             $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
                     cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
                 FROM registros r 
-                    WHERE tipo='Salida'".$this->filtrarPor().
+                    WHERE devolucion=false and tipo='Salida'".$this->filtrarPor().
                         " ORDER BY r.id DESC";
             return $this->database->query($sql);
         }else{
             $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
                     cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
                 FROM registros r
-                    WHERE tipo='Salida'
+                    WHERE tipo='Salida' and devolucion=false
                     ORDER BY r.id DESC";
             return $this->database->query($sql);
         }
@@ -177,32 +177,56 @@ class RegistroModel{
 
     public function realizarDevolucion(){
         if(isset($_POST["realizarDevolucion"])){
+            date_default_timezone_set('America/Argentina/Buenos_Aires');
+            $fecha=date("Y-m-d");
+            $vestidoDev=$this->obtenerRegistro();
+            if($vestidoDev!=null) {
+                $vestido=$vestidoDev["nombre_vestido"];
+                $cantidad=$vestidoDev["cantidad"];
+                $talle=$vestidoDev["talle_vestido"];
+                $color=$vestidoDev["color_vestido"];
+                $precio=$this->obtenerPrecioDelVestido($vestido);
+                $sql="UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='$vestido' and color_vestido='$color '
+                                and talle_vestido='$talle' and cantidad='$cantidad'
+                                ORDER BY id LIMIT 1";
+                $verificar=$this->database->query($sql);
+                $sql = "UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'$cantidad', cantidadE=cantidadE+'$cantidad',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'$precio'
+                        WHERE nombre_vestido='$vestido' and color_vestido='$color' and talle_vestido='$talle'";
+                $this->database->query($sql);
+                $sql = "UPDATE vestido
+                        SET salida=salida-'$cantidad', entrada=entrada+'$cantidad',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='$vestido'";
+                $this->database->query($sql);
+                $sql = "INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('$vestido','$talle','$color','Devolución','$cantidad','$fecha')";
+                $this->database->query($sql);
+            }else{
+                $alerta=[
+                    "mensaje"=>"No se pudo realizar la devolución"
+                ];
+                return $alerta;
+            }
+
+        }
+    }
+
+    public function obtenerRegistro(){
+        if(isset($_POST["realizarDevolucion"])){
             $vestido=$_POST["vestido"];
             $cantidad=$_POST["cantidad"];
             $talle=$_POST["talles"];
             $color=$_POST["colores"];
-            date_default_timezone_set('America/Argentina/Buenos_Aires');
-            $fecha=date("Y-m-d");
-            $precio=$this->obtenerPrecioDelVestido($vestido);
-            $sql="UPDATE registros 
-                    SET devolucion=true 
+            $sql="SELECT *
+                FROM registros 
                         WHERE nombre_vestido='$vestido' and color_vestido='$color' and tipo='Salida'
                                 and talle_vestido='$talle' and cantidad='$cantidad' and devolucion=false
-                                ORDER BY id LIMIT 1";
-            $this->database->query($sql);
-            $sql="UPDATE vestidosDetalle 
-                        SET cantidadS=cantidadS-'$cantidad', cantidadE=cantidadE+'$cantidad',
-                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'$precio'
-                        WHERE nombre_vestido='$vestido' and color_vestido='$color' and talle_vestido='$talle'";
-            $this->database->query($sql);
-            $sql="UPDATE vestido
-                        SET salida=salida-'$cantidad', entrada=entrada+'$cantidad',
-                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='$vestido'";
-            $this->database->query($sql);
-            $sql="INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
-                            VALUES('$vestido','$talle','$color','Devolución','$cantidad','$fecha')";
-            $this->database->query($sql);
+                                ORDER BY fecha LIMIT 1";
+            return $this->database->query($sql)->fetch_assoc();
         }
     }
 

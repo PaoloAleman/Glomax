@@ -39,4 +39,11 @@ class RegistroController
         ];
         $this->renderer->render("historialEntradas",$data);
     }
+
+    public function realizarDevolucion(){
+        $data=[
+            "alert"=>$this->registroModel->realizarDevolucion()
+        ];
+        $this->renderer->render("realizarDevolucion",$data);
+    }
 }
