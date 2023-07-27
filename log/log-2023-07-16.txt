@@ -396,3 +396,1153 @@
 [2023-07-16][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
                 SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
                 FROM vestido
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','S','Beige','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Beige' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'3', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','XL','Beige','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Beige' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'1', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','S','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Negro' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'2', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'3', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','L','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'3', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','S','Verde musgo','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'4', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','M','Verde musgo','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'4', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','XL','Verde musgo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'2', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','L','Habano','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'4', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','M','Habano','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'1', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','XL','Habano','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'5', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','XXL','Habano','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'1', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','S','Habano','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'5', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Tapado Channel'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Rojo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'2', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Vestido Starples'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Rojo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada+'2', saldoTotalMercaderia=entrada-salida
+                    WHERE nombre='Vestido Starples'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Rojo','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Rojo','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Marron','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Marron','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Marron','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Marron','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Camel','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Camel','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Marron','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Marron','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Marron','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Marron','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Rojo','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Rojo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Rojo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Rojo','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','M','Verde musgo','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Verde musgo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','L','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Verde musgo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XL','Verde musgo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Verde musgo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Starples','XXL','Verde musgo','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Starples' and color_vestido='Verde musgo' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','S','Beige','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Beige' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','XL','Beige','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Beige' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','L','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Natural' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','S','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Negro' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','L','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','M','Verde musgo','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','S','Verde musgo','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','XL','Verde musgo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','L','Habano','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','S','Habano','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','XL','Habano','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Channel','XXL','Habano','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Channel' and color_vestido='Habano' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','L','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','S','Gris','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Gris' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','M','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Gris' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','L','Gris','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Gris' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','XL','Gris','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Gris' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','XXL','Gris','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Gris' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','L','Francia','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Francia' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','M','Francia','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Francia' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','XL','Francia','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Francia' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Gretta','XXL','Francia','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Gretta' and color_vestido='Francia' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','M','Marron','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Marron' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','XL','Marron','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Marron' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','XXL','Marron','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Marron' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','XL','Negro','Entrada','7','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'7', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','M','Negro','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','XXL','Negro','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','M','Gris oscuro','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Gris oscuro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','XL','Gris oscuro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Gris oscuro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','XL','Gris','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Gris' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','M','Camel','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Camel' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','XL','Camel','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Camel' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Anezka','XXL','Camel','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Anezka' and color_vestido='Camel' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','XXL','Natural','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Natural' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','XL','Natural','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Natural' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','L','Natural','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Natural' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','M','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Natural' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','M','Gris','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Gris' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','L','Gris','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Gris' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','XL','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Gris' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','XXL','Gris','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Gris' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','M','Habano','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Habano' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','L','Habano','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Habano' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','XL','Habano','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Habano' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Chaleco Ethna','XXL','Habano','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Chaleco Ethna' and color_vestido='Habano' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Remeron Fiorella','S','Gris','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Gris' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Remeron Fiorella','M','Gris','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Gris' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Remeron Fiorella','L','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Gris' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Remeron Fiorella','XL','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Gris' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Remeron Fiorella','XXL','Gris','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Gris' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Remeron Fiorella','M','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Remeron Fiorella','S','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Negro' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Remeron Fiorella','XL','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XL','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XXL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','M','Marron','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Marron' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','L','Marron','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Marron' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XL','Marron','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Marron' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XL','Marron','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Marron' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XXL','Marron','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Marron' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','M','Verde musgo','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Verde musgo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','L','Verde musgo','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Verde musgo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XL','Verde musgo','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Verde musgo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XXL','Verde musgo','Entrada','6','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'6', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Verde musgo' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','M','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Natural' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','L','Natural','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Natural' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XL','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Natural' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','XXL','Natural','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Natural' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Bianka','M','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Bianka' and color_vestido='Natural' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','L','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','XL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','M','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Gris' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','L','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Gris' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','XL','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Gris' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','XXL','Gris','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Gris' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','M','Gris oscuro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Gris oscuro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','XL','Gris oscuro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Gris oscuro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido corto Dhara','XXL','Gris oscuro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Gris oscuro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Indira','M','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Indira' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Indira','L','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Indira' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Indira','XL','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Indira' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Indira','XXL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Indira' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Indira','M','Verde musgo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Indira' and color_vestido='Verde musgo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Indira','L','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Indira' and color_vestido='Verde musgo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Indira','XL','Verde musgo','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Indira' and color_vestido='Verde musgo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Vestido Indira','XXL','Verde musgo','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Vestido Indira' and color_vestido='Verde musgo' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Buzo Manta Teddy','U','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Buzo Manta Teddy' and color_vestido='Negro' and talle_vestido='U'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Buzo Manta Teddy','U','Beige','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Buzo Manta Teddy' and color_vestido='Beige' and talle_vestido='U'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Buzo Manta Teddy','U','Gris oscuro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Buzo Manta Teddy' and color_vestido='Gris oscuro' and talle_vestido='U'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','M','Marron','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Marron' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','L','Marron','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Marron' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XL','Marron','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Marron' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XXL','Marron','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Marron' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','L','Marron','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Marron' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XL','Marron','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Marron' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XXL','Marron','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Marron' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','M','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Camel' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','L','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Camel' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XL','Camel','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Camel' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XXL','Camel','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Camel' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','M','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Natural' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','L','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Natural' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XL','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Natural' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XXL','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Natural' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','M','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XL','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XXL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','S','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Negro' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','M','Rojo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Rojo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','L','Rojo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Rojo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','L','Rojo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Rojo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XL','Rojo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Rojo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Lisboa','XXL','Rojo','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Lisboa' and color_vestido='Rojo' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','S','Gris claro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Gris claro' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','M','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','L','Gris claro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Gris claro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','XL','Gris claro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Gris claro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','XXL','Gris claro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Gris claro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','S','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Natural' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','M','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Natural' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','L','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Natural' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','XL','Natural','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Natural' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','XXL','Natural','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Natural' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','M','Gris claro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Gris claro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','S','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Negro' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','XL','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','XXL','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','S','Rosa','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Rosa' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','M','Rosa','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Rosa' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','L','Rosa','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Rosa' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','XL','Rosa','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Rosa' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ibiza','XXL','Rosa','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ibiza' and color_vestido='Rosa' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','S','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Natural' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','M','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Natural' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','L','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Natural' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','XL','Natural','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Natural' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','XXL','Natural','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Natural' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','S','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Verde musgo' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','M','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','XL','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','XXL','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','S','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Negro' and talle_vestido='S'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','M','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Verde musgo' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','L','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Verde musgo' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','XL','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Verde musgo' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Amelia','XXL','Verde musgo','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Amelia' and color_vestido='Verde musgo' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Poncho en Picos Yamilet','M','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Poncho en Picos Yamilet' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Poncho en Picos Yamilet','XL','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Poncho en Picos Yamilet' and color_vestido='Gris' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Poncho en Picos Yamilet','XXL','Negro','Entrada','1','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'1', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Poncho en Picos Yamilet' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Poncho en Picos Yamilet','M','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Poncho en Picos Yamilet' and color_vestido='Gris' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Poncho en Picos Yamilet','XL','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Poncho en Picos Yamilet' and color_vestido='Gris' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Poncho en Picos Yamilet','XXL','Gris','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Poncho en Picos Yamilet' and color_vestido='Gris' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Poncho en Picos Yamilet','XL','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Poncho en Picos Yamilet' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Julieth','U','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Julieth' and color_vestido='Negro' and talle_vestido='U'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Julieth','U','Gris','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Julieth' and color_vestido='Gris' and talle_vestido='U'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Tapado Julieth','U','Beige','Entrada','5','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'5', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Tapado Julieth' and color_vestido='Beige' and talle_vestido='U'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ponchiito Nabi','U','Gris','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ponchiito Nabi' and color_vestido='Gris' and talle_vestido='U'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Ponchiito Nabi','U','Marron','Entrada','4','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'4', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Ponchiito Nabi' and color_vestido='Marron' and talle_vestido='U'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Aitana','M','Negro','Entrada','2','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'2', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Aitana' and color_vestido='Negro' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Aitana','L','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Aitana' and color_vestido='Negro' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Aitana','XL','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Aitana' and color_vestido='Negro' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Aitana','XXL','Negro','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Aitana' and color_vestido='Negro' and talle_vestido='XXL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Aitana','M','Rosa','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Aitana' and color_vestido='Rosa' and talle_vestido='M'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Aitana','L','Rosa','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Aitana' and color_vestido='Rosa' and talle_vestido='L'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Aitana','XL','Rosa','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Aitana' and color_vestido='Rosa' and talle_vestido='XL'
+[2023-07-16][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                        VALUES('Sueter Aitana','XXL','Rosa','Entrada','3','2023-07-16')
+[2023-07-16][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE+'3', totalStock=cantidadE-cantidadS
+                    WHERE nombre_vestido='Sueter Aitana' and color_vestido='Rosa' and talle_vestido='XXL'

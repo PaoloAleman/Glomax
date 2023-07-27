@@ -13,10 +13,13 @@
     {{#historial}}
         <tr class="border border-[#79762D]">
             <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidadSalidas}}</td>
-            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{saldoPagado}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">${{saldoPagado}}</td>
             <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{fechaPagada}}</td>
         </tr>
     {{/historial}}
+
 </table>
+    <p class="text-[#B1AC33] text-2xl text-center mt-6">*El 24/7 se pago con precios del primer pedido</p>
+
 </main>
 {{>footer}}

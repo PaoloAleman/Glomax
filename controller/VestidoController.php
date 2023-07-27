@@ -12,7 +12,8 @@ class VestidoController{
 
     public function listarVestidos(){
         $this->vestidoModel->realizarPago();
-        $this->vestidoModel->generarPDF();
+        $vestidos=$this->vestidoModel->getVestidosPagados()->fetch_all();
+        $this->vestidoModel->generarPDF($vestidos);
         $data=[
             "vestidos"=>$this->vestidoModel->getVestidos(),
             "vestidosSelect"=>$this->vestidoModel->getVestidosSinFiltro(),
@@ -39,6 +40,7 @@ class VestidoController{
         if(isset($_POST["vestidoBuscado"])){
             $_SESSION["nombreVestido"]=$_POST["vestidoBuscado"];
         }
+
 
         $data=[
             "detalle"=>$this->vestidoModel->getDetallePorVestido($_SESSION["nombreVestido"]),

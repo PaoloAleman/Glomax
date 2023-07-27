@@ -70,7 +70,8 @@ class VestidoModel
         }else{
             $sql = "SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
                 SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
-                FROM vestidosDetalle";
+                FROM vestidosDetalle
+                WHERE nombre_vestido='$vestido'";
             return $this->database->query($sql);
         }
     }
@@ -180,27 +181,35 @@ class VestidoModel
         }
     }
 
-    public function generarPDF(){
+    public function generarPDF($vestidos){
         if (isset($_POST["pagarTodo"])) {
-            $tituloReporte = "Lista de vestidos";
+            date_default_timezone_set("America/Argentina/Buenos_Aires");
+            $fechaActual=date("Y-m-d");
+            $fechaPago=$this->getUltimaFechaDePago();
+            $tituloReporte = "Lista de vestidos ($fechaPago / $fechaActual)";
             $this->darDatosDefault($tituloReporte);
-            $this->pdf->SetMargins(10, 10, 10);
-            $vestidos=$this->getVestidosPagados()->fetch_all();
-            $this->pdf->Cell(40, 5, "Nombre", 1, 0, "C");
-            $this->pdf->Cell(40, 5, "Talle", 1, 0, "C");
-            $this->pdf->Cell(40, 5, "Color", 1, 0, "C");
-            $this->pdf->Cell(40, 5, "Cantidad", 1, 0, "C");
-            $this->pdf->Cell(40, 5, "Fecha", 1, 1, "C");
-
+            $this->pdf->SetMargins(5, 10, 10);
+            $this->pdf->SetFont("Arial","",14);
+            $this->pdf->Cell(40, 5, "Total de ventas: ". $this->getTotalesVestidosPagados(), 0, 1, "C");
+            $this->pdf->Cell(40, 5, "", 0, 1, "C");
+            $this->pdf->SetFont("Arial","",14);
+            $this->pdf->SetFillColor(173,216,230);
+            $this->pdf->Cell(20, 7, mb_convert_encoding("Número", 'ISO-8859-1', 'UTF-8'), 1, 0, "C",true);
+            $this->pdf->Cell(65, 7, "Nombre", 1, 0, "C",true);
+            $this->pdf->Cell(20, 7, "Talle", 1, 0, "C",true);
+            $this->pdf->Cell(40, 7, "Color", 1, 0, "C",true);
+            $this->pdf->Cell(25, 7, "Cantidad", 1, 0, "C",true);
+            $this->pdf->Cell(35, 7, "Fecha", 1, 1, "C",true);
+            $i=1;
             foreach ($vestidos as $vestido){
-                $this->pdf->Cell(40, 5, $vestido[1], 1, 0, "C");
-                $this->pdf->Cell(40, 5, $vestido[2], 1, 0, "C");
-                $this->pdf->Cell(40, 5, $vestido[3], 1, 0, "C");
-                $this->pdf->Cell(40, 5, $vestido[5], 1, 0, "C");
-                $this->pdf->Cell(40, 5, $vestido[6], 1, 1, "C");
+                $this->pdf->Cell(20, 7, $i++, 1, 0, "C");
+                $this->pdf->Cell(65, 7, $vestido[1], 1, 0, "C");
+                $this->pdf->Cell(20, 7, $vestido[2], 1, 0, "C");
+                $this->pdf->Cell(40, 7, $vestido[3], 1, 0, "C");
+                $this->pdf->Cell(25, 7, $vestido[5], 1, 0, "C");
+                $this->pdf->Cell(35, 7, $vestido[6], 1, 1, "C");
             }
-            header('Content-Type: application/pdf');
-            header('Content-Disposition: attachment; filename="mi_archivo.pdf"');
+
             $this->pdf->Output('D', $tituloReporte . '.pdf');
         }
     }
@@ -213,8 +222,17 @@ class VestidoModel
                     cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
                 FROM registros
                 WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual'
-                ORDER BY nombre_vestido,talle_vestido,color_vestido, fecha";
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido";
         return $this->database->query($sql);
+    }
+    public function getTotalesVestidosPagados(){
+        $fechaPago=$this->getUltimaFechaDePago();
+        date_default_timezone_set("America/Argentina/Buenos_Aires");
+        $fechaActual=date('Y-m-d');
+        $sql="SELECT count(id) as cantidad
+                FROM registros
+                WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual'";
+        return $this->database->query($sql)->fetch_assoc()["cantidad"];
     }
 
     public function getUltimaFechaDePago(){

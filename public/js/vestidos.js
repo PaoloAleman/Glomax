@@ -23,7 +23,18 @@ function obtenerDatos(){
                 var colores=[];
                 var talles=[];
                 listaVestidos.addEventListener("change", function() {
-                    for (var i = 0; i < 200; i++) {
+                    for (var i = listaTalles.options.length - 1; i > 0; i--) {
+                        listaTalles.remove(i);
+                    }
+
+                    for (var i = listaColores.options.length - 1; i > 0; i--) {
+                        listaColores.remove(i);
+                    }
+
+                    colores = [];
+                    talles = [];
+
+                    for (var i = 0; i < 300; i++) {
                         if (listaVestidos.value === detallesTotales[i]["nombre_vestido"]) {
                             if(!talles.includes(detallesTotales[i]["talle_vestido"])){
                                 var option = document.createElement("option");
@@ -34,22 +45,21 @@ function obtenerDatos(){
                                 talles.push(detallesTotales[i]["talle_vestido"]);
                             }
 
-                            if(!colores.includes(detallesTotales[i]["color_vestido"])){
-                                var option=document.createElement("option");
-                                option.classList.add('text-[#B1AC33]','h-[30px]','w-[300px]','hover:border-[#2E2C02]','hover:text-black','hover:bg-[#B1AC33]')
-                                option.value=detallesTotales[i]["color_vestido"];
-                                option.text=detallesTotales[i]["color_vestido"];
+                            if(!colores.includes(detallesTotales[i]["color_vestido"])) {
+                                var option = document.createElement("option");
+                                option.classList.add('text-[#B1AC33]', 'h-[30px]', 'w-[300px]', 'hover:border-[#2E2C02]', 'hover:text-black', 'hover:bg-[#B1AC33]')
+                                option.value = detallesTotales[i]["color_vestido"];
+                                option.text = detallesTotales[i]["color_vestido"];
                                 listaColores.appendChild(option)
                                 colores.push(detallesTotales[i]["color_vestido"]);
-
                             }
-
                         }
                     }
                 });
 
             }
         })
+
     }else{
         $.ajax({
             url:"/vestido/datos",
@@ -70,7 +80,17 @@ function obtenerDatos(){
                 var colores=[];
                 var talles=[];
                 listaVestidos.addEventListener("change", function() {
-                    for (var i = 0; i < 200; i++) {
+                    for (var i = listaTalles.options.length - 1; i > 0; i--) {
+                        listaTalles.remove(i);
+                    }
+
+                    for (var i = listaColores.options.length - 1; i > 0; i--) {
+                        listaColores.remove(i);
+                    }
+
+                    colores = [];
+                    talles = [];
+                    for (var i = 0; i < 300; i++) {
                         if (listaVestidos.value === detallesTotales[i]["nombre_vestido"]) {
 
                             if(!talles.includes(detallesTotales[i]["talle_vestido"])){
