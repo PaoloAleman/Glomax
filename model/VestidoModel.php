@@ -189,29 +189,78 @@ class VestidoModel
             $tituloReporte = "Lista de vestidos ($fechaPago / $fechaActual)";
             $this->darDatosDefault($tituloReporte);
             $this->pdf->SetMargins(5, 10, 10);
-            $this->pdf->SetFont("Arial","",14);
-            $this->pdf->Cell(40, 5, "Total de ventas: ". $this->getTotalesVestidosPagados(), 0, 1, "C");
-            $this->pdf->Cell(40, 5, "", 0, 1, "C");
-            $this->pdf->SetFont("Arial","",14);
-            $this->pdf->SetFillColor(173,216,230);
-            $this->pdf->Cell(20, 7, mb_convert_encoding("Número", 'ISO-8859-1', 'UTF-8'), 1, 0, "C",true);
-            $this->pdf->Cell(65, 7, "Nombre", 1, 0, "C",true);
-            $this->pdf->Cell(20, 7, "Talle", 1, 0, "C",true);
-            $this->pdf->Cell(40, 7, "Color", 1, 0, "C",true);
-            $this->pdf->Cell(25, 7, "Cantidad", 1, 0, "C",true);
-            $this->pdf->Cell(35, 7, "Fecha", 1, 1, "C",true);
-            $i=1;
-            foreach ($vestidos as $vestido){
-                $this->pdf->Cell(20, 7, $i++, 1, 0, "C");
-                $this->pdf->Cell(65, 7, $vestido[1], 1, 0, "C");
-                $this->pdf->Cell(20, 7, $vestido[2], 1, 0, "C");
-                $this->pdf->Cell(40, 7, $vestido[3], 1, 0, "C");
-                $this->pdf->Cell(25, 7, $vestido[5], 1, 0, "C");
-                $this->pdf->Cell(35, 7, $vestido[6], 1, 1, "C");
-            }
+            $this->pdf->SetFont("Arial","",16);
+            $this->generarDatosTotales();
 
-            $this->pdf->Output('D', $tituloReporte . '.pdf');
+            $this->generarTablaDeVestidos($vestidos);
+            $this->generarTablaDeDevoluciones();
+
+            $this->pdf->Output('I', $tituloReporte . '.pdf');
         }
+    }
+
+
+    public function generarDatosTotales(){
+        $this->pdf->Cell(50, 5, "Total de ventas: ". $this->getTotalesVestidosPagados(), 0, 0, "C");
+        $this->pdf->Cell(230, 5, "Saldo pagado: $".$this->getTotales()->fetch_assoc()["totalSaldo"], 0, 1, "C");
+        $this->pdf->Cell(40, 5, "", 0, 1, "C");
+        $this->setEspacioVacio();
+    }
+    public function generarTablaDeVestidos($vestidos){
+        $this->generarEncabezadosDeTablas();
+        $i=1;
+
+        foreach ($vestidos as $vestido){
+            $this->pdf->Cell(20, 7, $i++, 1, 0, "C");
+            $this->pdf->Cell(65, 7, $vestido[1], 1, 0, "C");
+            $this->pdf->Cell(20, 7, $vestido[2], 1, 0, "C");
+            $this->pdf->Cell(40, 7, $vestido[3], 1, 0, "C");
+            $this->pdf->Cell(25, 7, $vestido[5], 1, 0, "C");
+            $this->pdf->Cell(35, 7, $vestido[6], 1, 1, "C");
+        }
+    }
+
+    public function generarEncabezadosDeTablas(){
+        $this->pdf->SetFillColor(173,216,230);
+        $this->pdf->Cell(20, 7,  mb_convert_encoding("N°", 'ISO-8859-1', 'UTF-8'), 1, 0, "C",true);
+        $this->pdf->Cell(65, 7, "Nombre", 1, 0, "C",true);
+        $this->pdf->Cell(20, 7, "Talle", 1, 0, "C",true);
+        $this->pdf->Cell(40, 7, "Color", 1, 0, "C",true);
+        $this->pdf->Cell(25, 7, "Cantidad", 1, 0, "C",true);
+        $this->pdf->Cell(35, 7, "Fecha", 1, 1, "C",true);
+    }
+
+    public function generarTablaDeDevoluciones(){
+        $devoluciones=$this->getDevoluciones();
+
+        $this->pdf->AddPage();
+        $this->pdf->SetFont('Arial', '', 20);
+        $this->pdf->Cell(0, 10, "Lista de devoluciones" , 0, 1, "C");
+
+        $this->pdf->SetMargins(15, 10, 10);
+        $this->setEspacioVacio();
+        $this->setEspacioVacio();
+        $this->setEspacioVacio();
+        $this->pdf->SetFont("Arial","",14);
+        $this->pdf->Cell(40, 5, "Total de devoluciones: ". $this->getContadorDevoluciones(), 0, 1, "C");
+        $this->pdf->SetMargins(5, 10, 10);
+        $this->setEspacioVacio();
+
+        $this->generarEncabezadosDeTablas();
+        $i=1;
+
+        foreach ($devoluciones as $devolucion){
+            $this->pdf->Cell(20, 7, $i++, 1, 0, "C");
+            $this->pdf->Cell(65, 7, $devolucion[1], 1, 0, "C");
+            $this->pdf->Cell(20, 7, $devolucion[2], 1, 0, "C");
+            $this->pdf->Cell(40, 7, $devolucion[3], 1, 0, "C");
+            $this->pdf->Cell(25, 7, $devolucion[5], 1, 0, "C");
+            $this->pdf->Cell(35, 7, $devolucion[6], 1, 1, "C");
+        }
+    }
+
+    public function setEspacioVacio(){
+        return $this->pdf->Cell(40, 5, "", 0, 1, "C");
     }
 
     public function getVestidosPagados(){
@@ -221,7 +270,7 @@ class VestidoModel
         $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
                     cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
                 FROM registros
-                WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual'
+                WHERE tipo='Salida' and devolucion=false and fecha between '$fechaPago' and '$fechaActual'
                 ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido";
         return $this->database->query($sql);
     }
@@ -231,7 +280,7 @@ class VestidoModel
         $fechaActual=date('Y-m-d');
         $sql="SELECT count(id) as cantidad
                 FROM registros
-                WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual'";
+                WHERE tipo='Salida' and devolucion=false and fecha between '$fechaPago' and '$fechaActual'";
         return $this->database->query($sql)->fetch_assoc()["cantidad"];
     }
 
@@ -253,6 +302,26 @@ class VestidoModel
         $this->pdf->SetFont("Arial", "B", 9);
 
         $this->pdf->SetFont("Arial", "", 9);
+    }
+
+    public function getDevoluciones(){
+        $fechaPago=$this->getUltimaFechaDePago();
+        date_default_timezone_set("America/Argentina/Buenos_Aires");
+        $fechaActual=date('Y-m-d');
+        $sql="SELECT * 
+                FROM registros
+                    WHERE tipo='Devolución' and  fecha_devolucion between '$fechaPago' and '$fechaActual'";
+        return $this->database->query($sql)->fetch_all();
+    }
+
+    public function getContadorDevoluciones(){
+        $fechaPago=$this->getUltimaFechaDePago();
+        date_default_timezone_set("America/Argentina/Buenos_Aires");
+        $fechaActual=date('Y-m-d');
+        $sql="SELECT count(*) as contador
+                FROM registros
+                    WHERE tipo='Devolución' and  fecha_devolucion between '$fechaPago' and '$fechaActual'";
+        return $this->database->query($sql)->fetch_assoc()["contador"];
     }
 
 

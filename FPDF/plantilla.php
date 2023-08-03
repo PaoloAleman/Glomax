@@ -19,24 +19,30 @@ class PDF extends FPDF
         global $nombreGrado;
         global $tituloReporte;
         // Logo
-        $this->Image("public/iconos/logo.jpeg", 10, 5, 15);
+        while(!isset($this->headerImpreso)){
+            $this->Image("public/iconos/logo.jpeg", 10, 5, 15);
 
-        // Arial bold 15
-        $this->SetFont("Arial", "B", 12);
+            // Arial bold 15
+            $this->SetFont("Arial", "B", 12);
 
-        // Título
-        $this->Cell(25);
-        $this->Cell(140, 5, mb_convert_encoding($tituloReporte, 'ISO-8859-1', 'UTF-8'), 0, 0, "C");
+            // Título
+            $this->Cell(25);
+            $this->Cell(140, 5, mb_convert_encoding($tituloReporte, 'ISO-8859-1', 'UTF-8'), 0, 0, "C");
 
-        //Fecha
-        $this->SetFont("Arial", "", 12);
-        $this->Cell(25, 5, "Fecha: " . date("d/m/Y"), 0, 1, "C");
-        $this->SetFont("Arial", "", 20);
+            //Fecha
+            $this->SetFont("Arial", "", 12);
+            $this->Cell(25, 5, "Fecha: " . date("d/m/Y"), 0, 1, "C");
+            $this->SetFont("Arial", "", 20);
 
-        $this->Cell(0, 10, "Listado de vestidos" . $nombreGrado, 0, 1, "C");
+            $this->Cell(0, 10, "Lista de vestidos" . $nombreGrado, 0, 1, "C");
 
-        // Salto de línea
-        $this->Ln(10);
+            // Salto de línea
+            $this->Ln(10);
+            $this->headerImpreso = true;
+
+        }
+
+
     }
 
     // Pie de página

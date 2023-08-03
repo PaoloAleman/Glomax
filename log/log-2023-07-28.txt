@@ -1,0 +1,2934 @@
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and talle_vestido='M' and color_vestido='Negro'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and talle_vestido='M' and color_vestido='Gris'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and talle_vestido='XL' and color_vestido='Gris'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Tapado Anezka' and talle_vestido='XXL' and color_vestido='Camel'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido corto Dhara' and talle_vestido='XXL' and color_vestido='Gris oscuro'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Tapado Channel' and talle_vestido='S' and color_vestido='Natural'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'and talle_vestido='L'and color_vestido='Gris'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'and talle_vestido='L'and color_vestido='Gris'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'and talle_vestido='S'and color_vestido='Negro'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'and talle_vestido='S'and color_vestido='Negro'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'and talle_vestido='XXL'and color_vestido='Marron'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'and talle_vestido='XXL'and color_vestido='Marron'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'and talle_vestido='XXL'and color_vestido='Beige'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'and talle_vestido='XXL'and color_vestido='Beige'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and talle_vestido='M' and color_vestido='Gris'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r
+                    WHERE tipo='Salida' and devolucion=false
+                    ORDER BY r.id DESC
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and talle_vestido='M' and color_vestido='Negro'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and talle_vestido='XL' and color_vestido='Gris'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Tapado Anezka' and talle_vestido='XXL' and color_vestido='Camel'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido corto Dhara' and talle_vestido='XXL' and color_vestido='Gris oscuro'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Tapado Channel' and talle_vestido='S' and color_vestido='Natural'
+[2023-07-28][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Indira'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Indira'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Indira'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Buzo Manta Teddy'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Buzo Manta Teddy'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Buzo Manta Teddy'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Lisboa'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Lisboa'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Lisboa'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Julieth'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Julieth'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Julieth'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Amelia'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Amelia'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Amelia'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Poncho en Picos Yamilet'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Poncho en Picos Yamilet'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Poncho en Picos Yamilet'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ponchiito Nabi'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Ponchiito Nabi'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ponchiito Nabi'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Aitana'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Aitana'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Aitana'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: INSERT INTO vestidosDetalle(nombre_vestido, color_vestido, talle_vestido,cantidadS, cantidadE, totalStock, saldoTotal)
+                        VALUES('Tapado Roma','Violeta Oscuro','U',0,0,0,0)
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: INSERT INTO vestidosDetalle(nombre_vestido, color_vestido, talle_vestido,cantidadS, cantidadE, totalStock, saldoTotal)
+                        VALUES('Tapado Roma','Beige','U',0,0,0,0)
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: INSERT INTO vestidosDetalle(nombre_vestido, color_vestido, talle_vestido,cantidadS, cantidadE, totalStock, saldoTotal)
+                        VALUES('Tapado Roma','Verde Claro','U',0,0,0,0)
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r
+                    WHERE tipo='Salida' and devolucion=false
+                    ORDER BY r.id DESC
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r 
+                    WHERE devolucion=false and tipo='Salida'and nombre_vestido='Sueter Ibiza'and talle_vestido='XXL'and color_vestido='Negro' ORDER BY r.id DESC
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT sum(cantidadE) as totalEntrada, sum(cantidadS) as totalSalida,
+                sum(totalStock) as totalStock, sum(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido corto Dhara'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Starples'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Remeron Fiorella'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Gretta'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Poncho en Picos Yamilet'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Poncho en Picos Yamilet'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Poncho en Picos Yamilet'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Chaleco Ethna'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Lisboa'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Lisboa'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Lisboa'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Aitana'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Aitana'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Aitana'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ibiza'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Anezka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Amelia'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Amelia'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Amelia'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Buzo Manta Teddy'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Buzo Manta Teddy'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Buzo Manta Teddy'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Indira'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Indira'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Indira'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ponchiito Nabi'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Sueter Ponchiito Nabi'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Sueter Ponchiito Nabi'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Vestido Bianka'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Julieth'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Julieth'
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Julieth'
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-07-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Tapado Julieth','U','Gris','Salida','1','2023-07-28')
+[2023-07-28][INFO]Ejecutando query: UPDATE vestidosDetalle
+                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'4115'
+                        WHERE nombre_vestido='Tapado Julieth' and color_vestido='Gris' and talle_vestido='U'
+[2023-07-28][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Tapado Julieth'
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Tapado Roma','U','Verde Claro','Salida','1','2023-07-28')
+[2023-07-28][INFO]Ejecutando query: UPDATE vestidosDetalle
+                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3780'
+                        WHERE nombre_vestido='Tapado Roma' and color_vestido='Verde Claro' and talle_vestido='U'
+[2023-07-28][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Tapado Roma'
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Tapado Channel','S','Beige','Salida','1','2023-07-28')
+[2023-07-28][INFO]Ejecutando query: UPDATE vestidosDetalle
+                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'4380'
+                        WHERE nombre_vestido='Tapado Channel' and color_vestido='Beige' and talle_vestido='S'
+[2023-07-28][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Tapado Channel','XL','Verde musgo','Salida','1','2023-07-28')
+[2023-07-28][INFO]Ejecutando query: UPDATE vestidosDetalle
+                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'4380'
+                        WHERE nombre_vestido='Tapado Channel' and color_vestido='Verde musgo' and talle_vestido='XL'
+[2023-07-28][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
+[2023-07-28][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
+                            VALUES('Tapado Channel','M','Natural','Salida','1','2023-07-28')
+[2023-07-28][INFO]Ejecutando query: UPDATE vestidosDetalle
+                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'4380'
+                        WHERE nombre_vestido='Tapado Channel' and color_vestido='Natural' and talle_vestido='M'
+[2023-07-28][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Tapado Channel'
+[2023-07-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-07-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-07-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and fecha between '2023-07-24' and '2023-07-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-07-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido

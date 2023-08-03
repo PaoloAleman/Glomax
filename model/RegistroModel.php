@@ -138,12 +138,12 @@ class RegistroModel{
             $fecha=date("Y-m-d");
             if($tipoVestido=="Salida"){
                 $sql="UPDATE vestidosDetalle 
-                        SET cantidadS=cantidadS-'$cantidadVestido', cantidadE=cantidadE+'$cantidadVestido',
+                        SET cantidadS=cantidadS-'$cantidadVestido',
                             totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'$precio'
                         WHERE nombre_vestido='$nombreVestido' and color_vestido='$colorVestido' and talle_vestido='$talleVestido'";
                 $this->database->query($sql);
                 $sql="UPDATE vestido
-                        SET salida=salida-'$cantidadVestido', entrada=entrada+'$cantidadVestido',
+                        SET salida=salida-'$cantidadVestido',
                             saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
                         WHERE nombre='$nombreVestido'";
                 $this->database->query($sql);
@@ -191,14 +191,14 @@ class RegistroModel{
                         WHERE nombre_vestido='$vestido' and color_vestido='$color '
                                 and talle_vestido='$talle' and cantidad='$cantidad'
                                 ORDER BY id LIMIT 1";
-                $verificar=$this->database->query($sql);
+                $this->database->query($sql);
                 $sql = "UPDATE vestidosDetalle 
-                        SET cantidadS=cantidadS-'$cantidad', cantidadE=cantidadE+'$cantidad',
+                        SET cantidadS=cantidadS-'$cantidad',
                             totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'$precio'
                         WHERE nombre_vestido='$vestido' and color_vestido='$color' and talle_vestido='$talle'";
                 $this->database->query($sql);
                 $sql = "UPDATE vestido
-                        SET salida=salida-'$cantidad', entrada=entrada+'$cantidad',
+                        SET salida=salida-'$cantidad',
                             saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
                         WHERE nombre='$vestido'";
                 $this->database->query($sql);
