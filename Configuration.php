@@ -2,10 +2,12 @@
 include_once ("./controller/VestidoController.php");
 include_once ("./controller/RegistroController.php");
 include_once ("./controller/CreacionController.php");
+include_once ("./controller/FlexController.php");
 
 include_once ("./model/VestidoModel.php");
 include_once ("./model/RegistroModel.php");
 include_once ("./model/CreacionModel.php");
+include_once ("./model/FlexModel.php");
 
 include_once ("./helpers/MustacheRender.php");
 include_once ("./helpers/MySqlDatabase.php");
@@ -36,6 +38,10 @@ class Configuration {
     }
     public function getCreacionController(){
         return new CreacionController(new CreacionModel($this->getDatabase()),$this->getRenderer());
+    }
+
+    public function getFlexController(){
+        return new FlexController(new FlexModel($this->getDatabase()),$this->getRenderer());
     }
 
     private function getArrayConfig() {

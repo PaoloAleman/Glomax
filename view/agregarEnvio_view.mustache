@@ -1,0 +1,43 @@
+{{>header}}
+<main id="main" class="pt-24 pb-20">
+    <form action="/registro/agregarSalida" method="post">
+        <div class="flex flex-col gap-6 items-center border border-[#B1AC33] rounded-3xl p-6 pt-20 lg:w-[40%] w-[80%] mx-auto">
+            <div class="lg:w-[70%] w-[90%] lg:-mt-28 -mt-24 lg:mb-10 mb-4 lg:h-[90px] h-[50px]
+                border border-[#2E2C02] bg-[#B1AC33] rounded-3xl flex items-center justify-center">
+                <h1 class="text-black lg:text-4xl text-2xl text-center">Agregar envío</h1>
+            </div>
+            <input name="cantidad" type="number" value="1" class="w-[90%] lg:h-[60px] h-[40px] bg-black
+                border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl">
+            <select name="vestido" class="w-[90%] lg:h-[60px] h-[40px] bg-black
+                border border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-2xl text-xl pl-4" id="vestidoBuscado" required>
+                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]">Días</option>
+                <option class="text-[#B1AC33] h-[30px] w-[300px]">Lunes</option>
+                <option class="text-[#B1AC33] h-[30px] w-[300px]">Martes</option>
+                <option class="text-[#B1AC33] h-[30px] w-[300px]">Miércoles</option>
+                <option class="text-[#B1AC33] h-[30px] w-[300px]">Jueves</option>
+                <option class="text-[#B1AC33] h-[30px] w-[300px]">Viernes</option>
+                <option class="text-[#B1AC33] h-[30px] w-[300px]">Sábado</option>
+                <option class="text-[#B1AC33] h-[30px] w-[300px]">Domingo</option>
+            </select>
+
+
+            <select name="talles" class="w-[90%] lg:h-[60px] h-[40px] bg-black
+                border border-[#B1AC33] text-[#B1AC33] lg:text-2xl text-xl pl-4 rounded-3xl" id="talleBuscado" required>
+                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
+                            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] ">Talles</option>
+            </select>
+            <select name="colores" class="w-[90%] lg:h-[60px] h-[40px] bg-black
+                border border-[#B1AC33] text-[#B1AC33] lg:text-2xl text-xl pl-4 rounded-3xl " id="colorBuscado" required>
+                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
+                            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">Colores</option>
+            </select>
+            <input type="submit" name="agregarSalida" value="Agregar"
+                   class="border border-[#B1AC33] w-[180px] h-[60px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
+            {{#alert}}
+                <h1 class="w-[20%] h-[60px] border border-[#2E2C02] rounded-3xl bg-[#B1AC33] text-black text-3xl
+                absolute right-20 flex items-center justify-center">{{mensaje}}</h1>
+            {{/alert}}
+        </div>
+    </form>
+</main>
+{{>footer}}
