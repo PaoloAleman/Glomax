@@ -1,0 +1,67 @@
+{{>headerFlex}}
+<main id="main" class="pt-24 pb-20">
+    <form action="/flex/editarEnvio" method="post">
+        {{#vestido}}
+            <div class="grid grid-cols-3">
+                <div class="flex flex-col items-center">
+                        <div class="w-[90%] flex flex-col gap-4 mb-8">
+                            <label for="id" class="text-3xl text-[#B1AC33]">ID</label>
+                            <input name="id" type="number" value="{{id}}" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                        border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" required>
+                        </div>
+                        <div class="w-[90%] flex flex-col gap-4 mb-8">
+                            <label for="fecha" class="text-3xl text-[#B1AC33]">Fecha</label>
+                            <input name="fecha" type="date" class="w-[100%] lg:h-[60px] h-[40px] bg-[#B1AC33]
+                            border border-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{fecha}}" required>
+                        </div>
+                        <div class="w-[90%] flex flex-col gap-4 mb-8">
+                            <label for="esCaba" class="text-3xl text-[#B1AC33]">¿Es CABA?</label>
+                            <input name="esCaba" type="text" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                            border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{es_caba}}" required>
+                        </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="w-[90%] flex flex-col gap-4 mb-8">
+                        <label for="receptor" class="text-3xl text-[#B1AC33]">Receptor</label>
+                        <input name="receptor" type="text" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                        border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{receptor}}" required>
+                    </div>
+                    <div class="w-[90%] flex flex-col gap-4 mb-8">
+                        <label for="dia" class="text-3xl text-[#B1AC33]">Día</label>
+                        <input name="dia" type="text" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                        border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{dia}}" required>
+                    </div>
+                    <div class="w-[90%] flex flex-col gap-4 mb-8">
+                        <label for="precio" class="text-3xl text-[#B1AC33]">Precio</label>
+                        <input name="precio" type="number" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                            border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{precio}}" required>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="w-[90%] flex flex-col gap-4 mb-8">
+                        <label for="destino" class="text-3xl text-[#B1AC33]">Destino</label>
+                        <input name="destino" type="text" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                        border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{destino}}" required>
+                    </div>
+                    <div class="w-[90%] flex flex-col gap-4 mb-8">
+                        <label for="cuenta" class="text-3xl text-[#B1AC33]">Cuenta</label>
+                        <input name="cuenta" type="text" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                        border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{cuenta}}" required>
+                    </div>
+                    <div class="w-[90%] flex flex-col gap-4 mb-8">
+                        <label for="tipo" class="text-3xl text-[#B1AC33]">Tipo</label>
+                        <input name="tipo" type="text" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                            border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{tipo}}" required>
+                    </div>
+                </div>
+            </div>
+        {{/vestido}}
+        <div class="flex justify-center mt-10">
+            <input type="submit" name="editarEnvio" value="Editar"
+                   class="border border-[#B1AC33] rounded-3xl w-[230px] h-[80px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">
+        </div>
+    </form>
+</main>
+{{>footer}}

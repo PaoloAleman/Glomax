@@ -9,13 +9,13 @@
             <table class="border border-[#B1AC33] mx-auto lg:mt-20 mt-10 w-[98%] " style="display: none;" id="tabla">
                 <tr class=" border border-[#B1AC33]">
                     <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Cant de envíos</th>
-                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Cant de devoluciones</th>
+                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Cant de cancelaciones</th>
                     <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Saldo total</th>
                 </tr>
                 {{#totales}}
                     <tr>
                         <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{cantEnvios}}</td>
-                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{cantDevoluciones}}</td>
+                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{cantCancelaciones}}</td>
                         <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">${{saldoTotal}}</td>
                     </tr>
                 {{/totales}}
@@ -114,7 +114,12 @@
                 <tr class="border border-[#79762D]">
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33] font-bold">{{fecha}}</td>
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{dia}}</td>
-                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{receptor}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl p-4 border border-[#B1AC33] font-bold
+                    hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">
+                        <form action="/flex/editarEnvio" method="get">
+                            <button type="submit" value="{{id}}" name="idEnvio" class="w-[100%] h-[100%]">{{receptor}}</button>
+                        </form>
+                    </td>
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{destino}}</td>
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{cuenta}}</td>
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{es_caba}}</td>

@@ -14,7 +14,6 @@ class FlexModel
             $destino=$_POST["destino"];
             $cuenta=$_POST["cuenta"];
             $esCaba=$_POST["esCaba"];
-            date_default_timezone_set("America/Argentina/Buenos_Aires");
             $fecha=$_POST["fecha"];
             $dia=$this->obtenerDíaActual()[date("l",strtotime($fecha))];
             if($esCaba=="CABA"){
@@ -28,36 +27,51 @@ class FlexModel
         }
     }
 
-    public function agregarDevolucion(){
-        if(isset($_POST["agregarDevolucion"])){
+    public function getEnvioPorID($id){
+        $sql="SELECT *
+                FROM flex
+                    WHERE id='$id'";
+        return $this->database->query($sql);
+    }
+
+    public function editarEnvio($id){
+        if(isset($_POST["editarEnvio"])){
             $receptor=$_POST["receptor"];
             $destino=$_POST["destino"];
+            $fecha=$_POST["fecha"];
+            $dia=$this->obtenerDíaActual()[date("l",strtotime($fecha))];
             $cuenta=$_POST["cuenta"];
             $esCaba=$_POST["esCaba"];
-            date_default_timezone_set("America/Argentina/Buenos_Aires");
-            $fecha=$_POST["fecha"];
-            $dia=$this->obtenerDíaActual()[date('l', strtotime($fecha))];
-            if($esCaba=="CABA"){
-                $sql="INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
-                        VALUES('$fecha','$dia','$receptor','$destino','$cuenta','$esCaba',2800.0,'Devolución')";
+            $precio=$_POST["precio"];
+            $tipo=$_POST["tipo"];
+            if(strtolower($tipo)=="cancelado"){
+                $sql="UPDATE flex
+                        SET receptor='$receptor',destino='$destino', fecha='$fecha', dia='$dia',
+                                cuenta='$cuenta', es_caba='$esCaba', precio='$precio'*-1, tipo='$tipo'
+                                WHERE id='$id'";
             }else{
-                $sql="INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
-                        VALUES('$fecha','$dia','$receptor','$destino','$cuenta','$esCaba',3000.0,'Devolución')";
+                $sql="UPDATE flex
+                        SET receptor='$receptor',destino='$destino', fecha='$fecha', dia='$dia',
+                                cuenta='$cuenta', es_caba='$esCaba', precio='$precio', tipo='$tipo'
+                                WHERE id='$id'";
             }
             $this->database->query($sql);
+            return true;
+        }else{
+            return false;
         }
     }
 
     public function getEnvios(){
         if(isset($_POST["filtrar"])){
             $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
-                    destino,cuenta,es_caba,tipo
+                    destino,cuenta,es_caba,tipo,id
                 FROM flex
                     WHERE ".$this->filtrarPor()."
                     ORDER BY id DESC";
         }else{
             $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
-                    destino,cuenta,es_caba,tipo
+                    destino,cuenta,es_caba,tipo,id
                 FROM flex
                     ORDER BY id DESC";
         }
@@ -75,13 +89,13 @@ class FlexModel
         if(isset($_POST["filtrar"])){
             $sql="SELECT SUM(precio) as saldoTotal,
                     (SELECT count(id) FROM flex WHERE tipo='Envío' and ". $this->filtrarPor().") as cantEnvios,
-                        (SELECT count(id) FROM flex WHERE tipo='Devolución' and ".$this->filtrarPor().") as cantDevoluciones
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado' and ".$this->filtrarPor().") as cantCancelaciones
                         FROM flex
                             WHERE ".$this->filtrarPor();
         }else{
             $sql="SELECT SUM(precio) as saldoTotal,
                     (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
-                        (SELECT count(id) FROM flex WHERE tipo='Devolución') as cantDevoluciones
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
                         FROM flex";
         }
         return $this->database->query($sql)->fetch_assoc();
@@ -145,6 +159,6 @@ class FlexModel
         $sql="SELECT fecha
                 FROM flex
                     ORDER BY fecha LIMIT 1";
-        return $this->database->query($sql)->fetch_assoc()["fecha"];
+        return $this->database->query($sql)->fetch_assoc()["fecha"] ?? null;
     }
 }

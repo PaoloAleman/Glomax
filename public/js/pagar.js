@@ -1,11 +1,13 @@
-const botonPago=document.getElementById("pagar");
-const popUpPago=document.getElementById("popUpPago");
-const cerrarPopUp=document.getElementById("cerrarPopUp");
+if(window.location.pathname=="/vestido/listarVestidos"){
+    const botonPago=document.getElementById("pagar");
+    const popUpPago=document.getElementById("popUpPago");
+    const cerrarPopUp=document.getElementById("cerrarPopUp");
 
-botonPago.addEventListener("click",()=>{
-    popUpPago.style.display="block";
-    cerrarPopUp.addEventListener("click",()=>{
-        popUpPago.style.display="none";
+    botonPago.addEventListener("click",()=>{
+        popUpPago.style.display="block";
+        cerrarPopUp.addEventListener("click",()=>{
+            popUpPago.style.display="none";
 
+        })
     })
-})
+}

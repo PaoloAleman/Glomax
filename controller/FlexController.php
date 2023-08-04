@@ -18,15 +18,22 @@ class FlexController
         $this->renderer->render("agregarEnvio",$data);
     }
 
-    public function agregarDevolucion(){
-        $this->flexModel->agregarDevolucion();
+    public function editarEnvio(){
+        if(!isset($_SESSION["idEnvio"])){
+           $_SESSION["idEnvio"]=$_GET["idEnvio"];
+        }
+        if($this->flexModel->editarEnvio($_SESSION["idEnvio"])){
+            header("Location:/flex/listaEnvios");
+            exit();
+        }
         $data=[
-            "fecha"=>$this->flexModel->getFecha()
+            "vestido"=>$this->flexModel->getEnvioPorID($_GET["idEnvio"] ?? null)
         ];
-        $this->renderer->render("agregarDevolucion",$data);
+        $this->renderer->render("cancelarEnvio",$data);
     }
 
     public function listaEnvios(){
+        unset($_SESSION["idEnvio"]);
         $data=[
             "envios"=>$this->flexModel->getEnvios(),
             "totales"=>$this->flexModel->getTotales(),
