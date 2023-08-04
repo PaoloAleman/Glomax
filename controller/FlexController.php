@@ -12,12 +12,18 @@ class FlexController
 
     public function agregarEnvio(){
         $this->flexModel->agregarEnvio();
-        $this->renderer->render("agregarEnvio");
+        $data=[
+            "fecha"=>$this->flexModel->getFecha()
+        ];
+        $this->renderer->render("agregarEnvio",$data);
     }
 
     public function agregarDevolucion(){
         $this->flexModel->agregarDevolucion();
-        $this->renderer->render("agregarDevolucion");
+        $data=[
+            "fecha"=>$this->flexModel->getFecha()
+        ];
+        $this->renderer->render("agregarDevolucion",$data);
     }
 
     public function listaEnvios(){

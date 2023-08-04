@@ -10,13 +10,13 @@ class FlexModel
 
     public function agregarEnvio(){
         if(isset($_POST["agregarEnvio"])){
-            $dia=$this->obtenerDíaActual()[date("l")];
             $receptor=$_POST["receptor"];
             $destino=$_POST["destino"];
             $cuenta=$_POST["cuenta"];
             $esCaba=$_POST["esCaba"];
             date_default_timezone_set("America/Argentina/Buenos_Aires");
-            $fecha=date("Y-m-d");
+            $fecha=$_POST["fecha"];
+            $dia=$this->obtenerDíaActual()[date("l",strtotime($fecha))];
             if($esCaba=="CABA"){
                 $sql="INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
                         VALUES('$fecha','$dia','$receptor','$destino','$cuenta','$esCaba',2800.0,'Envío')";
@@ -30,13 +30,13 @@ class FlexModel
 
     public function agregarDevolucion(){
         if(isset($_POST["agregarDevolucion"])){
-            $dia=$this->obtenerDíaActual()[date("l")];
             $receptor=$_POST["receptor"];
             $destino=$_POST["destino"];
             $cuenta=$_POST["cuenta"];
             $esCaba=$_POST["esCaba"];
             date_default_timezone_set("America/Argentina/Buenos_Aires");
-            $fecha=date("Y-m-d");
+            $fecha=$_POST["fecha"];
+            $dia=$this->obtenerDíaActual()[date('l', strtotime($fecha))];
             if($esCaba=="CABA"){
                 $sql="INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
                         VALUES('$fecha','$dia','$receptor','$destino','$cuenta','$esCaba',2800.0,'Devolución')";
@@ -63,6 +63,12 @@ class FlexModel
         }
         return $this->database->query($sql);
 
+    }
+
+    public function getFecha(){
+        if(isset($_POST["agregarEnvio"]) || isset($_POST["agregarEnvio"])){
+            return $_POST["fecha"];
+        }
     }
 
     public function getTotales(){
