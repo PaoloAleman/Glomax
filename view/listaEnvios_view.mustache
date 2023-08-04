@@ -1,0 +1,128 @@
+{{>headerFlex}}
+<main id="main" class="pt-10 pb-20 pl-4 pr-4">
+    <a href="/flex/listaEnvios" class="mx-auto border border-[#B1AC33] lg:w-[300px] lg:h-[100px] w-[210px] h-[80px]
+           flex items-center justify-center border border-2 rounded-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] text-[#B1AC33] lg:text-4xl text-2xl ">Envíos</a>
+    <div class="mx-auto lg:mt-20 mt-10 flex justify-center flex-wrap">
+        <button class="w-[80%] lg:h-[80px] h-[45px] border border-2 border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-3xl text-2xl
+            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]" id="mostrarTable">Obtener totales</button>
+        <div class="overflow-x-auto w-[98%]">
+            <table class="border border-[#B1AC33] mx-auto lg:mt-20 mt-10 w-[98%] " style="display: none;" id="tabla">
+                <tr class=" border border-[#B1AC33]">
+                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Cant de envíos</th>
+                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Cant de devoluciones</th>
+                    <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Saldo total</th>
+                </tr>
+                {{#totales}}
+                    <tr>
+                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{cantEnvios}}</td>
+                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{cantDevoluciones}}</td>
+                        <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">${{saldoTotal}}</td>
+                    </tr>
+                {{/totales}}
+            </table>
+        </div>
+    </div>
+
+    <div class="mt-20">
+        <button class="w-[15%] lg:h-[65px] h-[45px] border border-2 border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-3xl text-2xl
+            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]" id="mostrarFiltros">Filtros</button>
+        <div id="popUpFiltros" class="hidden w-[70%] bg-black border border-[#B1AC33] rounded-3xl fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 p-10">
+            <form action="/flex/listaEnvios" method="post" class="flex flex-col items-center gap-14">
+                <div class="grid grid-rows-3 gap-8">
+                    <div class="grid grid-cols-2">
+                        <div class="flex flex-col items-center gap-4">
+                            <label for="fechaInicio" class="text-3xl text-[#B1AC33] ">Fecha inicio</label>
+                            <input type="date" value="{{fechaInicio}}" name="fechaInicio" class="w-[280px] h-[50px]
+                                border border-[#B1AC33] py-2 text-2xl pl-4 bg-[#B1AC33]">
+                        </div>
+                        <div class="flex flex-col items-center gap-4">
+                            <label for="fechaFinal" class="text-3xl text-[#B1AC33]">Fecha final</label>
+                            <input type="date" value="{{fechaFinal}}" name="fechaFinal" class="w-[280px] h-[50px]
+                                border border-[#B1AC33] py-2 text-2xl pl-4 bg-[#B1AC33]">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex flex-col items-center gap-4">
+                            <label for="destino" class="text-3xl text-[#B1AC33] ">Destino</label>
+                            <select name="destino" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                            border border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-2xl text-xl pl-4">
+                                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]">Destinos</option>
+                                {{#destinos}}
+                                    <option class="text-[#B1AC33] h-[30px] w-[300px]" value="{{destino}}">{{destino}}</option>
+                                {{/destinos}}
+                            </select>
+                        </div>
+                        <div class="flex flex-col items-center gap-4">
+                            <label for="receptor" class="text-3xl text-[#B1AC33] ">Receptor</label>
+                            <select name="receptor" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                            border border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-2xl text-xl pl-4">
+                                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]">Receptores</option>
+                                {{#receptores}}
+                                    <option class="text-[#B1AC33] h-[30px] w-[300px]" value="{{receptor}}">{{receptor}}</option>
+                                {{/receptores}}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center gap-4">
+                            <label for="cuenta" class="text-3xl text-[#B1AC33] ">Cuenta</label>
+                            <select name="cuenta" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                            border border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-2xl text-xl pl-4">
+                                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]">Cuentas</option>
+                                <option class="text-[#B1AC33] h-[30px] w-[300px]" value="Mamá">Mamá</option>
+                                <option class="text-[#B1AC33] h-[30px] w-[300px]" value="Papá">Papá</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col items-center gap-4">
+                            <label for="esCaba" class="text-3xl text-[#B1AC33] ">¿Es de CABA?</label>
+                            <select name="esCaba" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                            border border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-2xl text-xl pl-4">
+                                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]">¿Es de CABA?</option>
+                                <option class="text-[#B1AC33] h-[30px] w-[300px]" value="CABA">Sí</option>
+                                <option class="text-[#B1AC33] h-[30px] w-[300px]" value="">No</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col items-center gap-4">
+                            <label for="tipo" class="text-3xl text-[#B1AC33] ">Tipo</label>
+                            <select name="tipo" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                                border border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-2xl text-xl pl-4">
+                                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]">Envío o Devolución</option>
+                                <option class="text-[#B1AC33] h-[30px] w-[300px]" value="Envío">Envío</option>
+                                <option class="text-[#B1AC33] h-[30px] w-[300px]" value="Devolución">Devolución</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" name="filtrar" value="Filtrar"
+                       class="border border-[#B1AC33] w-[150px] h-[60px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
+            </form>
+            <button class="absolute right-4 top-4" id="cerrarPopUp"><img src="/public/iconos/cerrar.png" class="lg:w-[40px] w-[30px]"></button>
+        </div>
+    </div>
+    <div class="mx-auto lg:mt-20 mt-10 lg:w-[100%] w-[100%] overflow-x-auto">
+        <table class="border border-[#B1AC33] lg:mx-auto w-[100%]" >
+            <tr class="border border-[#B1AC33]">
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Fecha</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Día</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Receptor</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Destino</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Cuenta</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">CABA</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Tipo</th>
+            </tr>
+            {{#envios}}
+                <tr class="border border-[#79762D]">
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33] font-bold">{{fecha}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{dia}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{receptor}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{destino}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{cuenta}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{es_caba}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{tipo}}</td>
+                </tr>
+            {{/envios}}
+        </table>
+    </div>
+
+</main>
+{{>footer}}

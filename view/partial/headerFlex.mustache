@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Glomax</title>
+</head>
+<body class="bg-black" id="body">
+<header class="w-[100%] h-[70px] lg:h-[100px] border-b-4 border-b border-[#B1AC33] flex items-center justify-center"  >
+    <div class="w-[60%] h-[100px] lg:w-[30%] flex items-center absolute left-0 " id="menuIcon">
+        <button type="button" class="h-[70px]" ><img class="lg:w-[70px] w-[50px] ml-4" src="/public/iconos/menuIcon.png" alt="menuIcon" id="imgMenu"></button>
+    </div>
+    <div class="absolute w-[60%] lg:w-[30%] pb-10 bg-black top-20 lg:top-24 left-0 flex flex-col border-r-4 border-b-4 border-[#B1AC33] rounded-br-3xl" style="display: none;" id="menu">
+        <ul class="text-[#B1AC33] flex flex-col gap-4">
+            <a href="/flex/listaEnvios"><li class="text-3xl hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Lista de envíos</li></a>
+            <a href="/flex/agregarEnvio"><li class="text-3xl hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Agregar envío</li></a>
+            <a href="/flex/agregarDevolucion"><li class="text-3xl hover:bg-[#B1AC33] hover:text-black h-[60px] flex items-center pl-4">Agregar devolución</li></a>
+        </ul>
+    </div>
+    <a href="/flex/listaEnvios" class="text-3xl lg:text-6xl font-semibold text-[#B1AC33] text-center">Glomax</a>
+    <a href="/lobby/interno" class="text-3xl lg:text-3xl font-semibold text-[#B1AC33] absolute right-6">Lobby</a>
+</header>

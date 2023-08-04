@@ -3,6 +3,7 @@ include_once ("./controller/VestidoController.php");
 include_once ("./controller/RegistroController.php");
 include_once ("./controller/CreacionController.php");
 include_once ("./controller/FlexController.php");
+include_once ("./controller/LobbyController.php");
 
 include_once ("./model/VestidoModel.php");
 include_once ("./model/RegistroModel.php");
@@ -42,6 +43,10 @@ class Configuration {
 
     public function getFlexController(){
         return new FlexController(new FlexModel($this->getDatabase()),$this->getRenderer());
+    }
+
+    public function getLobbyController(){
+        return new LobbyController($this->getRenderer());
     }
 
     private function getArrayConfig() {
