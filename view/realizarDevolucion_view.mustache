@@ -1,5 +1,9 @@
 {{>header}}
 <main id="main" class="pt-24 pb-20">
+    {{#alert}}
+        <h1 class="w-[34%] h-[90px] border border-[#2E2C02] rounded-bl-3xl rounded-tl-3xl bg-[#B1AC33] text-black text-3xl text-center
+                absolute top-8 right-0 flex items-center justify-center" id="alerta">{{mensaje}}</h1>
+    {{/alert}}
     <form action="/registro/realizarDevolucion" method="post">
         <div class="flex flex-col gap-6 items-center border border-[#B1AC33] rounded-3xl p-6 pt-20 lg:w-[40%] w-[80%] mx-auto">
             <div class="lg:w-[70%] w-[90%] lg:-mt-28 -mt-24 lg:mb-10 mb-4 lg:h-[90px] h-[50px]
@@ -25,10 +29,6 @@
             </select>
             <input type="submit" name="realizarDevolucion" value="Realizar"
                    class="border border-[#B1AC33] w-[180px] h-[60px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] hover: rounded-3xl">
-            {{#alert}}
-                <h1 class="w-[42%] h-[60px] border border-[#2E2C02] rounded-3xl bg-[#B1AC33] text-black text-3xl
-                absolute -bottom-40 flex items-center justify-center">{{mensaje}}</h1>
-            {{/alert}}
         </div>
     </form>
 </main>

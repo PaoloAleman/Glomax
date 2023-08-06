@@ -8,6 +8,8 @@ class RegistroModel{
         $this->database=$database;
     }
 
+
+
     public function agregarSalida(){
         if(isset($_POST["agregarSalida"])){
             $vestido=$_POST["vestido"];
@@ -19,8 +21,8 @@ class RegistroModel{
             date_default_timezone_set('America/Argentina/Buenos_Aires');
             $fecha=date("Y-m-d");
             if($stock>=$cantidad){
-                $sql="INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
-                            VALUES('$vestido','$talle','$color','Salida','$cantidad','$fecha')";
+                $sql="INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
+                            VALUES('$vestido','$talle','$color','$precio','Salida','$cantidad','$fecha')";
                 $this->database->query($sql);
                 $sql="UPDATE vestidosDetalle
                         SET cantidadS=cantidadS+'$cantidad',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'$precio'
@@ -30,13 +32,17 @@ class RegistroModel{
                         SET salida=salida+'$cantidad',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
                         WHERE nombre='$vestido'";
                 $this->database->query($sql);
+                $alerta=[
+                    "mensaje"=>"¡Salida agregada correctamente!"
+                ];
             }else{
                 $alerta=[
-                    "mensaje"=>"No hay stock"
+                    "mensaje"=>"¡No hay stock!"
                 ];
-                return $alerta;
             }
         }
+        return $alerta ?? null;
+
     }
 
     public function obtenerStockDelVestido($vestido, $talle, $color){
@@ -110,8 +116,9 @@ class RegistroModel{
             $color=$_POST["colores"];
             date_default_timezone_set('America/Argentina/Buenos_Aires');
             $fecha=date("Y-m-d");
-            $sql="INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
-                        VALUES('$vestido','$talle','$color','Entrada','$cantidad','$fecha')";
+            $precio=$this->obtenerPrecioDelVestido($vestido);
+            $sql="INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha,precio)
+                        VALUES('$vestido','$talle','$color','Entrada','$cantidad','$fecha','$precio')";
             $this->database->query($sql);
             $sql="UPDATE vestidosDetalle
                     SET cantidadE=cantidadE+'$cantidad', totalStock=cantidadE-cantidadS
@@ -185,6 +192,7 @@ class RegistroModel{
                 $cantidad=$vestidoDev["cantidad"];
                 $talle=$vestidoDev["talle_vestido"];
                 $color=$vestidoDev["color_vestido"];
+                $fechaRegistro=$vestidoDev["fecha"];
                 $precio=$this->obtenerPrecioDelVestido($vestido);
                 $sql="UPDATE registros 
                     SET devolucion=true 
@@ -202,16 +210,18 @@ class RegistroModel{
                             saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
                         WHERE nombre='$vestido'";
                 $this->database->query($sql);
-                $sql = "INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
-                            VALUES('$vestido','$talle','$color','Devolución','$cantidad','$fecha')";
+                $sql = "INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha,fecha_devolucion,precio)
+                            VALUES('$vestido','$talle','$color','Devolución','$cantidad','$fechaRegistro','$fecha','$precio')";
                 $this->database->query($sql);
+                $alerta=[
+                    "mensaje"=>"¡Devolución hecha correctamente!"
+                ];
             }else{
                 $alerta=[
-                    "mensaje"=>"No se pudo realizar la devolución"
+                    "mensaje"=>"¡No se pudo realizar la devolución!"
                 ];
-                return $alerta;
             }
-
+            return $alerta ?? null;
         }
     }
 
