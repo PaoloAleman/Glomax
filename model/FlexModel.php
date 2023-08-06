@@ -24,7 +24,15 @@ class FlexModel
                         VALUES('$fecha','$dia','$receptor','$destino','$cuenta','$esCaba',3000.0,'Envío')";
             }
             $this->database->query($sql);
+            $alerta=[
+                "mensaje"=>"¡Envío agregado correctamente!"
+            ];
+        }else{
+            $alerta=[
+                "mensaje"=>"¡No se pudo agregar este envío!"
+            ];
         }
+        return $alerta ?? null;
     }
 
     public function getEnvioPorID($id){

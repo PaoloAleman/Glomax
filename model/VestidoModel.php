@@ -129,22 +129,6 @@ class VestidoModel
         return $arrayAsociativo;
     }
 
-    public function getTotales(){
-        if(isset($_POST["buscar"])){
-            $vestido=$_POST["vestidoBuscado"];
-            $sql="SELECT entrada as totalEntrada, salida as totalSalida,
-                saldoTotalMercaderia as totalStock, saldoTotal as totalSaldo
-                FROM vestido
-                WHERE nombre='$vestido'";
-            return $this->database->query($sql);
-        }else{
-            $sql="SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
-                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
-                FROM vestido";
-            return $this->database->query($sql);
-        }
-    }
-
     public function realizarPago(){
         if(isset($_POST["pagarTodo"])){
             $datos=$this->getTotales()->fetch_assoc();
@@ -199,13 +183,30 @@ class VestidoModel
         }
     }
 
-
     public function generarDatosTotales(){
         $this->pdf->Cell(50, 5, "Total de ventas: ". $this->getTotalesVestidosPagados(), 0, 0, "C");
         $this->pdf->Cell(230, 5, "Saldo pagado: $".$this->getTotales()->fetch_assoc()["totalSaldo"], 0, 1, "C");
         $this->pdf->Cell(40, 5, "", 0, 1, "C");
         $this->setEspacioVacio();
     }
+
+
+    public function getTotales(){
+        if(isset($_POST["buscar"])){
+            $vestido=$_POST["vestidoBuscado"];
+            $sql="SELECT entrada as totalEntrada, salida as totalSalida,
+                saldoTotalMercaderia as totalStock, saldoTotal as totalSaldo
+                FROM vestido
+                WHERE nombre='$vestido'";
+            return $this->database->query($sql);
+        }else{
+            $sql="SELECT SUM(entrada) as totalEntrada, SUM(salida) as totalSalida,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido";
+            return $this->database->query($sql);
+        }
+    }
+
     public function generarTablaDeVestidos($vestidos){
         $this->generarEncabezadosDeTablas();
         $i=1;
@@ -259,10 +260,19 @@ class VestidoModel
         }
     }
 
+    public function getDevoluciones(){
+        $fechaPago=$this->getUltimaFechaDePago();
+        date_default_timezone_set("America/Argentina/Buenos_Aires");
+        $fechaActual=date('Y-m-d');
+        $sql="SELECT * 
+                FROM registros
+                    WHERE tipo='Devolución' and  fecha_devolucion between '$fechaPago' and '$fechaActual'";
+        return $this->database->query($sql)->fetch_all();
+    }
+
     public function setEspacioVacio(){
         return $this->pdf->Cell(40, 5, "", 0, 1, "C");
     }
-
     public function getVestidosPagados(){
         $fechaPago=$this->getUltimaFechaDePago();
         date_default_timezone_set("America/Argentina/Buenos_Aires");
@@ -274,6 +284,7 @@ class VestidoModel
                 ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido";
         return $this->database->query($sql);
     }
+
     public function getTotalesVestidosPagados(){
         $fechaPago=$this->getUltimaFechaDePago();
         date_default_timezone_set("America/Argentina/Buenos_Aires");
@@ -302,16 +313,6 @@ class VestidoModel
         $this->pdf->SetFont("Arial", "B", 9);
 
         $this->pdf->SetFont("Arial", "", 9);
-    }
-
-    public function getDevoluciones(){
-        $fechaPago=$this->getUltimaFechaDePago();
-        date_default_timezone_set("America/Argentina/Buenos_Aires");
-        $fechaActual=date('Y-m-d');
-        $sql="SELECT * 
-                FROM registros
-                    WHERE tipo='Devolución' and  fecha_devolucion between '$fechaPago' and '$fechaActual'";
-        return $this->database->query($sql)->fetch_all();
     }
 
     public function getContadorDevoluciones(){

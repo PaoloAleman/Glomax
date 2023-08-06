@@ -30,13 +30,17 @@ class RegistroModel{
                         SET salida=salida+'$cantidad',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
                         WHERE nombre='$vestido'";
                 $this->database->query($sql);
+                $alerta=[
+                    "mensaje"=>"¡Salida agregada correctamente!"
+                ];
             }else{
                 $alerta=[
-                    "mensaje"=>"No hay stock"
+                    "mensaje"=>"¡No hay stock!"
                 ];
-                return $alerta;
             }
         }
+        return $alerta ?? null;
+
     }
 
     public function obtenerStockDelVestido($vestido, $talle, $color){
@@ -185,6 +189,7 @@ class RegistroModel{
                 $cantidad=$vestidoDev["cantidad"];
                 $talle=$vestidoDev["talle_vestido"];
                 $color=$vestidoDev["color_vestido"];
+                $fechaRegistro=$vestidoDev["fecha"];
                 $precio=$this->obtenerPrecioDelVestido($vestido);
                 $sql="UPDATE registros 
                     SET devolucion=true 
@@ -202,16 +207,18 @@ class RegistroModel{
                             saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
                         WHERE nombre='$vestido'";
                 $this->database->query($sql);
-                $sql = "INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha)
-                            VALUES('$vestido','$talle','$color','Devolución','$cantidad','$fecha')";
+                $sql = "INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha,fecha_devolucion)
+                            VALUES('$vestido','$talle','$color','Devolución','$cantidad','$fechaRegistro','$fecha')";
                 $this->database->query($sql);
+                $alerta=[
+                    "mensaje"=>"¡Devolución hecha correctamente!"
+                ];
             }else{
                 $alerta=[
-                    "mensaje"=>"No se pudo realizar la devolución"
+                    "mensaje"=>"¡No se pudo realizar la devolución!"
                 ];
-                return $alerta;
             }
-
+            return $alerta ?? null;
         }
     }
 

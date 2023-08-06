@@ -11,9 +11,10 @@ class FlexController
     }
 
     public function agregarEnvio(){
-        $this->flexModel->agregarEnvio();
+
         $data=[
-            "fecha"=>$this->flexModel->getFecha()
+            "fecha"=>$this->flexModel->getFecha(),
+            "alert"=>$this->flexModel->agregarEnvio()
         ];
         $this->renderer->render("agregarEnvio",$data);
     }
@@ -22,10 +23,12 @@ class FlexController
         if(!isset($_SESSION["idEnvio"])){
            $_SESSION["idEnvio"]=$_GET["idEnvio"];
         }
+
         if($this->flexModel->editarEnvio($_SESSION["idEnvio"])){
             header("Location:/flex/listaEnvios");
             exit();
         }
+
         $data=[
             "vestido"=>$this->flexModel->getEnvioPorID($_GET["idEnvio"] ?? null)
         ];

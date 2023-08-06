@@ -1,0 +1,10 @@
+/* Definir la animación de desvanecimiento */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Aplicar la animación a los elementos con la clase "fade-out" */
+.fade-out {
+    animation: fadeOut 2s ease;
+}
