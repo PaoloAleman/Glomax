@@ -130,7 +130,23 @@ class VestidoModel
     }
 
     public function realizarPago(){
-
+        if(isset($_POST["pagarTodo"])){
+            $datos=$this->getTotales()->fetch_assoc();
+            $cantSalidas=$datos["totalSalida"];
+            $cantDevoluciones=$datos["totalDevoluciones"];
+            $saldoPagado=$datos["totalSaldo"];
+            date_default_timezone_set('America/Argentina/Buenos_Aires');
+            $fecha=date("Y-m-d");
+            $sql="INSERT INTO historialPagos(cantidadSalidas,cantidadDevoluciones,saldoPagado,fechaPagada)
+                    VALUES ('$cantSalidas','$cantDevoluciones','$saldoPagado','$fecha')";
+            $this->database->query($sql);
+            $sql="UPDATE vestido
+                    SET entrada=entrada-salida, salida=0, saldoTotalMercaderia=entrada, saldoTotal=0, fechaPago='$fecha'";
+            $this->database->query($sql);
+            $sql="UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE-cantidadS, cantidadS=0, totalStock=cantidadE, saldoTotal=0 ";
+            $this->database->query($sql);
+        }
     }
 
     public function getHistorialDePagos(){
@@ -167,7 +183,7 @@ class VestidoModel
             $this->generarTablaDeVestidos($vestidos);
             $this->generarTablaDeDevoluciones();
 
-            $this->pdf->Output('I', $tituloReporte . '.pdf');
+            $this->pdf->Output('D', $tituloReporte . '.pdf');
         }
     }
 
