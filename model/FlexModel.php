@@ -3,9 +3,11 @@
 class FlexModel
 {
     private $database;
+    private $pdf;
 
-    public function __construct($database){
+    public function __construct($database,$pdf){
         $this->database=$database;
+        $this->pdf=$pdf;
     }
 
     public function agregarEnvio(){
@@ -168,5 +170,75 @@ class FlexModel
                 FROM flex
                     ORDER BY fecha LIMIT 1";
         return $this->database->query($sql)->fetch_assoc()["fecha"] ?? null;
+    }
+
+    public function generarPDF(){
+        if(isset($_POST["generarPDF"])){
+            $saldoPagado=$this->getSaldoPagado()["precio"];
+            $cantidad=$this->getSaldoPagado()["cantidad"];
+            date_default_timezone_set("America/Argentina/Buenos_Aires");
+            $fechaActual=date("Y-m-d");
+            $this->pdf->addPage();
+            $this->pdf->SetFont("Arial", "", 12);
+            $this->pdf->Cell(25, 5, "Fecha: " . date("d/m/Y"), 0, 1, "C");
+
+            $this->pdf->SetFont("Arial", "", 20);
+            $this->pdf->Cell(0, 10, mb_convert_encoding("Lista de envíos", 'ISO-8859-1', 'UTF-8'), 0, 1, "C");
+            $this->pdf->SetMargins(5, 10, 10);
+            $this->pdf->Cell(30, 12, "", 0, 1, "C");
+            $this->pdf->SetFont("Arial", "", 14);
+            $this->pdf->Cell(50, 5, "Saldo pagado: $". $this->getSaldoPagado()["precio"], 0, 0, "C");
+            $this->pdf->Cell(250, 5, mb_convert_encoding("Cantidad de envíos: ". $this->getSaldoPagado()["cantidad"],'ISO-8859-1',"UTF-8"), 0, 1, "C");
+            $this->pdf->Cell(30, 3, "", 0, 1, "C");
+
+            $this->generarEncabezados();
+            $this->generarTablaDeEnvios();
+
+            $this->pagarEnvios();
+            $this->pdf->Output('I', 'Lista de Envíos.pdf');
+        }
+    }
+
+    public function generarEncabezados(){
+        $this->pdf->SetFillColor(173,216,230);
+        $this->pdf->Cell(30, 7, "Fecha", 1, 0, "C",true);
+        $this->pdf->Cell(75, 7, "Receptor", 1, 0, "C",true);
+        $this->pdf->Cell(75, 7, "Destino", 1, 0, "C",true);
+        $this->pdf->Cell(25, 7, "CABA", 1, 1, "C",true);
+    }
+
+    public function generarTablaDeEnvios(){
+        $this->pdf->SetFont("Arial", "", 12);
+        $envios=$this->getEnviosPDF()->fetch_all();
+
+        foreach ($envios as $envio){
+            $this->pdf->Cell(30, 7, $envio[0], 1, 0, "C");
+            $this->pdf->Cell(75, 7, $envio[1], 1, 0, "C");
+            $this->pdf->Cell(75, 7, $envio[2], 1, 0, "C");
+            if($envio[3]=="CABA"){
+                $this->pdf->Cell(25, 7,mb_convert_encoding("Sí", 'ISO-8859-1', 'UTF-8'), 1, 1, "C");
+            }else{
+                $this->pdf->Cell(25, 7,"No", 1, 1, "C");
+            }
+        }
+    }
+
+    public function getEnviosPDF(){
+        $sql = "SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,receptor, destino, es_caba
+                FROM flex
+                WHERE pagado=false";
+        return $this->database->query($sql);
+    }
+
+    public function getSaldoPagado(){
+        $sql="SELECT SUM(precio) as precio, COUNT(id) as cantidad
+                FROM flex
+                    WHERE pagado=false";
+        return $this->database->query($sql)->fetch_assoc();
+    }
+
+    public function pagarEnvios(){
+        $sql="UPDATE flex SET pagado=true WHERE pagado=false";
+        $this->database->query($sql);
     }
 }

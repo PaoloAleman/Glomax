@@ -42,7 +42,7 @@ class Configuration {
     }
 
     public function getFlexController(){
-        return new FlexController(new FlexModel($this->getDatabase()),$this->getRenderer());
+        return new FlexController(new FlexModel($this->getDatabase(), new FPDF("P", "mm", "letter")),$this->getRenderer());
     }
 
     public function getLobbyController(){
