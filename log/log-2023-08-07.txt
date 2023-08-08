@@ -1,0 +1,25 @@
+[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-07'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-07][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and devolucion=false and fecha between '2023-07-29' and '2023-08-07'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-07'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
+                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                FROM vestido
