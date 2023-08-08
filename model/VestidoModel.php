@@ -150,7 +150,7 @@ class VestidoModel
     }
 
     public function getHistorialDePagos(){
-        $sql="SELECT cantidadSalidas, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
+        $sql="SELECT cantidadSalidas,cantidadDevoluciones, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
                 FROM historialPagos";
         return $this->database->query($sql);
     }
@@ -175,6 +175,9 @@ class VestidoModel
             $this->darDatosDefault($tituloReporte);
             $this->pdf->SetMargins(5, 10, 10);
             $this->pdf->SetFont("Arial","",16);
+            $this->pdf->Cell(196, 5, "Saldo pagado: $". $this->getTotales()->fetch_assoc()["totalSaldo"], 0, 1, "C");
+            $this->setEspacioVacio();
+            $this->setEspacioVacio();
             $this->generarDatosTotales();
 
             $this->generarTablaDeVestidos($vestidos);
@@ -186,7 +189,7 @@ class VestidoModel
 
     public function generarDatosTotales(){
         $this->pdf->Cell(50, 5, "Total de ventas: ". $this->getTotalesVestidosPagados(), 0, 0, "C");
-        $this->pdf->Cell(230, 5, "Saldo pagado: $".$this->getTotales()->fetch_assoc()["totalSaldo"], 0, 1, "C");
+        $this->pdf->Cell(230, 5, "Saldo salidas: $". $this->getTotales()->fetch_assoc()["totalSaldoSalidas"], 0, 1, "C");
         $this->pdf->Cell(40, 5, "", 0, 1, "C");
         $this->setEspacioVacio();
     }
@@ -196,6 +199,7 @@ class VestidoModel
         $fechaPago=$this->getUltimaFechaDePago();
         date_default_timezone_set("America/Argentina/Buenos_Aires");
         $fechaActual=date('Y-m-d');
+        $saldoDev=$this->getSaldoDev();
         if(isset($_POST["buscar"])){
             $vestido=$_POST["vestidoBuscado"];
             $sql="SELECT entrada as totalEntrada, salida as totalSalida,
@@ -205,16 +209,30 @@ class VestidoModel
             return $this->database->query($sql);
         }else{
             $sql="SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha between '$fechaPago' and '$fechaActual' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
+                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '$fechaPago' and '$fechaActual' ) as totalDevoluciones,
+                SUM(saldoTotalMercaderia) as totalStock, 
+                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual' ) as totalSaldoSalidas,
+                (SELECT SUM(precio)-'$saldoDev' FROM registros WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual' ) as totalSaldo,
+                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '$fechaPago' and '$fechaActual' ) as totalSaldoDev
                 FROM vestido";
             return $this->database->query($sql);
         }
     }
 
+    public function getSaldoDev(){
+        $fechaPago=$this->getUltimaFechaDePago();
+        date_default_timezone_set("America/Argentina/Buenos_Aires");
+        $fechaActual=date('Y-m-d');
+        $sql="SELECT SUM(precio) as saldoDev
+                FROM registros 
+                   WHERE tipo='Devolución' and fecha_devolucion between '$fechaPago' and '$fechaActual' ";
+        return $this->database->query($sql)->fetch_assoc()["saldoDev"];
+    }
+
     public function generarTablaDeVestidos($vestidos){
         $this->generarEncabezadosDeTablas();
         $i=1;
+        $this->pdf->SetFont("Arial","",14);
 
         foreach ($vestidos as $vestido){
             $this->pdf->Cell(20, 7, $i++, 1, 0, "C");
@@ -246,13 +264,16 @@ class VestidoModel
         $this->setEspacioVacio();
         $this->setEspacioVacio();
         $this->setEspacioVacio();
-        $this->pdf->SetFont("Arial","",14);
-        $this->pdf->Cell(40, 5, "Total de devoluciones: ". $this->getContadorDevoluciones(), 0, 1, "C");
+        $this->pdf->SetFont("Arial","",16);
+        $this->pdf->Cell(50, 5, "Total de devoluciones: ". $this->getContadorDevoluciones(), 0, 0, "C");
+        $this->pdf->Cell(210, 5, "Saldo devoluciones: $". $this->getTotales()->fetch_assoc()["totalSaldoDev"], 0, 1, "C");
+
         $this->pdf->SetMargins(5, 10, 10);
         $this->setEspacioVacio();
 
         $this->generarEncabezadosDeTablas();
         $i=1;
+        $this->pdf->SetFont("Arial","",14);
 
         foreach ($devoluciones as $devolucion){
             $this->pdf->Cell(20, 7, $i++, 1, 0, "C");

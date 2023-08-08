@@ -6,20 +6,22 @@
 
 <table class="border border-[#B1AC33] mx-auto mt-20 w-[98%]">
     <tr class="border border-[#B1AC33]">
-        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Cantidad de Salidas</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Salidas</th>
+        <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Devoluciones</th>
         <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Saldo pagado</th>
         <th class="text-[#B1AC33] text-3xl p-4 border border-[#B1AC33]">Fecha de pago</th>
     </tr>
     {{#historial}}
         <tr class="border border-[#79762D]">
             <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidadSalidas}}</td>
+            <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{cantidadDevoluciones}}</td>
             <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">${{saldoPagado}}</td>
             <td class="text-[#B1AC33] text-2xl text-center p-4 border border-[#B1AC33]">{{fechaPagada}}</td>
         </tr>
     {{/historial}}
 
 </table>
-    <p class="text-[#B1AC33] text-2xl text-center mt-6">*El 24/7 se pago con precios del primer pedido</p>
+    <p class="text-[#B1AC33] text-2xl text-center mt-6">*El 24/7 se pagó con precios del primer pedido</p>
 
 </main>
 {{>footer}}
