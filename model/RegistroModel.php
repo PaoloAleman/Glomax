@@ -76,6 +76,22 @@ class RegistroModel{
             return $this->database->query($sql);
         }
     }
+    public function getHistorialDevoluciones(){
+        if(isset($_POST["filtrar"])){
+            $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    DATE_FORMAT(fecha_devolucion,'%d-%m-%Y') as fechaDev, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros 
+                    WHERE tipo='Devolución'".$this->filtrarPor().
+                " ORDER BY id DESC";
+        }else{
+            $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                   DATE_FORMAT(fecha,'%d-%m-%Y') as fecha, DATE_FORMAT(fecha_devolucion,'%d-%m-%Y') as fechaDev
+                FROM registros
+                    WHERE tipo='Devolución'
+                    ORDER BY id DESC";
+        }
+        return $this->database->query($sql);
+    }
     public function filtrarPor(){
         $condiciones[]="";
         if(isset($_POST["vestidoBuscado"])){
@@ -90,6 +106,7 @@ class RegistroModel{
         }
         return implode("",$condiciones);
     }
+
     public function getHistorialEntradas(){
         if(isset($_POST["filtrar"])){
             $sql="SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
@@ -206,7 +223,7 @@ class RegistroModel{
                         WHERE nombre_vestido='$vestido' and color_vestido='$color' and talle_vestido='$talle'";
                 $this->database->query($sql);
                 $sql = "UPDATE vestido
-                        SET salida=salida-'$cantidad',
+                        SET salida=salida-'$cantidad', devoluciones=devoluciones+'$cantidad',
                             saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
                         WHERE nombre='$vestido'";
                 $this->database->query($sql);

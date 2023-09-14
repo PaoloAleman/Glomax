@@ -1,0 +1,198 @@
+[2023-09-13][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id,fecha_cancelacion
+                FROM flex
+                    where tipo='Envío'
+                    ORDER BY id DESC
+[2023-09-13][INFO]Ejecutando query: SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío') as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-09-13][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-13][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,id
+                FROM flex
+                    WHERE tipo='Envío' and  fecha between '2023-01-05' and '2023-01-09'
+                    ORDER BY id DESC
+[2023-09-13][INFO]Ejecutando query: SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-05' and '2023-01-09') as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-05' and '2023-01-09') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado' and  fecha between '2023-01-05' and '2023-01-09') as cantCancelaciones
+                        FROM flex
+                            WHERE  fecha between '2023-01-05' and '2023-01-09'
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-09-13][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-13][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,id
+                FROM flex
+                    WHERE tipo='Envío' and  fecha between '2023-01-12' and '2023-01-16'
+                    ORDER BY id DESC
+[2023-09-13][INFO]Ejecutando query: SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-12' and '2023-01-16') as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-12' and '2023-01-16') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado' and  fecha between '2023-01-12' and '2023-01-16') as cantCancelaciones
+                        FROM flex
+                            WHERE  fecha between '2023-01-12' and '2023-01-16'
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-09-13][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-13][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,id
+                FROM flex
+                    WHERE tipo='Envío' and  fecha between '2023-01-09' and '2023-01-13'
+                    ORDER BY id DESC
+[2023-09-13][INFO]Ejecutando query: SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-09' and '2023-01-13') as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-09' and '2023-01-13') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado' and  fecha between '2023-01-09' and '2023-01-13') as cantCancelaciones
+                        FROM flex
+                            WHERE  fecha between '2023-01-09' and '2023-01-13'
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-09-13][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-13][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,id
+                FROM flex
+                    WHERE tipo='Envío' and  fecha between '2023-01-16' and '2023-09-20'
+                    ORDER BY id DESC
+[2023-09-13][INFO]Ejecutando query: SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-16' and '2023-09-20') as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-16' and '2023-09-20') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado' and  fecha between '2023-01-16' and '2023-09-20') as cantCancelaciones
+                        FROM flex
+                            WHERE  fecha between '2023-01-16' and '2023-09-20'
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-09-13][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-13][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,id
+                FROM flex
+                    WHERE tipo='Envío' and  fecha between '2023-01-16' and '2023-01-20'
+                    ORDER BY id DESC
+[2023-09-13][INFO]Ejecutando query: SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-16' and '2023-01-20') as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-16' and '2023-01-20') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado' and  fecha between '2023-01-16' and '2023-01-20') as cantCancelaciones
+                        FROM flex
+                            WHERE  fecha between '2023-01-16' and '2023-01-20'
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-09-13][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-13][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,id
+                FROM flex
+                    WHERE tipo='Envío' and  fecha between '2023-01-23' and '2023-01-27'
+                    ORDER BY id DESC
+[2023-09-13][INFO]Ejecutando query: SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-23' and '2023-01-27') as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío' and  fecha between '2023-01-23' and '2023-01-27') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado' and  fecha between '2023-01-23' and '2023-01-27') as cantCancelaciones
+                        FROM flex
+                            WHERE  fecha between '2023-01-23' and '2023-01-27'
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-09-13][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-13][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id,fecha_cancelacion
+                FROM flex
+                    where tipo='Envío'
+                    ORDER BY id DESC
+[2023-09-13][INFO]Ejecutando query: SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío') as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-09-13][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-09-13][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-13][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS

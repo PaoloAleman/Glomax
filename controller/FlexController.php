@@ -25,7 +25,7 @@ class FlexController
         }
 
         if($this->flexModel->editarEnvio($_SESSION["idEnvio"])){
-            header("Location:/flex/listaEnvios");
+            header("Location:/flex/listaEnviosCancelados");
             exit();
         }
 
@@ -46,5 +46,18 @@ class FlexController
             "fechaFinal"=>date("Y-m-d")
         ];
         $this->renderer->render("listaEnvios",$data);
+    }
+
+    public function listaEnviosCancelados(){
+        unset($_SESSION["idEnvio"]);
+        $data=[
+            "envios"=>$this->flexModel->getEnviosCancelados(),
+            "totales"=>$this->flexModel->getTotales(),
+            "destinos"=>$this->flexModel->getDestinos(),
+            "receptores"=>$this->flexModel->getReceptores(),
+            "fechaInicio"=>$this->flexModel->getFechaInicio(),
+            "fechaFinal"=>date("Y-m-d")
+        ];
+        $this->renderer->render("listaEnviosCancelados",$data);
     }
 }

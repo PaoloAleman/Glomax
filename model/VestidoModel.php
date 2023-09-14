@@ -131,7 +131,7 @@ class VestidoModel
 
     public function realizarPago(){
         if(isset($_POST["pagarTodo"])){
-            $datos=$this->getTotales()->fetch_assoc();
+            $datos=$this->getTotales();
             $cantSalidas=$datos["totalSalida"];
             $cantDevoluciones=$datos["totalDevoluciones"];
             $saldoPagado=$datos["totalSaldo"];
@@ -144,7 +144,7 @@ class VestidoModel
                     SET entrada=entrada-salida, salida=0, saldoTotalMercaderia=entrada, saldoTotal=0, fechaPago='$fecha'";
             $this->database->query($sql);
             $sql="UPDATE vestidosDetalle
-                    SET cantidadE=cantidadE-cantidadS, cantidadS=0, totalStock=cantidadE, saldoTotal=0 ";
+                    SET cantidadE=cantidadE-cantidadS, cantidadS=0, totalStock=cantidadE, saldoTotal=0,devoluciones=0 ";
             $this->database->query($sql);
         }
     }
@@ -175,7 +175,7 @@ class VestidoModel
             $this->darDatosDefault($tituloReporte);
             $this->pdf->SetMargins(5, 10, 10);
             $this->pdf->SetFont("Arial","",16);
-            $this->pdf->Cell(196, 5, "Saldo pagado: $". $this->getTotales()->fetch_assoc()["totalSaldo"], 0, 1, "C");
+            $this->pdf->Cell(196, 5, "Saldo pagado: $". $this->getTotales()["totalSaldo"], 0, 1, "C");
             $this->setEspacioVacio();
             $this->setEspacioVacio();
             $this->generarDatosTotales();
@@ -183,51 +183,70 @@ class VestidoModel
             $this->generarTablaDeVestidos($vestidos);
             $this->generarTablaDeDevoluciones();
 
-            $this->pdf->Output('D', $tituloReporte . '.pdf');
+            $this->pdf->Output('I', $tituloReporte . '.pdf');
         }
     }
 
     public function generarDatosTotales(){
-        $this->pdf->Cell(50, 5, "Total de ventas: ". $this->getTotalesVestidosPagados(), 0, 0, "C");
-        $this->pdf->Cell(230, 5, "Saldo salidas: $". $this->getTotales()->fetch_assoc()["totalSaldoSalidas"], 0, 1, "C");
+        $this->pdf->Cell(50, 5, "Total de ventas: ".$this->getTotales()["totalSalida"], 0, 0, "C");
+        $this->pdf->Cell(230, 5, "Saldo salidas: $". $this->getTotales()["totalSaldoSalidas"], 0, 1, "C");
         $this->pdf->Cell(40, 5, "", 0, 1, "C");
         $this->setEspacioVacio();
     }
 
 
     public function getTotales(){
-        $fechaPago=$this->getUltimaFechaDePago();
-        date_default_timezone_set("America/Argentina/Buenos_Aires");
-        $fechaActual=date('Y-m-d');
-        $saldoDev=$this->getSaldoDev();
-        if(isset($_POST["buscar"])){
-            $vestido=$_POST["vestidoBuscado"];
-            $sql="SELECT entrada as totalEntrada, salida as totalSalida,
-                saldoTotalMercaderia as totalStock, saldoTotal as totalSaldo
-                FROM vestido
-                WHERE nombre='$vestido'";
-            return $this->database->query($sql);
-        }else{
-            $sql="SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '$fechaPago' and '$fechaActual' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'$saldoDev' FROM registros WHERE tipo='Salida' and fecha between '$fechaPago' and '$fechaActual' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '$fechaPago' and '$fechaActual' ) as totalSaldoDev
-                FROM vestido";
-            return $this->database->query($sql);
-        }
+        $datos=[
+            "totalEntrada"=>$this->getTotalEntradas(),
+            "totalSalida"=>$this->getTotalSalidas(),
+            "totalDevoluciones"=>$this->getTotalDevoluciones(),
+            "totalSaldoSalidas"=>$this->getTotalSaldoSalidas(),
+            "totalSaldoDev"=>$this->getTotalSaldoDevoluciones(),
+            "totalSaldo"=>$this->getTotalSaldo(),
+            "totalStock"=>$this->getTotalStock()
+        ];
+        return $datos;
     }
 
-    public function getSaldoDev(){
-        $fechaPago=$this->getUltimaFechaDePago();
-        date_default_timezone_set("America/Argentina/Buenos_Aires");
-        $fechaActual=date('Y-m-d');
-        $sql="SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '$fechaPago' and '$fechaActual' ";
-        return $this->database->query($sql)->fetch_assoc()["saldoDev"];
+
+    public function getTotalEntradas(){
+        $sql="SELECT SUM(entrada) as totalEntrada
+                FROM vestido";
+        return $this->database->query($sql)->fetch_assoc()["totalEntrada"];
     }
+    public function getTotalStock(){
+        $sql="SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido";
+        return $this->database->query($sql)->fetch_assoc()["totalStock"];
+    }
+    public function getTotalDevoluciones(){
+        $sql="SELECT COUNT(id) as totalDevoluciones
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false";
+        return $this->database->query($sql)->fetch_assoc()["totalDevoluciones"];
+    }
+    public function getTotalSalidas(){
+        $sql="SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE tipo='Salida' and pagado=false";
+        return $this->database->query($sql)->fetch_assoc()["totalSalida"];
+    }
+    public function getTotalSaldoSalidas(){
+        $sql="SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and pagado=false";
+        return $this->database->query($sql)->fetch_assoc()["totalSaldoSalidas"];
+    }
+    public function getTotalSaldoDevoluciones(){
+        $sql="SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false";
+        return $this->database->query($sql)->fetch_assoc()["totalSaldoDev"];
+    }
+    public function getTotalSaldo(){
+        return $this->getTotalSaldoSalidas()-$this->getTotalSaldoDevoluciones();
+    }
+
 
     public function generarTablaDeVestidos($vestidos){
         $this->generarEncabezadosDeTablas();
@@ -266,7 +285,7 @@ class VestidoModel
         $this->setEspacioVacio();
         $this->pdf->SetFont("Arial","",16);
         $this->pdf->Cell(50, 5, "Total de devoluciones: ". $this->getContadorDevoluciones(), 0, 0, "C");
-        $this->pdf->Cell(210, 5, "Saldo devoluciones: $". $this->getTotales()->fetch_assoc()["totalSaldoDev"], 0, 1, "C");
+        $this->pdf->Cell(210, 5, "Saldo devoluciones: $". $this->getTotales()["totalSaldoDev"], 0, 1, "C");
 
         $this->pdf->SetMargins(5, 10, 10);
         $this->setEspacioVacio();

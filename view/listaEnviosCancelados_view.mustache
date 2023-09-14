@@ -1,7 +1,8 @@
 {{>headerFlex}}
 <main id="main" class="pt-10 pb-20 pl-4 pr-4">
-    <a href="/flex/listaEnvios" class="mx-auto border border-[#B1AC33] lg:w-[300px] lg:h-[100px] w-[210px] h-[80px]
-           flex items-center justify-center border border-2 rounded-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] text-[#B1AC33] lg:text-4xl text-2xl ">Envíos</a>
+    <a href="/flex/listaEnviosCancelados" class="mx-auto border border-[#B1AC33] lg:w-[340px] lg:h-[100px] w-[210px] h-[80px]
+           flex items-center justify-center border border-2 rounded-3xl hover:bg-[#B1AC33]
+           hover:text-black hover:border-[#2E2C02] text-[#B1AC33] lg:text-4xl text-2xl ">Envíos cancelados</a>
     <div class="mx-auto lg:mt-20 mt-10 flex justify-center flex-wrap">
         <button class="w-[80%] lg:h-[80px] h-[45px] border border-2 border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-3xl text-2xl
             hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]" id="mostrarTable">Obtener totales</button>
@@ -108,12 +109,13 @@
                 <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Destino</th>
                 <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">Cuenta</th>
                 <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">CABA</th>
+                <th class="text-[#B1AC33] lg:text-3xl text-2xl p-4 border border-[#B1AC33]">F. Cancelado</th>
             </tr>
             {{#envios}}
                 <tr class="border border-[#79762D]">
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33] font-bold">{{fecha}}</td>
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{dia}}</td>
-                    <td class="text-[#B1AC33] lg:text-2xl text-xl p-4 border border-[#B1AC33] font-bold
+                    <td class="lg:text-2xl text-xl p-4 border border-[#B1AC33] font-bold bg-[#{{devuelto}}]
                     hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">
                         <form action="/flex/editarEnvio" method="get">
                             <button type="submit" value="{{id}}" name="idEnvio" class="w-[100%] h-[100%]">{{receptor}}</button>
@@ -122,6 +124,7 @@
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{destino}}</td>
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{cuenta}}</td>
                     <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{es_caba}}</td>
+                    <td class="text-[#B1AC33] lg:text-2xl text-xl text-center p-4 border border-[#B1AC33]">{{fecha_cancelacion}}</td>
                 </tr>
             {{/envios}}
         </table>

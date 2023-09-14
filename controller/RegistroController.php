@@ -22,6 +22,13 @@ class RegistroController
         $this->renderer->render("agregarEntrada");
     }
 
+    public function realizarDevolucion(){
+        $data=[
+            "alert"=>$this->registroModel->realizarDevolucion()
+        ];
+        $this->renderer->render("realizarDevolucion",$data);
+    }
+
     public function historialSalidas(){
         $this->registroModel->eliminarRegistro();
         $data=[
@@ -40,10 +47,12 @@ class RegistroController
         $this->renderer->render("historialEntradas",$data);
     }
 
-    public function realizarDevolucion(){
+    public function historialDevoluciones(){
+        $this->registroModel->eliminarRegistro();
         $data=[
-            "alert"=>$this->registroModel->realizarDevolucion()
+            "historial"=>$this->registroModel->getHistorialDevoluciones(),
+            "tipo"=>"Devoluciones"
         ];
-        $this->renderer->render("realizarDevolucion",$data);
+        $this->renderer->render("historialDevoluciones",$data);
     }
 }

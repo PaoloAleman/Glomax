@@ -1,0 +1,391 @@
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and devolucion=false and fecha between '2023-08-12' and '2023-08-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-08-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-08-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(devoluciones) as totalDevoluciones
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros r
+                    WHERE tipo='Salida' and devolucion=false
+                    ORDER BY r.id DESC
+[2023-08-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and devolucion=false and fecha between '2023-08-12' and '2023-08-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-08-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-08-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(devoluciones) as totalDevoluciones
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-28][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(devoluciones) as totalDevoluciones
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: INSERT INTO historialPagos(cantidadSalidas,cantidadDevoluciones,saldoPagado,fechaPagada)
+                    VALUES ('13','5','28120','2023-08-28')
+[2023-08-28][INFO]Ejecutando query: UPDATE vestido
+                    SET entrada=entrada-salida, salida=0, saldoTotalMercaderia=entrada, saldoTotal=0, fechaPago='2023-08-28'
+[2023-08-28][INFO]Ejecutando query: UPDATE vestidosDetalle
+                    SET cantidadE=cantidadE-cantidadS, cantidadS=0, totalStock=cantidadE, saldoTotal=0 
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and devolucion=false and fecha between '2023-08-12' and '2023-08-28'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(devoluciones) as totalDevoluciones
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(devoluciones) as totalDevoluciones
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT * 
+                FROM registros
+                    WHERE tipo='Devolución' and  fecha_devolucion between '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT count(*) as contador
+                FROM registros
+                    WHERE tipo='Devolución' and  fecha_devolucion between '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(devoluciones) as totalDevoluciones
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-08-28][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(devoluciones) as totalDevoluciones
+                FROM vestido
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and fecha BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-08-28'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and fecha_devolucion BETWEEN '2023-08-19' and '2023-08-28'
+[2023-08-28][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido

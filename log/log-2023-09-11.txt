@@ -1,0 +1,180 @@
+[2023-09-11][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-09-11'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-09-11][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and devolucion=false and fecha between '2023-09-04' and '2023-09-11'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-09-11][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-09-11][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-09-11][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT COUNT(id) as totalDevoluciones
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-09-11][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-11][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-11][INFO]Ejecutando query: SELECT *
+                FROM registros 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and tipo='Salida'
+                                and talle_vestido='M' and cantidad='1' and devolucion=false
+                                ORDER BY fecha LIMIT 1
+[2023-09-11][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-09-11][INFO]Ejecutando query: UPDATE registros 
+                    SET devolucion=true 
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro '
+                                and talle_vestido='M' and cantidad='1'
+                                ORDER BY id LIMIT 1
+[2023-09-11][INFO]Ejecutando query: UPDATE vestidosDetalle 
+                        SET cantidadS=cantidadS-'1',
+                            totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
+                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='M'
+[2023-09-11][INFO]Ejecutando query: UPDATE vestido
+                        SET salida=salida-'1', devoluciones=devoluciones+'1',
+                            saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
+                        WHERE nombre='Vestido Starples'
+[2023-09-11][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,tipo,cantidad,fecha,fecha_devolucion,precio)
+                            VALUES('Vestido Starples','M','Negro','Devolución','1','2023-08-17','2023-09-11','3310')
+[2023-09-11][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-11][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-09-11'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-09-11][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and devolucion=false and fecha between '2023-09-04' and '2023-09-11'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-09-11][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-09-11][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-09-11][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT COUNT(id) as totalDevoluciones
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-09-11][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-09-11][INFO]Ejecutando query: SELECT fechaPagada
+                FROM historialPagos
+                    WHERE fechaPagada!='2023-09-11'
+                    ORDER BY fechaPagada DESC LIMIT 1 
+[2023-09-11][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
+                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
+                FROM registros
+                WHERE tipo='Salida' and devolucion=false and fecha between '2023-09-04' and '2023-09-11'
+                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
+[2023-09-11][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-09-11][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
+                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
+                FROM vestido
+                ORDER BY id
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada
+                FROM vestido
+[2023-09-11][INFO]Ejecutando query: SELECT COUNT(id) as totalSalida
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT COUNT(id) as totalDevoluciones
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoSalidas
+                FROM registros
+                WHERE tipo='Salida' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(cantidad*precio) as totalSaldoDev
+                FROM registros
+                WHERE tipo='Devolución' and pagado=false
+[2023-09-11][INFO]Ejecutando query: SELECT SUM(saldoTotalMercaderia) as totalStock
+                FROM vestido
+[2023-09-11][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-09-11][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS

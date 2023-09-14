@@ -16,8 +16,13 @@
                         </div>
                         <div class="w-[90%] flex flex-col gap-4 mb-8">
                             <label for="esCaba" class="text-3xl text-[#B1AC33]">¿Es CABA?</label>
-                            <input name="esCaba" type="text" class="w-[100%] lg:h-[60px] h-[40px] bg-black
-                            border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{es_caba}}" required>
+                            <select name="esCaba" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                                border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl">
+                                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
+                                    hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] ">¿Es CABA?</option>
+                                <option value="CABA" class="text-[#B1AC33] h-[30px] w-[300px]">Sí</option>
+                                <option value="" class="text-[#B1AC33] h-[30px] w-[300px]">No</option>
+                            </select>
                         </div>
                 </div>
 
@@ -52,13 +57,23 @@
                     </div>
                     <div class="w-[90%] flex flex-col gap-4 mb-8">
                         <label for="tipo" class="text-3xl text-[#B1AC33]">Tipo</label>
-                        <input name="tipo" type="text" class="w-[100%] lg:h-[60px] h-[40px] bg-black
-                            border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl" value="{{tipo}}" required>
+                        <select name="tipo" class="w-[100%] lg:h-[60px] h-[40px] bg-black
+                        border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl">
+                            <option value="Envío" class="text-[#B1AC33] h-[30px] w-[300px]">Envío</option>
+                            <option value="Cancelado" class="text-[#B1AC33] h-[30px] w-[300px]">Cancelado</option>
+                        </select>
                     </div>
                 </div>
             </div>
         {{/vestido}}
-        <div class="flex justify-center mt-10">
+        <div class="flex justify-around mt-10">
+            <select name="devuelto" class="w-[27%] lg:h-[60px] h-[40px] bg-black
+                        border border-[#B1AC33] text-[#B1AC33] py-2 lg:text-2xl text-xl pl-4 rounded-3xl">
+                <option disabled selected hidden class="text-[#B1AC33] h-[30px] w-[300px]
+                            hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02] ">¿Fue devuelto?</option>
+                <option value="C4E499" class="text-[#B1AC33] h-[30px] w-[300px]">Sí</option>
+                <option value="FF4F76" class="text-[#B1AC33] h-[30px] w-[300px]">No</option>
+            </select>
             <input type="submit" name="editarEnvio" value="Editar"
                    class="border border-[#B1AC33] rounded-3xl w-[230px] h-[80px] text-[#B1AC33] text-3xl hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">
         </div>

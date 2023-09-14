@@ -1,0 +1,281 @@
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT cantidadSalidas,cantidadDevoluciones, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
+                FROM historialPagos
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Tapado Roma' and talle_vestido='U' and color_vestido='Violeta Oscuro'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Gretta' and talle_vestido='L' and color_vestido='Gris'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido corto Dhara' and talle_vestido='M' and color_vestido='Gris'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido corto Dhara'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Remeron Fiorella' and talle_vestido='S' and color_vestido='Negro'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Remeron Fiorella'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Gretta' and talle_vestido='M' and color_vestido='Francia'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Starples' and talle_vestido='L' and color_vestido='Negro'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Starples' and talle_vestido='XL' and color_vestido='Rojo'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Starples' and talle_vestido='XXL' and color_vestido='Camel'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Gretta' and talle_vestido='S' and color_vestido='Negro'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Gretta'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Vestido Starples' and talle_vestido='XL' and color_vestido='Marron'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Vestido Starples'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Tapado Anezka' and talle_vestido='XXL' and color_vestido='Beige'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Poncho en Picos Yamilet' and talle_vestido='XL' and color_vestido='Negro'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Poncho en Picos Yamilet'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT totalStock
+                FROM vestidosDetalle
+                    WHERE nombre_vestido='Tapado Anezka' and talle_vestido='XXL' and color_vestido='Camel'
+[2023-08-08][INFO]Ejecutando query: SELECT precio
+                FROM vestido
+                WHERE nombre='Tapado Anezka'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT *
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                WHERE nombre='Tapado Roma'
+[2023-08-08][INFO]Ejecutando query: SELECT SUM(cantidadE) as totalEntrada, SUM(cantidadS) as totalSalida,
+                SUM(totalStock) as totalStock, SUM(saldoTotal) as saldoTotal
+                FROM vestidosDetalle
+                WHERE nombre_vestido='Tapado Roma'
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-08][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-08][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-08][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-08][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-08][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-08][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-08][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS

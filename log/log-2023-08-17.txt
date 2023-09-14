@@ -1,0 +1,2575 @@
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-02','Lunes','Alejandra Ramos','Tigre','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-02-01','Miércoles','Angela Acosta','Barracas','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-02-01','Miércoles','Erica Cano','Constitución','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-02-01','Miércoles','Marcela Panoroni','Quilmes','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-02-01','Miércoles','María Virginia Gugger','San Miguel','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-02-01','Miércoles','María Ayala','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-02-01','Miércoles','Nora Beatriz Martinez','San Miguel','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-02-01','Miércoles','Lucía Catalina Geraldi','Moreno','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT *
+                FROM flex
+                    WHERE id='1'
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT *
+                FROM flex
+                    WHERE id='1'
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT *
+                FROM flex
+                    WHERE id='1'
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-01','Domingo','Ayelen Grikardt','Gonzalez Catan','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-02','Lunes','Patricia Aguero','Parque Patricios','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-02','Lunes','Nancy Rodriguez','Florencio Varela','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-02','Lunes','María Cantero','San Bernardo','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-02','Lunes','Lucas Gomez','Almirante Brown','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-02','Lunes','Natalia Gomez','Villa Urquiza','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-03','Martes','Gabriela Quinteros','Cañitas','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-03','Martes','Melina Littera','Parque Chas','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-03','Martes','Graciela Ardriux','Mataderos','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-03','Martes','Morales Hernandez ','Ituzaingó','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-03','Martes','Claudia Alejandra','Gonzalez Catan','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Gisela Gonzalez','San Miguel','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Lorena Demi','Saavedra','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Graciela Cavetto','Buenos Aires','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Laura Vilar','Lanús','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Teresa E Rivero','Avellaneda','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Zaida Batesta','Tigre','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Johana Amachea','Esteban Echeverría','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Maida Alejandra','Palermo','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Victoria Garo','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Susana A Del Valle','Flores','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Julieta Andrea Paz','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Teresa Elsa Rivero','Belgrano','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Ayelen Gonzalez','Belgrano','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Carmen Burqueño','Ituzaingó','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-04','Miércoles','Norma Dolores','Balvanera','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Charomari Suawt','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Melli Adriana','Villa Pueyrredon','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Lidia Vega','Vicente López','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Selena Bruttz','Belgrano','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Elizabeth Burgos ','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Barbara Nochelson','Parque Chas','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Cluadia Grover','Caballito','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Silvia Dolores Pacheco','Retiro','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-05','Jueves','Victoria Penillo','San Martín','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-06','Viernes','Cinthia Santino','Lanús','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-06','Viernes','Gabriela Drocina','Florencio Varela','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-06','Viernes','Noelia Porra','Tres de Febrero','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-06','Viernes','Luciana Carnack','Morón','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-06','Viernes','Julieta Honrales','Villa Crespo','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-07','Sábado','Isabel Cruz','Parque Chacabuco','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Adriana Rosa Solis','Palermo','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Nigarson Maria Luisa','Ramos Mejía','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Rosa Rojas','Lomas del Mirador','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Beli Adriana','Villa Pueyrredon','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Melina Rey','Almirante Brown','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Carla Paola Aquino','Recoleta','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Sergio Alarcón','Balvanera','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Moro Rodriguez','Lanús','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Anita Palombo','Villa Devoto','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Lara Pinki','San Isidro','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Elsa Díaz','Aldo Bonzi','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Paola Gandulfo','Villa Luro','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Matías Pengue','Vicente López','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Carolina Fogiliani','Almagro','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Virginia Necoli','Villa Soldati','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Isabel Fernandez','Parque Chacabuco','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Ana A Libertadores','Florencio Varela','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-09','Lunes','Javier Martínez','San Martín','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-10','Martes','Paola Gandulfo','Villa Luro','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-10','Martes','Nenda Claudia','Almiran','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT *
+                FROM flex
+                    WHERE id='69'
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT *
+                FROM flex
+                    WHERE id='69'
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: UPDATE flex
+                        SET receptor='Nenda Claudia',destino='Almirante Brown', fecha='2023-01-10', dia='Martes',
+                                cuenta='Papá', es_caba=' ', precio='3000', tipo='Envío'
+                                WHERE id='69'
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-10','Martes','Patricia Suarez','Lanús','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-10','Martes','Luis María Marbel','Villa Devoto','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-10','Martes','Luis María Marbel','Villa Devoto','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-10','Martes','María Cascio','San Martín','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-10','Martes','José Solozabal','Ramos Mejía','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-10','Martes','Rosario Bagnato','Lanús','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-11','Miércoles','Diego Dewinge','Quilmes','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-11','Miércoles','Marcelo Fancioni','Morón','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-11','Miércoles','Eva Lucero','Florencio Varela','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-11','Miércoles','Mariana Gómez','Tres de Febrero','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-11','Miércoles','Lucía Cortés','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-11','Miércoles','Luciana Cartañes','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-11','Miércoles','Amalia Propato','Parque Chas','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-11','Miércoles','Gisela Biosco','Villa Pueyrredon','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-12','Jueves','Fernandez Miriam','Lanús','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-12','Jueves','Victoria Dileon','Floresta','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-12','Jueves','María Victoria Gambaldi','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-12','Jueves','Karina Mureato','Parque Chacabuco','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-12','Jueves','Elsa Gomez','Berazategui','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-12','Jueves','María Paula Corredera','Tres de Febrero','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-13','Viernes','Soraya Moralés','Lomas de Zamora','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-13','Viernes','Soraya Moralés','Lomas de Zamora','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-13','Viernes','Paula Petrinillo','Villa Urquiza','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-13','Viernes','Josefino Beltrán','Merlo','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-13','Viernes','Cecilia Cordello','Centro','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-13','Viernes','Nancy Cantro','Lomas de Zamora','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-13','Viernes','Silvana Vergara','Nuñez','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','Gabriela Antonic','San Nicolás','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','Valeria Fernandez','Villa del Parque','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','Andrés Ortiz','San Martín','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT *
+                FROM flex
+                    WHERE id='99'
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: UPDATE flex
+                        SET receptor='Andrés Ortiz',destino='San Martín', fecha='2023-01-16', dia='Lunes',
+                                cuenta='Papá', es_caba='', precio='2800', tipo='Envío'
+                                WHERE id='99'
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','Ana María','Ezeiza','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','Eduardo Civiole','Villa del Parque','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','María de la Mercedes','Lomas de Zamora','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','Gabriela Aulobea','Palermo','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','Graciela Scaramal','Caballito','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-16','Lunes','María Álvarez','Ituzaingó','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Cristina Isabel ','Saavedra','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Gloria Fontana','San Cristobal','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Merlo Natalia','Merlo','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Gladys Ramirez','Parque Avellaneda','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Stella Maris Gomez','Villa Real','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Gonzalo Cason ','Vicente López','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Leonarda Alberto Ruiz','Florencio Varela','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Alicia Achur','Caballito','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Magui Andrea ','Almirante Brown','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Susana Alvarez','Quilmes','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Carolina Garcia','Retiro','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-17','Martes','Martina Dineo','San Isidro','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','Leonardo Carlene','Flores','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','Claudia Monotti','Ituzaingó','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','Nelida','Merlo','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','Ariel de Pietro','Morón','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','María Marta Fiori','Esteban Echeverría','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','María Zambrano','Liniers','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','Patricia Romero','Flores','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','Eugenia Zenon','San Isidro','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','Marisa Ramirez','Villa Soldati','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-18','Miércoles','Esteban ','Vicente López','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-19','Jueves','Marcelo P Alegre','Vicente López','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-19','Jueves','Sandra Romero','Tres de Febrero','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-19','Jueves','Cecilia Zaldivar','Capital','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-19','Jueves','Lorena Solozaber','Ramos Mejía','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-20','Viernes','Lucía ','Quilmes','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-20','Viernes','Valeria Gomez','Merlo','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-20','Viernes','Rocío Rodriguez','Palermo','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-20','Viernes','Celeste ','Almirante Brown','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-20','Viernes','Yanina Gomez','Avellaneda','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Viviana Blanchetto','Capital','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Maricolly Josefina Villar','Almagro','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','María del Carmen Perez','Colegiales','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Rogel Moreti','San Martín','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Andrea Segovia','Casanova','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','María Luján','Almirante Brown','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','María Ponce','Villa Lugano','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Gabriela Troncoso','Quilmes','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Elva Sanfelice','Recoleta','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','María Soledad','Morón','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Graciela Hobulica','Palermo','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Nagle Roxana','Almirante Brown','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Elvira Arce','Capital','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-23','Lunes','Osvaldo Camodeca','Hurlinghan','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-24','Martes','Norma Quintana ','Lanús','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-24','Martes','Laila Perez','Almirante Brown','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-24','Martes','Adriana Blancheti','Capital','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-24','Martes','Andrea Andreu','Aldo Bonzi','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-24','Martes','Florencia Figun','Recoleta','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-25','Miércoles','Leonardo Bataglia','Devoto','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-25','Miércoles','Patricia Rusiti','Merlo','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-25','Miércoles','Luciana Roldan','Quilmes','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-25','Miércoles','Madelaine','San Miguel','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-25','Miércoles','Victoria Di leo','Floresta','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-25','Miércoles','Stella María','Nuñez','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-25','Miércoles','Montenegro Jose Luis','Hurlinghan','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT *
+                FROM flex
+                    WHERE id='161'
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: UPDATE flex
+                        SET receptor='Stella María',destino='Liniers', fecha='2023-01-25', dia='Miércoles',
+                                cuenta='Papá', es_caba='CABA', precio='2800', tipo='Envío'
+                                WHERE id='161'
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-26','Jueves','Ramona Muñoz','Belgrano','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-26','Jueves','Melina Ruiz','Quilmes','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-26','Jueves','Patricia Espinola','Tigre','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-26','Jueves','Susana Hernandez','Rafael Castillo','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-26','Jueves','Rodrigo Hernandez ','Nueva Pompeya','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-26','Jueves','Mirtha Noemi Valdez','Colegiales','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-26','Jueves','Verónica Szilick','Caballito','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-26','Jueves','Liliana Martin','Moreno','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-27','Viernes','Osvaldo','La Tablada','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-27','Viernes','María Baronel','Buenos Aires','Mamá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-27','Viernes','Gisela Marquez','Lomas de Zamora','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-27','Viernes','Moscardi Monica','Ituzaingó','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-27','Viernes','María Traversa','San Isidro','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-30','Lunes','María Roncero','Lomas de Zamora','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-30','Lunes','María Mercado','Tigre','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-30','Lunes','Domingo Palacios','Tigre','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-30','Lunes','Yolanda Aranda','Villa Lugano','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-30','Lunes','Gustavo Figueroa','Villa Soldati','Papá','CABA',2800.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-30','Lunes','Liliana Borgogia','Lomas de Zamora','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-31','Martes','Agustín Arias','Virrey del Pino','Mamá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: INSERT INTO flex(fecha,dia,receptor,destino,cuenta,es_caba,precio,tipo) 
+                        VALUES('2023-01-31','Martes','Aguilera Mariana','Moreno','Papá',' ',3000.0,'Envío')
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS
+[2023-08-17][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-17][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-17][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-17][INFO]Ejecutando query: SELECT nombre
+                FROM vestido
+                ORDER BY nombre
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+[2023-08-17][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
+                FROM vestidosDetalle
+                WHERE cantidadE>cantidadS

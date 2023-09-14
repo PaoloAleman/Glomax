@@ -27,10 +27,6 @@ class FlexModel
             $alerta=[
                 "mensaje"=>"¡Envío agregado correctamente!"
             ];
-        }else{
-            $alerta=[
-                "mensaje"=>"¡No se pudo agregar este envío!"
-            ];
         }
         return $alerta ?? null;
     }
@@ -52,39 +48,59 @@ class FlexModel
             $esCaba=$_POST["esCaba"];
             $precio=$_POST["precio"];
             $tipo=$_POST["tipo"];
-            if(strtolower($tipo)=="cancelado"){
-                $sql="UPDATE flex
-                        SET receptor='$receptor',destino='$destino', fecha='$fecha', dia='$dia',
-                                cuenta='$cuenta', es_caba='$esCaba', precio='$precio'*-1, tipo='$tipo'
-                                WHERE id='$id'";
-            }else{
-                $sql="UPDATE flex
-                        SET receptor='$receptor',destino='$destino', fecha='$fecha', dia='$dia',
-                                cuenta='$cuenta', es_caba='$esCaba', precio='$precio', tipo='$tipo'
-                                WHERE id='$id'";
-            }
+            $devuelto=$_POST["devuelto"];
+            $sql="UPDATE flex
+                    SET receptor='$receptor',destino='$destino', fecha='$fecha', dia='$dia',
+                            cuenta='$cuenta', es_caba='$esCaba', precio='$precio', tipo='$tipo',
+                                fecha_cancelacion='$fecha',devuelto='$devuelto'
+                        WHERE id='$id'";
             $this->database->query($sql);
             return true;
         }else{
             return false;
         }
     }
+    /*
+     * Teresa Rivero 4/1. Fecha cancelación:4/1
+Ayelen. Gonzalez Catan 2/1
+Teresa Elsa Rivero 4/1
+Cancelados: Otra casilla donde dice "Pedir paquete" y otra que dice "Entregado"
+Javier Martínez 9/1
+Karina Mureato 12/1
+Marcelo P Alegre 19/1
+Gabriela Troncoso 23/1*/
 
     public function getEnvios(){
         if(isset($_POST["filtrar"])){
             $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
-                    destino,cuenta,es_caba,tipo,id
+                    destino,cuenta,es_caba,id
                 FROM flex
-                    WHERE ".$this->filtrarPor()."
+                    WHERE tipo='Envío' and ".$this->filtrarPor()."
                     ORDER BY id DESC";
         }else{
             $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
-                    destino,cuenta,es_caba,tipo,id
+                    destino,cuenta,es_caba,tipo,id,fecha_cancelacion
                 FROM flex
+                    where tipo='Envío'
                     ORDER BY id DESC";
         }
         return $this->database->query($sql);
-
+    }
+    public function getEnviosCancelados(){
+        if(isset($_POST["filtrar"])){
+            $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,devuelto,id,DATE_FORMAT(fecha_cancelacion,'%d-%m')
+                FROM flex
+                    WHERE tipo='Cancelado' and ".$this->filtrarPor()."
+                    ORDER BY id DESC";
+        }else{
+            $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,devuelto,id,DATE_FORMAT(fecha_cancelacion,'%d-%m') as fecha_cancelacion
+                FROM flex
+                    WHERE tipo='Cancelado'
+                    ORDER BY id DESC";
+        }
+        return $this->database->query($sql);
     }
 
     public function getFecha(){
@@ -95,13 +111,13 @@ class FlexModel
 
     public function getTotales(){
         if(isset($_POST["filtrar"])){
-            $sql="SELECT SUM(precio) as saldoTotal,
+            $sql="SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío' and ".$this->filtrarPor().") as saldoTotal,
                     (SELECT count(id) FROM flex WHERE tipo='Envío' and ". $this->filtrarPor().") as cantEnvios,
                         (SELECT count(id) FROM flex WHERE tipo='Cancelado' and ".$this->filtrarPor().") as cantCancelaciones
                         FROM flex
                             WHERE ".$this->filtrarPor();
         }else{
-            $sql="SELECT SUM(precio) as saldoTotal,
+            $sql="SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío') as saldoTotal,
                     (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
                         (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
                         FROM flex";
@@ -169,4 +185,5 @@ class FlexModel
                     ORDER BY fecha LIMIT 1";
         return $this->database->query($sql)->fetch_assoc()["fecha"] ?? null;
     }
+
 }
