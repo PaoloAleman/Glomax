@@ -23,9 +23,14 @@
         </div>
     </div>
 
-    <div class="mt-20">
-        <button class="w-[15%] lg:h-[65px] h-[45px] border border-2 border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-3xl text-2xl
+        <div class="mt-20 flex justify-around items-center">
+            <button class="w-[15%] lg:h-[65px] h-[45px] border border-2 border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-3xl text-2xl
             hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]" id="mostrarFiltros">Filtros</button>
+            <form action="/flex/listaEnvios" method="post">
+                <input type="submit" value="Generar PDF" name="generarPDF" class="w-[118%] lg:h-[65px] h-[45px] border border-2 border-[#B1AC33] rounded-3xl text-[#B1AC33] lg:text-3xl text-2xl
+                        hover:bg-[#B1AC33] hover:text-black hover:border-[#2E2C02]">
+            </form>
+        </div>
         <div id="popUpFiltros" class="hidden w-[70%] bg-black border border-[#B1AC33] rounded-3xl fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 p-10">
             <form action="/flex/listaEnvios" method="post" class="flex flex-col items-center gap-14">
                 <div class="grid grid-rows-3 gap-8">
@@ -98,7 +103,6 @@
             </form>
             <button class="absolute right-4 top-4" id="cerrarPopUp"><img src="/public/iconos/cerrar.png" class="lg:w-[40px] w-[30px]"></button>
         </div>
-    </div>
     <div class="mx-auto lg:mt-20 mt-10 lg:w-[100%] w-[100%] overflow-x-auto">
         <table class="border border-[#B1AC33] lg:mx-auto w-[100%]" >
             <tr class="border border-[#B1AC33]">

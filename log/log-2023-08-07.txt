@@ -1,155 +1,3 @@
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT cantidadSalidas, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
-                FROM historialPagos
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT cantidadSalidas, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
-                FROM historialPagos
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT cantidadSalidas, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
-                FROM historialPagos
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT cantidadSalidas, saldoPagado, DATE_FORMAT(fechaPagada,'%d-%m-%Y') as fechaPagada
-                FROM historialPagos
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
-[2023-08-07][INFO]Ejecutando query: SELECT nombre
-                FROM vestido
-                ORDER BY nombre
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-[2023-08-07][INFO]Ejecutando query: SELECT nombre_vestido, talle_vestido, color_vestido
-                FROM vestidosDetalle
-                WHERE cantidadE>cantidadS
 [2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
                 FROM historialPagos
                     WHERE fechaPagada!='2023-08-07'
@@ -171,157 +19,9 @@
                 FROM historialPagos
                     WHERE fechaPagada!='2023-08-07'
                     ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
 [2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
-                FROM vestido
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
-                FROM vestido
-[2023-08-07][INFO]Ejecutando query: INSERT INTO historialPagos(cantidadSalidas,cantidadDevoluciones,saldoPagado,fechaPagada)
-                    VALUES ('25','8','62665','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                    SET entrada=entrada-salida, salida=0, saldoTotalMercaderia=entrada, saldoTotal=0, fechaPago='2023-08-07'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                    SET cantidadE=cantidadE-cantidadS, cantidadS=0, totalStock=cantidadE, saldoTotal=0 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
-                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
-                FROM registros
-                WHERE tipo='Salida' and devolucion=false and fecha between '2023-07-29' and '2023-08-07'
-                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
-                FROM vestido
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT count(id) as cantidad
-                FROM registros
-                WHERE tipo='Salida' and devolucion=false and fecha between '2023-07-29' and '2023-08-07'
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
-                FROM vestido
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT * 
-                FROM registros
-                    WHERE tipo='Devolución' and  fecha_devolucion between '2023-07-29' and '2023-08-07'
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT count(*) as contador
-                FROM registros
-                    WHERE tipo='Devolución' and  fecha_devolucion between '2023-07-29' and '2023-08-07'
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
-                FROM vestido
-[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
-                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
-                FROM vestido
-                ORDER BY id
-[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
-                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
-                FROM vestido
-                ORDER BY id
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
+                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
+                SUM(saldoTotalMercaderia) as totalStock, SUM(saldoTotal) as totalSaldo
                 FROM vestido
 [2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
                 FROM historialPagos
@@ -355,215 +55,246 @@
                     (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
                 SUM(saldoTotalMercaderia) as totalStock, 
                 (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
+                (SELECT SUM(precio)-'' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
                 (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
                 FROM vestido
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Tapado Roma','U','Violeta Oscuro','3780','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3780'
-                        WHERE nombre_vestido='Tapado Roma' and color_vestido='Violeta Oscuro' and talle_vestido='U'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Tapado Roma'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido Gretta','L','Gris','2980','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'2980'
-                        WHERE nombre_vestido='Vestido Gretta' and color_vestido='Gris' and talle_vestido='L'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido Gretta'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido corto Dhara','M','Gris','2730','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'2730'
-                        WHERE nombre_vestido='Vestido corto Dhara' and color_vestido='Gris' and talle_vestido='M'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido corto Dhara'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido Remeron Fiorella','S','Negro','3550','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3550'
-                        WHERE nombre_vestido='Vestido Remeron Fiorella' and color_vestido='Negro' and talle_vestido='S'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido Remeron Fiorella'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido Gretta','M','Francia','2980','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'2980'
-                        WHERE nombre_vestido='Vestido Gretta' and color_vestido='Francia' and talle_vestido='M'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido Gretta'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido Starples','L','Negro','3310','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
-                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Negro' and talle_vestido='L'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido Starples'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido Starples','XL','Rojo','3310','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
-                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Rojo' and talle_vestido='XL'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido Starples'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido Starples','XXL','Camel','3310','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
-                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Camel' and talle_vestido='XXL'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido Starples'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido Gretta','S','Negro','2980','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'2980'
-                        WHERE nombre_vestido='Vestido Gretta' and color_vestido='Negro' and talle_vestido='S'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido Gretta'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Vestido Starples','XL','Marron','3310','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'3310'
-                        WHERE nombre_vestido='Vestido Starples' and color_vestido='Marron' and talle_vestido='XL'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Vestido Starples'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Tapado Anezka','XXL','Beige','4250','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'4250'
-                        WHERE nombre_vestido='Tapado Anezka' and color_vestido='Beige' and talle_vestido='XXL'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Tapado Anezka'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Poncho en Picos Yamilet','XL','Negro','4225','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'4225'
-                        WHERE nombre_vestido='Poncho en Picos Yamilet' and color_vestido='Negro' and talle_vestido='XL'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Poncho en Picos Yamilet'
-[2023-08-07][INFO]Ejecutando query: INSERT INTO registros(nombre_vestido,talle_vestido,color_vestido,precio,tipo,cantidad,fecha)
-                            VALUES('Tapado Anezka','XXL','Camel','4250','Salida','1','2023-08-07')
-[2023-08-07][INFO]Ejecutando query: UPDATE vestidosDetalle
-                        SET cantidadS=cantidadS+'1',totalStock=cantidadE-cantidadS, saldoTotal=cantidadS*'4250'
-                        WHERE nombre_vestido='Tapado Anezka' and color_vestido='Camel' and talle_vestido='XXL'
-[2023-08-07][INFO]Ejecutando query: UPDATE vestido
-                        SET salida=salida+'1',saldoTotalMercaderia=entrada-salida, saldoTotal=salida*precio
-                        WHERE nombre='Tapado Anezka'
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
-                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
-                FROM registros
-                WHERE tipo='Salida' and devolucion=false and fecha between '2023-07-29' and '2023-08-07'
-                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
-[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
-                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
-                FROM vestido
-                ORDER BY id
-[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
-                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
-                FROM vestido
-                ORDER BY id
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
-                FROM vestido
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
-                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
-                FROM registros
-                WHERE tipo='Salida' and devolucion=false and fecha between '2023-07-29' and '2023-08-07'
-                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
-[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
-                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
-                FROM vestido
-                ORDER BY id
-[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
-                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
-                FROM vestido
-                ORDER BY id
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
-                FROM vestido
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT id, nombre_vestido, talle_vestido, color_vestido, tipo,
-                    cantidad, DATE_FORMAT(fecha,'%d-%m-%Y') as fecha
-                FROM registros
-                WHERE tipo='Salida' and devolucion=false and fecha between '2023-07-29' and '2023-08-07'
-                ORDER BY fecha, nombre_vestido,talle_vestido,color_vestido
-[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
-                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
-                FROM vestido
-                ORDER BY id
-[2023-08-07][INFO]Ejecutando query: SELECT nombre, entrada, salida, saldoTotalMercaderia,
-                    precio, saldoTotal, DATE_FORMAT(fechaPago,'%d-%m-%Y') as fechaPago
-                FROM vestido
-                ORDER BY id
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT fechaPagada
-                FROM historialPagos
-                    WHERE fechaPagada!='2023-08-07'
-                    ORDER BY fechaPagada DESC LIMIT 1 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoDev
-                FROM registros 
-                   WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' 
-[2023-08-07][INFO]Ejecutando query: SELECT SUM(entrada) as totalEntrada, (SELECT COUNT(id) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSalida,
-                    (SELECT COUNT(id) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalDevoluciones,
-                SUM(saldoTotalMercaderia) as totalStock, 
-                (SELECT SUM(precio) FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldoSalidas,
-                (SELECT SUM(precio)-'26230' FROM registros WHERE tipo='Salida' and fecha between '2023-07-29' and '2023-08-07' ) as totalSaldo,
-                (SELECT SUM(precio) FROM registros WHERE tipo='Devolución' and fecha_devolucion between '2023-07-29' and '2023-08-07' ) as totalSaldoDev
-                FROM vestido
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1
+[2023-08-07][INFO]Ejecutando query: SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
+                    destino,cuenta,es_caba,tipo,id
+                FROM flex
+                    ORDER BY id DESC
+[2023-08-07][INFO]Ejecutando query: SELECT SUM(precio) as saldoTotal,
+                    (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
+                        (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
+                        FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT destino
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT DISTINCT receptor
+                FROM flex
+[2023-08-07][INFO]Ejecutando query: SELECT fecha
+                FROM flex
+                    ORDER BY fecha LIMIT 1

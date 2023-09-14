@@ -3,9 +3,11 @@
 class FlexModel
 {
     private $database;
+    private $pdf;
 
-    public function __construct($database){
+    public function __construct($database,$pdf){
         $this->database=$database;
+        $this->pdf=$pdf;
     }
 
     public function agregarEnvio(){
@@ -26,6 +28,10 @@ class FlexModel
             $this->database->query($sql);
             $alerta=[
                 "mensaje"=>"¡Envío agregado correctamente!"
+            ];
+        }else{
+            $alerta=[
+                "mensaje"=>"¡No se pudo agregar este envío!"
             ];
         }
         return $alerta ?? null;
@@ -48,59 +54,39 @@ class FlexModel
             $esCaba=$_POST["esCaba"];
             $precio=$_POST["precio"];
             $tipo=$_POST["tipo"];
-            $devuelto=$_POST["devuelto"];
-            $sql="UPDATE flex
-                    SET receptor='$receptor',destino='$destino', fecha='$fecha', dia='$dia',
-                            cuenta='$cuenta', es_caba='$esCaba', precio='$precio', tipo='$tipo',
-                                fecha_cancelacion='$fecha',devuelto='$devuelto'
-                        WHERE id='$id'";
+            if(strtolower($tipo)=="cancelado"){
+                $sql="UPDATE flex
+                        SET receptor='$receptor',destino='$destino', fecha='$fecha', dia='$dia',
+                                cuenta='$cuenta', es_caba='$esCaba', precio='$precio'*-1, tipo='$tipo'
+                                WHERE id='$id'";
+            }else{
+                $sql="UPDATE flex
+                        SET receptor='$receptor',destino='$destino', fecha='$fecha', dia='$dia',
+                                cuenta='$cuenta', es_caba='$esCaba', precio='$precio', tipo='$tipo'
+                                WHERE id='$id'";
+            }
             $this->database->query($sql);
             return true;
         }else{
             return false;
         }
     }
-    /*
-     * Teresa Rivero 4/1. Fecha cancelación:4/1
-Ayelen. Gonzalez Catan 2/1
-Teresa Elsa Rivero 4/1
-Cancelados: Otra casilla donde dice "Pedir paquete" y otra que dice "Entregado"
-Javier Martínez 9/1
-Karina Mureato 12/1
-Marcelo P Alegre 19/1
-Gabriela Troncoso 23/1*/
 
     public function getEnvios(){
         if(isset($_POST["filtrar"])){
             $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
-                    destino,cuenta,es_caba,id
+                    destino,cuenta,es_caba,tipo,id
                 FROM flex
-                    WHERE tipo='Envío' and ".$this->filtrarPor()."
+                    WHERE ".$this->filtrarPor()."
                     ORDER BY id DESC";
         }else{
             $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
-                    destino,cuenta,es_caba,tipo,id,fecha_cancelacion
+                    destino,cuenta,es_caba,tipo,id
                 FROM flex
-                    where tipo='Envío'
                     ORDER BY id DESC";
         }
         return $this->database->query($sql);
-    }
-    public function getEnviosCancelados(){
-        if(isset($_POST["filtrar"])){
-            $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
-                    destino,cuenta,es_caba,devuelto,id,DATE_FORMAT(fecha_cancelacion,'%d-%m')
-                FROM flex
-                    WHERE tipo='Cancelado' and ".$this->filtrarPor()."
-                    ORDER BY id DESC";
-        }else{
-            $sql="SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,dia,receptor,
-                    destino,cuenta,es_caba,devuelto,id,DATE_FORMAT(fecha_cancelacion,'%d-%m') as fecha_cancelacion
-                FROM flex
-                    WHERE tipo='Cancelado'
-                    ORDER BY id DESC";
-        }
-        return $this->database->query($sql);
+
     }
 
     public function getFecha(){
@@ -111,13 +97,13 @@ Gabriela Troncoso 23/1*/
 
     public function getTotales(){
         if(isset($_POST["filtrar"])){
-            $sql="SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío' and ".$this->filtrarPor().") as saldoTotal,
+            $sql="SELECT SUM(precio) as saldoTotal,
                     (SELECT count(id) FROM flex WHERE tipo='Envío' and ". $this->filtrarPor().") as cantEnvios,
                         (SELECT count(id) FROM flex WHERE tipo='Cancelado' and ".$this->filtrarPor().") as cantCancelaciones
                         FROM flex
                             WHERE ".$this->filtrarPor();
         }else{
-            $sql="SELECT (SELECT sum(precio) FROM flex WHERE tipo='Envío') as saldoTotal,
+            $sql="SELECT SUM(precio) as saldoTotal,
                     (SELECT count(id) FROM flex WHERE tipo='Envío') as cantEnvios,
                         (SELECT count(id) FROM flex WHERE tipo='Cancelado') as cantCancelaciones
                         FROM flex";
@@ -186,4 +172,73 @@ Gabriela Troncoso 23/1*/
         return $this->database->query($sql)->fetch_assoc()["fecha"] ?? null;
     }
 
+    public function generarPDF(){
+        if(isset($_POST["generarPDF"])){
+            $saldoPagado=$this->getSaldoPagado()["precio"];
+            $cantidad=$this->getSaldoPagado()["cantidad"];
+            date_default_timezone_set("America/Argentina/Buenos_Aires");
+            $fechaActual=date("Y-m-d");
+            $this->pdf->addPage();
+            $this->pdf->SetFont("Arial", "", 12);
+            $this->pdf->Cell(25, 5, "Fecha: " . date("d/m/Y"), 0, 1, "C");
+
+            $this->pdf->SetFont("Arial", "", 20);
+            $this->pdf->Cell(0, 10, mb_convert_encoding("Lista de envíos", 'ISO-8859-1', 'UTF-8'), 0, 1, "C");
+            $this->pdf->SetMargins(5, 10, 10);
+            $this->pdf->Cell(30, 12, "", 0, 1, "C");
+            $this->pdf->SetFont("Arial", "", 14);
+            $this->pdf->Cell(50, 5, "Saldo pagado: $". $this->getSaldoPagado()["precio"], 0, 0, "C");
+            $this->pdf->Cell(250, 5, mb_convert_encoding("Cantidad de envíos: ". $this->getSaldoPagado()["cantidad"],'ISO-8859-1',"UTF-8"), 0, 1, "C");
+            $this->pdf->Cell(30, 3, "", 0, 1, "C");
+
+            $this->generarEncabezados();
+            $this->generarTablaDeEnvios();
+
+            $this->pagarEnvios();
+            $this->pdf->Output('I', 'Lista de Envíos.pdf');
+        }
+    }
+
+    public function generarEncabezados(){
+        $this->pdf->SetFillColor(173,216,230);
+        $this->pdf->Cell(30, 7, "Fecha", 1, 0, "C",true);
+        $this->pdf->Cell(75, 7, "Receptor", 1, 0, "C",true);
+        $this->pdf->Cell(75, 7, "Destino", 1, 0, "C",true);
+        $this->pdf->Cell(25, 7, "CABA", 1, 1, "C",true);
+    }
+
+    public function generarTablaDeEnvios(){
+        $this->pdf->SetFont("Arial", "", 12);
+        $envios=$this->getEnviosPDF()->fetch_all();
+
+        foreach ($envios as $envio){
+            $this->pdf->Cell(30, 7, $envio[0], 1, 0, "C");
+            $this->pdf->Cell(75, 7, $envio[1], 1, 0, "C");
+            $this->pdf->Cell(75, 7, $envio[2], 1, 0, "C");
+            if($envio[3]=="CABA"){
+                $this->pdf->Cell(25, 7,mb_convert_encoding("Sí", 'ISO-8859-1', 'UTF-8'), 1, 1, "C");
+            }else{
+                $this->pdf->Cell(25, 7,"No", 1, 1, "C");
+            }
+        }
+    }
+
+    public function getEnviosPDF(){
+        $sql = "SELECT DATE_FORMAT(fecha,'%d-%m') as fecha,receptor, destino, es_caba
+                FROM flex
+                WHERE pagado=false";
+        return $this->database->query($sql);
+    }
+
+    public function getSaldoPagado(){
+        $sql="SELECT SUM(precio) as precio, COUNT(id) as cantidad
+                FROM flex
+                    WHERE pagado=false";
+        return $this->database->query($sql)->fetch_assoc();
+    }
+
+    public function pagarEnvios(){
+        $sql="UPDATE flex SET pagado=true WHERE pagado=false";
+        $this->database->query($sql);
+    }
 }

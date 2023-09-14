@@ -37,6 +37,7 @@ class FlexController
 
     public function listaEnvios(){
         unset($_SESSION["idEnvio"]);
+        $this->flexModel->generarPDF();
         $data=[
             "envios"=>$this->flexModel->getEnvios(),
             "totales"=>$this->flexModel->getTotales(),

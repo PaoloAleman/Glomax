@@ -14,6 +14,7 @@ class VestidoController{
         $this->vestidoModel->realizarPago();
         $vestidos=$this->vestidoModel->getVestidosPagados()->fetch_all();
         $this->vestidoModel->generarPDF($vestidos);
+
         $data=[
             "vestidos"=>$this->vestidoModel->getVestidos(),
             "vestidosSelect"=>$this->vestidoModel->getVestidosSinFiltro(),
