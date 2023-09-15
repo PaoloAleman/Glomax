@@ -10,7 +10,7 @@ class LobbyController
     }
 
     public function interno(){
-        $this->renderer->render("lobby");
+        $this->renderer->render("nSuscripciones");
     }
 
 }

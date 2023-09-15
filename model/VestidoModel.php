@@ -146,6 +146,9 @@ class VestidoModel
             $sql="UPDATE vestidosDetalle
                     SET cantidadE=cantidadE-cantidadS, cantidadS=0, totalStock=cantidadE, saldoTotal=0,devoluciones=0 ";
             $this->database->query($sql);
+            $sql="UPDATE registros
+                    SET pagado=1";
+            $this->database->query($sql);
         }
     }
 
